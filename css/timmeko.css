@@ -91,7 +91,8 @@
        width: 100%;
        height: 100%;
        position: absolute;
-       background-size: contain
+       background-size: contain;
+       transition: all 1s;
    }
    
    .image-sm {
@@ -181,6 +182,7 @@
    
    .row a:hover > .block > .image {
        opacity: 0.4;
+
    }
    
    .row a:hover > .block > .block-content {
@@ -198,3 +200,11 @@
        text-transform: none;
        opacity: 1;
    }
+
+footer{
+ background-color: #000;
+    color: #ccc;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: 25px;
+}
