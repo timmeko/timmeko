@@ -7,7 +7,7 @@
 }
 
     .jsfg-loader .animation-dots {
-        color: #797979;
+        color: #1696d2;
         font-size: 20px;
     }
 
@@ -45,6 +45,11 @@
     
 .hide {
     display: none;
+}
+
+.span1{
+ display: inline-block;
+    margin:2px;
 }
 
     @media (min-width:768px) {

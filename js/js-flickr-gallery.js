@@ -13,7 +13,7 @@
     var FORMAT = 'json',
         SEARCH_API_METHOD = 'flickr.photos.search',
         SETS_API_METHOD = 'flickr.photosets.getPhotos',
-        API_KEY = '62525ee8c8d131d708d33d61f29434b6',
+        API_KEY = '480135cf41c14d316acd2ab96efc72d9',
         // Tag attributes
         DATA_TAGS_ATTR = 'data-tags',
         DATA_USER_ID_ATTR = 'data-user-id',
@@ -31,7 +31,7 @@
         GEN_IMAGE_CONTAINER_CLASS = 'modal-image',
         GEN_FOOTER_CONTAINER_CLASS = 'modal-footer'
       ;
-    
+    console.log(SETS_API_METHOD);
     // Plugin name declaration
     var pluginName = 'jsFlickrGallery', 
         defaults = {
@@ -184,7 +184,6 @@
             // Assign constants to url options
             this.options.url.format = FORMAT;
             this.options.url.api_key = API_KEY;
-            
             this.options.url.photoset_id = this.$element.attr( DATA_SET_ID_ATTR ) || this.options.url.photoset_id;
             if ( this.options.url.photoset_id ) {
               // Fetch data for certain photo set
@@ -212,7 +211,6 @@
 
             // Get images using ajax and display them on success
             this._getPhotos();
-
             return this;
         },
                 
@@ -585,7 +583,7 @@
                 // Append modal to body   
                 modal = document.createElement( 'div' );
                 modal.id = this.options.modal.id;
-                modal.className = 'modal jsfg-modal hide fade';
+                modal.className = 'modal jsfg-modal fade';
                 modal.innerHTML = header + body + footer;
               
                 document.body.appendChild( modal );
@@ -627,6 +625,8 @@
                 }
                  
                 self._loadImage( true );
+                
+             
             });
             
             // Next image in modal

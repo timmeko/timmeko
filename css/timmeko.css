@@ -33,6 +33,9 @@
    .dark{
     background-color: #000 !important;   
    }
+.light{
+    background-color: #fff !important;
+}
    .intro-text .intro-lead-in {
        margin-bottom: 25px;
        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -176,8 +179,13 @@
        background-size: cover;
    }
    
+
+
+.feature{
+ text-align: center;
+}
    .row {
-       background-color: #1696d2;
+/*       background-color: #1696d2;*/
    }
    
    .row a:hover > .block > .image {
