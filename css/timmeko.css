@@ -178,9 +178,43 @@
        background-position: center;
        background-size: cover;
    }
+   .illustration-transy{
+       background-image: url(../img/0119_transy_mapbg.jpg);
+       background-position: center;
+       background-size: auto;
+   }
+.illustration-ncaa{
+    background-image: url(https://farm4.staticflickr.com/3455/3786325520_cb1872e3b4_o.jpg);
+    background-position:center;
+    background-size: cover;
+}
+.illustration-editorial{
+    background-image: url(https://farm9.staticflickr.com/8652/15941340633_f7ed714e38_b.jpg);
+    background-position:center;
+    background-size: cover;
+}
+.illustration-cave{
+       background-image: url(https://farm3.staticflickr.com/2438/3786335734_2bcbbd832d_o.jpg);
+    background-position:center;
+    background-size: cover; 
+}
    
 
+.modal-header{
+ background-color: #000;
+    color: #ccc;
+}
+.modal-footer{
+/*     background-color: #000;*/
+    color: #ccc;
+}
 
+.close{
+ font-size: 40px;
+    color:#fff;
+    font-weight: 100;
+    opacity: 1.0;
+}
 .feature{
  text-align: center;
 }
