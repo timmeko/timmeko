@@ -250,3 +250,10 @@ footer{
     padding-bottom: 35px;
     margin-top: 25px;
 }
+
+@media(min-width:1199px){
+ .navbar-nav{
+  float:right;
+     margin-top:5px;
+ }
+}
