@@ -18,7 +18,6 @@
 
     <link href="css/timmeko.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/js-flickr-gallery.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -45,7 +44,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.html">
                 <div id="logo">
                     <?xml version="1.0" encoding="utf-8" ?>
                     <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -55,7 +53,7 @@
                         <text transform="matrix(1 0 0 1 6.5537 25.5117)" fill="#FFFFFF" font-family="'Lato-Black'" font-size="23.7319" letter-spacing="1">TIM MEKO</text>
                         <text transform="matrix(1 0 0 1 151.0425 25.5117)" fill="#00B7F4" font-family="'Lato-Light'" font-size="23.7319" letter-spacing="1">VISUAL COMMUNICATION</text>
                     </svg>
-                </div></a>
+                </div>
 
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -88,87 +86,95 @@
 
     <!-- Page Content -->
     <div class="container">
-        <div class="row dark">
-            
-                <div class="intro-img"></div>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+            </ol>
 
-            <div class="col-lg-12 intro">
-                <div class="intro-text text-center">
-                    <div class="intro-lead-in">Work</div>
-                    <div class="intro-heading">Illustration</div>
-                    <div class="intro-desc">Sometimes an illustration is the best way to explain a concept.</div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/editorial1.jpg" alt="...">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
                 </div>
-            </div>
+                <div class="item">
+                    <img src="img/editorial2.jpg" alt="...">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/editorial3.jpg" alt="...">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/editorial4.jpg" alt="...">
+                    <div class="carousel-caption">
+                        ...
+                </div>
+                </div>
+                 <div class="item">
+                    <img src="img/editorial5.jpg" alt="...">
+                    <div class="carousel-caption">
+                        ...
+                  </div></div>
+                                                    <div class="item">
+                    <img src="img/editorial6.jpg" alt="...">
+                    <div class="carousel-caption">
+                        ...
+                    </div></div>
+                                                    <div class="item">
+                    <img src="img/editorial7.jpg" alt="...">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <!-- /.row -->
-        <div class="row">
-            <h1 class="feature">Featured Illustration Projects</h1>
-            <a href="illustration-editorial.html">
-                <div class="col-lg-6 block large ">
-                    <div class="image illustration-editorial"></div>
-
-                    <div class="block-content top left">
-                        <h1>Editorial Illustrations</h1>
-                        <p class="lead"></p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="col-lg-6 block large">
-                    <div class="image illustration-ncaa"></div>
-                    <div class="block-content bottom right">
-                        <h1>NCAA Special Section</h1>
-                        <p class="lead"></p>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="col-lg-6 block large ">
-                    <div class="image illustration-cave"></div>
-
-                    <div class="block-content top left">
-                        <h1>Exploring Ohio's Cave Dwellers</h1>
-                        <p class="lead"></p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="col-lg-6 block large">
-                    <div class="image illustration-transy"></div>
-                    <div class="block-content bottom right">
-                        <h1>Transylvania University Campus Map</h1>
-                        <p class="lead"></p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <!-- /.row -->
-<div class="row">
-            <h1 class="feature">Other Illustration Work</h1>
-<div data-toggle="jsfg" data-set-id="72157629634497359" data-per-page="50" thumbnailSize="large"></div></div>
+<!--        end carousel-->
         
-    
+        <div class="col-md-7 offset-2">
+        <h1>Editorial Illustrations</h1>
+        <p>Recently, I've had the pleasure of doing several editorial illustrations for the Center of Public Integrity and the International Consortium of Investigative Journalists. These illustrations usually aim to visualize CPI and ICIJ's work of shining light on those who wish to skirt the system and take advantage of loopholes. They expose the gritty underbelly of big money, those who seek to buy influence, and corporations who put profits above people. Several of these projects have won awards and I'm proud to be a part of them.
 
+</p>
+            </div>
     </div>
     <!-- /.container -->
-        <footer>
-            <div class="container">
-                <div class="col-lg-12">
-        This is the footer
+    <footer>
+        <div class="container">
+            <div class="col-lg-12">
+                This is the footer
             </div>
-                </div>
+        </div>
 
-        </footer>
+    </footer>
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    
-<!--    flickr gallery plugin-->
-    <script type="text/javascript" src="js/js-flickr-gallery.js"></script>
 
 </body>
 
