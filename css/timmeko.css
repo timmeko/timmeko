@@ -23,6 +23,10 @@
        background-size: cover
    }
    
+ .intro-infographics {
+      
+       background-image: url(../img/infographics-header.jpg) !important;
+      }
 
    
    .intro-text {
@@ -195,6 +199,27 @@
 }
 .illustration-cave{
        background-image: url(https://farm3.staticflickr.com/2438/3786335734_2bcbbd832d_o.jpg);
+    background-position:center;
+    background-size: cover; 
+}
+
+.infographics-conclave{
+       background-image: url(../img/infographics-conclave.jpg);
+    background-position:center;
+    background-size: cover; 
+}
+.infographics-news{
+       background-image: url(../img/news/infographics-news.jpg);
+    background-position:center;
+    background-size: cover; 
+}
+.infographics-science{
+       background-image: url(../img/science/infographics-science.jpg);
+    background-position:center;
+    background-size: cover; 
+}
+.infographics-education{
+       background-image: url(../img/education/infographics-education.jpg);
     background-position:center;
     background-size: cover; 
 }
