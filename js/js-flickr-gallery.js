@@ -53,8 +53,8 @@
                 'imageContainerClass' : '.' + GEN_IMAGE_CONTAINER_CLASS,
                 'onContainerNext' : true,
                 'imageFadeTime' : 250,
-                'prevClass' : '.btn.modal-prev',
-                'nextClass' : '.btn.modal-next',
+                'prevClass' : '.btn.btn-lg.btn-primary.modal-prev',
+                'nextClass' : '.btn.btn-lg.btn-primary.modal-next',
                 'prevText' : 'Previous image',
                 'nextText' : 'Next image',
                 'offsetWidth' : 100,
@@ -574,10 +574,10 @@
                 footer = '<div class="' + GEN_FOOTER_CONTAINER_CLASS + '">' +
                             '<button title="' + this.options.modal.prevText + 
                                 '" class="' + this._replaceDots( this.options.modal.prevClass ) + 
-                                '">&laquo;</button>' +
+                                '"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>' +
                             '<button title="' + this.options.modal.nextText + 
                                 '" class="' + this._replaceDots( this.options.modal.nextClass ) + 
-                                '">&raquo;</button>' +
+                                '"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>' +
                          '</div>';   
 
                 // Append modal to body   
@@ -708,15 +708,15 @@
                     if ( $window.width() > RESPONSIVE_WIDTH ) {
                         $modal.css( 'top', '' );
                         ( $.support.transition ? $modal.animate : $modal.css ).call( $modal.stop(), {
-                            'margin-left' : -$modal.outerWidth() / 2,
-                            'margin-top' : -$modal.outerHeight() / 2
+//                            'margin-left' : -$modal.outerWidth() / 2,
+//                            'margin-top' : -$modal.outerHeight() / 2
                         });
                     } else {
                         // ..center on y axis
                         $modal.css({
                             'top': ( $window.height() - $modal.outerHeight() ) / 2,
-                            'margin-left' : '',
-                            'margin-top' : ''
+//                            'margin-left' : '',
+//                            'margin-top' : ''
                         });
                     }
                     // Fade image in and center modal
