@@ -223,6 +223,27 @@
     background-position:center;
     background-size: cover; 
 }
+
+.design-beer{
+       background-image: url(../img/design/design-beer.jpg);
+    background-position:center;
+    background-size: cover; 
+}
+.design-newsletters{
+       background-image: url(../img/design/newsletter1.jpg);
+    background-position:center;
+    background-size: cover; 
+}
+.design-hustle{
+       background-image: url(../img/design/dd42feeb0d0116fec721a478ef1266b7.png);
+    background-position:center;
+    background-size: cover; 
+}
+.design-27{
+       background-image: url(../img/design/d686908736e413a95ba312f389cce618.png);
+    background-position:center;
+    background-size: cover; 
+}
    
 
 .modal-header{
