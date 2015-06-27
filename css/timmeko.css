@@ -14,7 +14,16 @@
        margin-top: 15px;
        height: 100%;
    }
-   
+.title-name{
+ font-family: 'Lato', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.title-vis{
+ font-family: 'Lato', Arial, sans-serif;
+    font-weight: 100;
+}
+
    .intro {
        height: 400px;
        padding:0;
@@ -142,13 +151,13 @@
    }
    
    .infographics {
-       background-image: url(../img/InsideTheConclave_sm.jpg);
+       background-image: url(../img/infographics-conclave.jpg);
        background-position: center;
        background-size: cover;
    }
    
    .maps {
-       background-image: url(../img/0119_transy_mapbg.jpg);
+       background-image: url(../img/transy1.png);
        background-position: center;
        background-size: auto;
    }
@@ -160,19 +169,19 @@
    }
    
    .design {
-       background-image: url(../img/0119_transy_mapbg.jpg);
+       background-image: url(../img/design/newsletter4.jpg);
        background-position: center;
        background-size: cover;
    }
    
    .about {
-       background-image: url(../img/mekomugshot.png);
+       background-image: url(../img/11130101_692870126303_222769530982943254_n.jpg);
        background-position: center;
        background-size: cover;
    }
    
    .contact {
-       background-image: url(../img/IMG_0496.JPG);
+       background-image: url(../img/design/beerLabels/beer2.jpg);
        background-position: center;
        background-size: cover;
    }
