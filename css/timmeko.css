@@ -41,7 +41,9 @@
    .intro-text {
        color: #fff;
        z-index: 15;
-       padding-top: 50px;
+       padding-top: 60px;
+       margin: 0 auto;
+       width: 90%;
    }
    .dark{
     background-color: #000 !important;   
@@ -50,6 +52,7 @@
     background-color: #fff !important;
 }
    .intro-text .intro-lead-in {
+       margin-top:10%;
        margin-bottom: 25px;
        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
        font-size: 40px;
@@ -244,17 +247,26 @@
     background-size: cover; 
 }
 .design-hustle{
-       background-image: url(../img/design/dd42feeb0d0116fec721a478ef1266b7.png);
+       background-image: url(../img/theHustle.jpg);
     background-position:center;
     background-size: cover; 
 }
 .design-27{
-       background-image: url(../img/design/d686908736e413a95ba312f389cce618.png);
+       background-image: url(../img/27wks.png);
     background-position:center;
     background-size: cover; 
 }
    
-
+.design-header{
+           background-image: url(../img/_MG_2939.jpg);
+    background-position:center;
+    background-size: cover; 
+}
+.illustration-header{
+           background-image: url(../img/illustration-header.jpg);
+    background-position:center;
+    background-size: cover; 
+}
 .modal-header{
  background-color: #000;
     color: #ccc;
@@ -306,9 +318,36 @@ footer{
     margin-top: 25px;
 }
 
+.navbar-header a:hover{
+ text-decoration: none;
+}
+
 @media(min-width:1199px){
  .navbar-nav{
   float:right;
      margin-top:5px;
+ }
+    .intro-text{
+     padding-top: 0;   
+    }
+    
+    .hi{
+     margin-top:40px !important;   
+    }
+}
+
+@media (max-width:1199px){
+ .hi{
+  margin-top:10px !important;   
+ }
+    .home{
+     font-size: 36px !important;
+        line-height: 36px !important;
+    }
+}
+
+@media (max-width:574px){
+ .home{font-size: 24px !important;
+     line-height: 24pt !important;
  }
 }
