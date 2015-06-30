@@ -1,0 +1,389 @@
+/* ----- Logo ----- */
+
+#logo a {
+	background-image:url('../images/themes/logos/none.png'); 
+	min-height:0;
+	height:40px;
+}
+* html #logo a {/* IE6 png Support */
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/themes/logos/none.png", sizingMethod="crop");
+}
+
+/* ----- Backgrounds ----- */
+html{
+		background-color:#0f1215;
+}
+#logo{
+	background-image:url(http://timmeko.wufoo.com../images/themes/patterns/fernBL.png);	background-color:#666666;
+}
+#container, html.embed{
+	background-color:#0f1215;
+}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo input.file, .wufoo select.select{
+	background:#333333 url(../images/fieldbg.gif) repeat-x top;
+	border:1px solid Background color '333333 url(../images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+	border-bottom:1px solid Background color '333333 url(../images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+	border-right:1px solid Background color '333333 url(../images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+}
+.safari .wufoo select.select{
+	font-size:110% !important;
+}
+.safari .wufoo input.file{
+	background:none;
+	border:none;
+}
+
+.wufoo li.focused{
+	background-color:transparent;
+}
+.wufoo .instruct{
+	background-color:#333333;
+}
+
+/* ----- Borders ----- */
+#container{
+	border:0 solid #CCCCCC;
+}
+.wufoo .info, .wufoo .paging-context{
+	border-bottom:0 dotted #CCCCCC;
+}
+.wufoo .section h3, .wufoo .captcha, #payment .paging-context{
+	border-top:0 dotted #CCCCCC;
+}
+.wufoo input.text, .wufoo textarea.textarea{
+
+}
+.wufoo .instruct{
+	border:0 solid #E6E6E6;
+}
+.fixed .info{
+	border-bottom:none;
+}
+.wufoo li.section.scrollText{
+	border-color:#2e3133;
+}
+
+/* ----- Typography ----- */
+.wufoo .info h2{
+	font-size:180%;
+	font-family:Verdana;
+	font-style:normal;
+	font-weight:normal;
+	color:#333333;
+}
+.wufoo .info div{
+	font-size:100%;
+	font-family:Verdana;
+	font-style:normal;
+	font-weight:normal;
+	color:#eeeeee;
+}
+.wufoo .section h3{
+	font-size:110%;
+	font-family:Verdana;
+	font-style:normal;
+	font-weight:normal;
+	color:#eeeeee;
+}
+.wufoo .section div{
+	font-size:85%;
+	font-family:Verdana;
+	font-style:normal;
+	font-weight:normal;
+	color:#eeeeee;
+}
+
+.wufoo label.desc, .wufoo legend.desc{
+	font-size:85%;
+	font-family:Verdana;
+	font-style:normal;
+	font-weight:bold;
+	color:#eeeeee;
+}
+
+.wufoo label.choice{
+	font-size:110%;
+	font-family:Verdana;
+	font-style:normal;
+	font-weight:normal;
+	color:#eeeeee;
+}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo input.file, .wufoo select.select{
+	font-style:normal;
+	font-weight:normal;
+	color:#eeeeee;
+	font-size:110%;
+}
+{* Custom Fonts Break Dropdown Selection in IE *}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo input.file{ 
+	font-family:Verdana;
+}
+.safari .wufoo select.select{
+	background:#333333 url(../images/fieldbg.gif) repeat-x top;
+	border:1px solid Background color '333333 url(../images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+	border-bottom:1px solid Background color '333333 url(../images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+	border-right:1px solid Background color '333333 url(../images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+	font-size:110% !important;
+}
+
+
+.wufoo li div, .wufoo li span, .wufoo li div label, .wufoo li span label{
+	font-family:Verdana;
+	color:#eeeeee;
+}
+.safari .wufoo input.file{ /* Webkit */
+	font-size:110%;
+	font-family:Verdana;
+	color:#eeeeee;
+}
+.wufoo .instruct small{
+	font-size:85%;
+	font-family:Verdana;
+	font-style:normal;
+	font-weight:normal;
+	color:#eeeeee;
+}
+
+.altInstruct small, li.leftHalf small, li.rightHalf small,
+li.leftThird small, li.middleThird small, li.rightThird small,
+.iphone small{
+	color:#eeeeee !important;
+}
+
+/* ----- Button Styles ----- */
+
+.wufoo input.btTxt{
+
+}
+
+/* ----- Highlight Styles ----- */
+
+
+/* ----- Confirmation ----- */
+
+.confirm h2{
+	font-family:Verdana;
+	color:#eeeeee;
+}
+a.powertiny b, a.powertiny em{
+	color:#e6e6e6 !important;
+}
+.embed a.powertiny b, .embed a.powertiny em{
+	color:#e6e6e6 !important;
+}
+
+/* ----- Pagination ----- */
+
+.pgStyle1 var, .pgStyle2 var, .pgStyle2 em, .page1 .pgStyle2 var, .pgStyle1 b, .wufoo .buttons .marker{
+	font-family:Verdana;
+	color:#eeeeee;
+}
+.pgStyle1 var, .pgStyle2 td{
+	border:1px solid #3f4144;
+}
+.pgStyle1 .done var{
+	background:#3f4144;
+}
+
+.pgStyle1 .selected var, .pgStyle2 var, .pgStyle2 var em{
+	background:#d6d6d6;
+	color:#000000;
+}
+.pgStyle1 .selected var{
+	border:1px solid #eeeeee;
+}
+
+.buttons button, .buttons button:hover{
+	color:#FFFFFF;
+}
+
+/* Likert Backgrounds */
+
+.likert table{
+	background-color:#0f1215;
+}
+.likert thead td, .likert thead th{
+	background-color:#282a2d;
+}
+.likert tbody tr.alt td, .likert tbody tr.alt th{
+	background-color:#181b1e;
+}
+
+/* Likert Borders */
+
+.likert table, .likert th, .likert td{
+	border-color:#2e3133;
+}
+.likert td{
+	border-left:1px solid #3f4144;
+}
+
+/* Likert Typography */
+
+.likert caption, .likert thead td, .likert tbody th label{
+	color:#eeeeee;
+	font-family:Verdana;
+}
+.likert tbody td label{
+	color:#d6d6d6;
+	font-family:Verdana;
+}
+.likert caption, .likert tbody th label{
+	font-size:85%;
+}
+
+/* Likert Hover */
+
+.likert tbody tr:hover td, .likert tbody tr:hover th, .likert tbody tr:hover label{
+	background-color:transparent;
+	color:#000000;
+}
+.likert tbody tr:hover td{
+	border-left:1px solid #cccccc;
+}
+
+/* ----- Running Total ----- */
+
+.wufoo #lola{
+	background:#282a2d;
+}
+.wufoo #lola tbody td{
+	border-bottom:1px solid #3f4144;
+}
+.wufoo #lola{
+	font-family:Verdana;
+	color:#eeeeee;
+}
+.wufoo #lola tfoot th{
+	color:#bebebe;
+}
+
+/* ----- Report Styles ----- */
+
+.wufoo .wfo_graph h3{
+	font-size:85%;
+	font-family:Verdana;
+	color:#eeeeee;
+}
+.wfo_txt, .wfo_graph h4{
+	color:#eeeeee;
+}
+.wufoo .footer h4{
+	color:#eeeeee;
+}
+.wufoo .footer span{
+	color:#eeeeee;
+}
+
+/* ----- Number Widget ----- */
+
+.wfo_number{
+	background-color:#181b1e;
+	border-color:#2e3133;
+}
+.wfo_number strong, .wfo_number em{
+	color:#FFFFFF;
+}
+
+/* ----- Chart Widget Border and Background Colors ----- */
+
+#widget, #widget body{
+	background:#0f1215;
+}
+.fcNav a.show{
+	background-color:#0f1215;
+	border-color:#3f4144;
+}
+.fc table{
+	border-left:1px solid #2e3133;	
+}
+.fc thead th, .fc .more th{
+	background-color:#2e3133 !important;
+	border-right:1px solid #3f4144 !important;
+}
+.fc tbody td, .fc tbody th, .fc tfoot th, .fc tfoot td{
+	background-color:#0f1215;
+	border-right:1px solid #3f4144;
+	border-bottom:1px solid #2e3133;
+}
+.fc tbody tr.alt td, .fc tbody tr.alt th, .fc tbody td.alt{
+	background-color:#181b1e;
+}
+
+/* ----- Chart Widget Typography Colors ----- */
+
+.fc caption, .fcNav, .fcNav a{
+	color:#eeeeee;
+}
+.fc tfoot, 
+.fc thead th,
+.fc tbody th div, 
+.fc tbody td.count, .fc .cards tbody td a, .fc td.percent var,
+.fc .timestamp span{
+	color:#FFFFFF;
+}
+.fc .indent .count{
+	color:#e4e4e4;
+}
+.fc .cards tbody td a span{
+	color:#a7a7a7;
+}
+
+/* ----- Chart Widget Hover Colors ----- */
+
+.fc tbody tr:hover td, .fc tbody tr:hover th,
+.fc tfoot tr:hover td, .fc tfoot tr:hover th{
+	background-color:transparent;
+}
+.fc tbody tr:hover th div, .fc tbody tr:hover td, .fc tbody tr:hover var,
+.fc tfoot tr:hover th div, .fc tfoot tr:hover td, .fc tfoot tr:hover var{
+	color:#000000;
+}
+
+/* ----- Payment Summary ----- */
+
+.invoice thead th, 
+.invoice tbody th, .invoice tbody td,
+.invoice tfoot th,
+.invoice .total,
+.invoice tfoot .last th, .invoice tfoot .last td,
+.invoice tfoot th, .invoice tfoot td{
+	border-color:#2e3133;
+}
+.invoice thead th, .wufoo .checkNotice{
+	background:#181b1e;
+}
+.invoice th, .invoice td{
+	color:#FFFFFF;
+}
+#ppSection, #ccSection{
+	border-bottom:0 dotted #CCCCCC;
+}
+#shipSection, #invoiceSection{
+	border-top:0 dotted #CCCCCC;
+}
+
+/* Drop Shadows */
+#container{
+	-webkit-box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	-o-box-shadow:none !important;
+	box-shadow:none !important;
+}
+
+/* - - - Local Fonts - - - */
+
+/* - - - Responsive - - - */
+
+@media only screen and (max-width: 480px) {
+	html{
+		background-color:#0f1215;
+	}
+	a.powertiny b, a.powertin em{
+		color:#e6e6e6 !important;
+	}
+}
+
+/* - - - Custom Theme - - - */
+

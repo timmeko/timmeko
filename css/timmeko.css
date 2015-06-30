@@ -14,41 +14,44 @@
        margin-top: 15px;
        height: 100%;
    }
-.title-name{
- font-family: 'Lato', Arial, sans-serif;
-    font-weight: 700;
-}
-
-.title-vis{
- font-family: 'Lato', Arial, sans-serif;
-    font-weight: 100;
-}
-
+   
+   .title-name {
+       font-family: 'Lato', Arial, sans-serif;
+       font-weight: 700;
+   }
+   
+   .title-vis {
+       font-family: 'Lato', Arial, sans-serif;
+       font-weight: 100;
+   }
+   
    .intro {
        height: 400px;
-       padding:0;
+       padding: 0;
        /*        padding-bottom: 20%;*/
+       
        background-image: url(../img/header.png);
        background-size: cover
    }
    
- .intro-infographics {
-      
+   .intro-infographics {
        background-image: url(../img/infographics-header.jpg) !important;
-      }
-
+   }
    
    .intro-text {
        color: #fff;
        z-index: 15;
        padding-top: 50px;
    }
-   .dark{
-    background-color: #000 !important;   
+   
+   .dark {
+       background-color: #000 !important;
    }
-.light{
-    background-color: #fff !important;
-}
+   
+   .light {
+       background-color: #fff !important;
+   }
+   
    .intro-text .intro-lead-in {
        margin-bottom: 25px;
        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -191,95 +194,107 @@
        background-position: center;
        background-size: cover;
    }
-   .illustration-transy{
+   
+   .illustration-transy {
        background-image: url(../img/0119_transy_mapbg.jpg);
        background-position: center;
        background-size: auto;
    }
-.illustration-ncaa{
-    background-image: url(https://farm4.staticflickr.com/3455/3786325520_cb1872e3b4_o.jpg);
-    background-position:center;
-    background-size: cover;
-}
-.illustration-editorial{
-    background-image: url(https://farm9.staticflickr.com/8652/15941340633_f7ed714e38_b.jpg);
-    background-position:center;
-    background-size: cover;
-}
-.illustration-cave{
-       background-image: url(https://farm3.staticflickr.com/2438/3786335734_2bcbbd832d_o.jpg);
-    background-position:center;
-    background-size: cover; 
-}
-
-.infographics-conclave{
-       background-image: url(../img/infographics-conclave.jpg);
-    background-position:center;
-    background-size: cover; 
-}
-.infographics-news{
-       background-image: url(../img/news/infographics-news.jpg);
-    background-position:center;
-    background-size: cover; 
-}
-.infographics-science{
-       background-image: url(../img/science/infographics-science.jpg);
-    background-position:center;
-    background-size: cover; 
-}
-.infographics-education{
-       background-image: url(../img/education/infographics-education.jpg);
-    background-position:center;
-    background-size: cover; 
-}
-
-.design-beer{
-       background-image: url(../img/design/design-beer.jpg);
-    background-position:center;
-    background-size: cover; 
-}
-.design-newsletters{
-       background-image: url(../img/design/newsletter1.jpg);
-    background-position:center;
-    background-size: cover; 
-}
-.design-hustle{
-       background-image: url(../img/design/dd42feeb0d0116fec721a478ef1266b7.png);
-    background-position:center;
-    background-size: cover; 
-}
-.design-27{
-       background-image: url(../img/design/d686908736e413a95ba312f389cce618.png);
-    background-position:center;
-    background-size: cover; 
-}
    
-
-.modal-header{
- background-color: #000;
-    color: #ccc;
-}
-.modal-footer{
-/*     background-color: #000;*/
-    color: #ccc;
-}
-
-.close{
- font-size: 40px;
-    color:#fff;
-    font-weight: 100;
-    opacity: 1.0;
-}
-.feature{
- text-align: center;
-}
+   .illustration-ncaa {
+       background-image: url(https://farm4.staticflickr.com/3455/3786325520_cb1872e3b4_o.jpg);
+       background-position: center;
+       background-size: cover;
+   }
+   
+   .illustration-editorial {
+       background-image: url(https://farm9.staticflickr.com/8652/15941340633_f7ed714e38_b.jpg);
+       background-position: center;
+       background-size: cover;
+   }
+   
+   .illustration-cave {
+       background-image: url(https://farm3.staticflickr.com/2438/3786335734_2bcbbd832d_o.jpg);
+       background-position: center;
+       background-size: cover;
+   }
+   
+   .infographics-conclave {
+       background-image: url(../img/infographics-conclave.jpg);
+       background-position: center;
+       background-size: cover;
+   }
+   
+   .infographics-news {
+       background-image: url(../img/news/infographics-news.jpg);
+       background-position: center;
+       background-size: cover;
+   }
+   
+   .infographics-science {
+       background-image: url(../img/science/infographics-science.jpg);
+       background-position: center;
+       background-size: cover;
+   }
+   
+   .infographics-education {
+       background-image: url(../img/education/infographics-education.jpg);
+       background-position: center;
+       background-size: cover;
+   }
+   
+   .design-beer {
+       background-image: url(../img/design/design-beer.jpg);
+       background-position: center;
+       background-size: cover;
+   }
+   
+   .design-newsletters {
+       background-image: url(../img/design/newsletter1.jpg);
+       background-position: center;
+       background-size: cover;
+   }
+   
+   .design-hustle {
+       background-image: url(../img/design/dd42feeb0d0116fec721a478ef1266b7.png);
+       background-position: center;
+       background-size: cover;
+   }
+   
+   .design-27 {
+       background-image: url(../img/design/d686908736e413a95ba312f389cce618.png);
+       background-position: center;
+       background-size: cover;
+   }
+   
+   .modal-header {
+       background-color: #000;
+       color: #ccc;
+   }
+   
+   .modal-footer {
+       /*     background-color: #000;*/
+       
+       color: #ccc;
+   }
+   
+   .close {
+       font-size: 40px;
+       color: #fff;
+       font-weight: 100;
+       opacity: 1.0;
+   }
+   
+   .feature {
+       text-align: center;
+   }
+   
    .row {
-/*       background-color: #1696d2;*/
+       /*       background-color: #1696d2;*/
    }
    
    .row a:hover > .block > .image {
        opacity: 0.4;
-
    }
    
    .row a:hover > .block > .block-content {
@@ -297,18 +312,22 @@
        text-transform: none;
        opacity: 1;
    }
-
-footer{
- background-color: #000;
-    color: #ccc;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    margin-top: 25px;
+   
+   footer {
+       background-color: #000;
+       color: #ccc;
+       padding-top: 35px;
+       padding-bottom: 35px;
+       margin-top: 25px;
+   }
+   
+.notranslate{
+    list-style-type: none;
 }
 
-@media(min-width:1199px){
- .navbar-nav{
-  float:right;
-     margin-top:5px;
- }
-}
+   @media(min-width:1199px) {
+       .navbar-nav {
+           float: right;
+           margin-top: 5px;
+       }
+   }
