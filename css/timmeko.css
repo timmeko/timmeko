@@ -271,6 +271,27 @@
        background-size: cover;
    }
    
+.maps-ncdb {
+       background-image: url(../img/ncdb-img.jpg);
+       background-position: center;
+       background-size: cover;
+   }
+.maps-mortgage {
+       background-image: url(../img/mortgage2.png);
+       background-position: center;
+       background-size: cover;
+   }
+.maps-static {
+       background-image: url(../img/energy-in-virginia-full.jpg);
+       background-position: center;
+       background-size: cover;
+   }
+.maps-maf {
+       background-image: url(../img/maf-img.png);
+       background-position: center;
+       background-size: cover;
+   }
+   
    .modal-header {
        background-color: #000;
        color: #ccc;
