@@ -328,6 +328,27 @@ margin-top:20px;
     background-position:center;
     background-size: cover; 
 }
+
+.dataviz-nine{
+       background-image: url(../img/9charts5.jpg);
+    background-position:center;
+    background-size: cover; 
+}
+.dataviz-occ{
+       background-image: url(../img/occ5.png);
+    background-position:center;
+    background-size: cover; 
+}
+.dataviz-editorial{
+       background-image: url(../img/dataviz1.jpg);
+    background-position:center;
+    background-size: cover; 
+}
+.dataviz-everyday{
+       background-image: url(../img/shotspotter1.png);
+    background-position:center;
+    background-size: cover; 
+}
    
 .design-header{
            background-image: url(../img/_MG_2939.jpg);
