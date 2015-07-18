@@ -45,6 +45,9 @@
    .intro-infographics {
        background-image: url(../img/infographics-header.jpg) !important;
    }
+.intro-dataviz {
+       background-image: url(../img/header.png) !important;
+   }
 .intro-maps {
        background-image: url(../img/map-header.jpg) !important;
    }
