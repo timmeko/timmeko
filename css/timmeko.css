@@ -22,7 +22,7 @@
    }
 
 #logo:hover .title-name{
- fill:#ccc;   
+ fill:#ffc002;   
 }
 #logo:hover .title-vis{
  fill:#000;   
@@ -69,7 +69,10 @@
    }
    
 .rail-btn{
-margin-top:20px;
+margin-top: 20px;
+background-color: #1696d2;
+border: none;
+border-radius: 0;
 }
    .intro-text .intro-lead-in {
        margin-top:10%;
