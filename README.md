@@ -1,26 +1,75 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Bare](http://startbootstrap.com/template-overviews/bare/)
+# Tim Meko Portfolio 2025 v2
 
-[Bare](http://startbootstrap.com/template-overviews/bare/) is a bare HTML starter template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template features predefined file paths for Bootstrap and jQuery, so you can quickly create Bootstrap websites.
+A modern portfolio website built with [Eleventy](https://11ty.dev) showcasing visual journalism, data visualization, and mapping work.
 
-## Getting Started
+## Setup
 
-To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+```bash
+npm install
+```
 
-## Bugs and Issues
+## Development
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-bare/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/bare/).
+```bash
+npm run dev
+```
 
-## Creator
+This starts the Eleventy development server with live reload at `http://localhost:8080`.
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+## Build
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+```bash
+npm run build
+```
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+Builds the site to the `_site` directory.
 
-## Copyright and License
+## CSV Data Ingestion
 
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-bare/blob/gh-pages/LICENSE) license.# timmeko
+To populate content from CSV files:
+
+```bash
+npm run ingest
+```
+
+This reads CSV files from `../PORTFOLIO CSVs/` and creates markdown files for items where `include=1`.
+
+Future image fetching capability:
+```bash
+npm run ingest:fetch
+```
+
+## Site Structure
+
+**Grid-Based Layout:**
+- **Featured Work**: 6 flagship mapping and visualization projects (3x2 desktop, 2x3 mobile)
+- **Insights & Talks**: 6 external articles, presentations, and thought pieces (3x2 desktop, 2x3 mobile)  
+- **Editing & Production**: 6 collaborative editing and production work items (3x2 desktop, 2x3 mobile)
+- **More Work**: Additional portfolio pieces in a responsive grid (4-5 across desktop, 2 mobile)
+- **About**: Background and contact information
+
+## Collections
+
+The site uses Eleventy collections for content organization:
+- `flagship`: Featured mapping work (exactly 5 items)
+- `insights`: Articles and talks that link externally
+- `editing`: Editorial and production work  
+- `more`: Additional portfolio work displayed in a grid
+
+All collections are automatically sorted by date (newest first), with items missing dates appearing at the end sorted alphabetically by title.
+
+## Design
+
+The site uses a modern, responsive design with:
+- Mobile-first responsive grid layouts
+- CSS-only zoom effects for portfolio grids
+- Clean typography and consistent spacing
+- Accessible color contrast and semantic markup
+
+## Content Management
+
+Content is managed through:
+- Individual markdown files in `src/` subdirectories
+- CSV ingestion for bulk content import
+- Front matter for metadata and configuration
+- External linking for insights and editing work

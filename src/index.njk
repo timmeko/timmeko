@@ -1,0 +1,144 @@
+---
+layout: base
+title: Tim Meko - Visual Journalist & Graphics Editor
+---
+
+<section class="hero section">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Hi, I'm Tim</h1>
+      <p>I explain ideas and tell stories using data visualization, design, and illustration</p>
+    </div>
+  </div>
+</section>
+
+<section class="featured section">
+  <div class="container">
+    <header class="section-header">
+      <h2>Featured Work</h2>
+    </header>
+    
+    <div class="featured-grid">
+      {% for item in collections.flagship %}
+        <article class="featured-card">
+          {% if item.data.hero %}
+            <img src="{{ item.data.hero }}" alt="{{ item.data.title }}" class="card-image">
+          {% else %}
+            <div class="card-image" data-placeholder="{{ item.data.title }}"></div>
+          {% endif %}
+          <div class="card-content">
+            <h3 class="card-title">
+              <a href="{{ item.url }}">{{ item.data.title }}</a>
+            </h3>
+            {% if item.data.date %}
+              <time class="card-date">{{ item.data.date | dateFormat }}</time>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="insights section">
+  <div class="container">
+    <header class="section-header">
+      <h2>Insights & Talks</h2>
+    </header>
+    
+    <div class="cards-grid">
+      {% for item in collections.insights %}
+        <article class="card">
+          {% if item.data.hero %}
+            <img src="{{ item.data.hero }}" alt="{{ item.data.title }}" class="card-image">
+          {% else %}
+            <div class="card-image" data-placeholder="{{ item.data.title }}"></div>
+          {% endif %}
+          <div class="card-content">
+            <h3 class="card-title">
+              {% if item.data.external %}
+                <a href="{{ item.data.external }}" target="_blank" rel="noopener noreferrer">{{ item.data.title }}</a>
+              {% else %}
+                {{ item.data.title }}
+              {% endif %}
+            </h3>
+            {% if item.data.date %}
+              <time class="card-date">{{ item.data.date | dateFormat }}</time>
+            {% endif %}
+            {% if item.data.type %}
+              <span class="card-type">{{ item.data.type | capitalize }}</span>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="editing section">
+  <div class="container">
+    <header class="section-header">
+      <h2>Editing & Production</h2>
+    </header>
+    
+    <div class="cards-grid">
+      {% for item in collections.editing %}
+        <article class="card">
+          {% if item.data.hero %}
+            <img src="{{ item.data.hero }}" alt="{{ item.data.title }}" class="card-image">
+          {% else %}
+            <div class="card-image" data-placeholder="{{ item.data.title }}"></div>
+          {% endif %}
+          <div class="card-content">
+            <h3 class="card-title">
+              {% if item.data.link %}
+                <a href="{{ item.data.link }}" target="_blank" rel="noopener noreferrer">{{ item.data.title }}</a>
+              {% else %}
+                {{ item.data.title }}
+              {% endif %}
+            </h3>
+            {% if item.data.date %}
+              <time class="card-date">{{ item.data.date | dateFormat }}</time>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="more-work section">
+  <div class="container">
+    <header class="section-header">
+      <h2>More Work</h2>
+    </header>
+    
+    <div class="more-grid">
+      {% for item in collections.more %}
+        <div class="more-card">
+          {% if item.data.hero %}
+            <img src="{{ item.data.hero }}" alt="{{ item.data.title }}" class="more-image">
+          {% else %}
+            <div class="more-image" data-placeholder="{{ item.data.title }}"></div>
+          {% endif %}
+          {% if item.data.link %}
+            <a href="{{ item.data.link }}" target="_blank" rel="noopener noreferrer" class="more-link" aria-label="{{ item.data.title }}"></a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="about-contact section">
+  <div class="container">
+    <header class="section-header">
+      <h2>About & Contact</h2>
+    </header>
+    
+    <div class="about-content">
+      <p>I'm passionate about visual storytelling and helping people understand complex information through thoughtful design and data visualization.</p>
+      <p><a href="/about">Learn more about my background and approach →</a></p>
+    </div>
+  </div>
+</section>

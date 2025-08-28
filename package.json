@@ -1,0 +1,27 @@
+{
+  "name": "timmeko-portfolio-2025-v2",
+  "version": "1.0.0",
+  "description": "Tim Meko's portfolio website built with Eleventy",
+  "main": ".eleventy.js",
+  "scripts": {
+    "dev": "eleventy --serve --watch",
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "ingest": "node csv-to-md.js",
+    "ingest:fetch": "node csv-to-md.js --fetch"
+  },
+  "keywords": [
+    "portfolio",
+    "mapping",
+    "data-visualization",
+    "eleventy"
+  ],
+  "author": "Tim Meko",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "papaparse": "^5.4.1"
+  }
+}

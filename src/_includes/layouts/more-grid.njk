@@ -1,0 +1,30 @@
+---
+layout: base
+---
+
+<section class="more-grid-section">
+  <div class="container">
+    {% if title %}
+      <header class="section-header">
+        <h2>{{ title }}</h2>
+      </header>
+    {% endif %}
+    
+    <div class="more-grid">
+      {% for item in collections.more %}
+        <div class="more-card">
+          {% if item.data.hero %}
+            <img src="{{ item.data.hero }}" alt="{{ item.data.title }}" class="more-image">
+          {% endif %}
+          {% if item.data.link %}
+            <a href="{{ item.data.link }}" target="_blank" rel="noopener noreferrer" class="more-link" aria-label="{{ item.data.title }}"></a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    
+    <div class="more-content">
+      {{ content | safe }}
+    </div>
+  </div>
+</section>
