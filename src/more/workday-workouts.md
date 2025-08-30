@@ -1,10 +1,13 @@
 ---
 title: "Workday Workouts"
-slug: "workday-workouts"
 date: 2016-08-08
-tags: ["more"]
-hero: "https://www.washingtonpost.com/wp-stat/graphics/sports/olympics/social-cards/office-olympics-promo.jpg"
+hero: "img/optimized/thumb/office-olympics-promo.jpg"
 link: "http://www.washingtonpost.com/graphics/sports/olympics/office-olympics/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+Inspired by the Olympics? Make your cubicle your stadium and the office your own little Rio.
+
+**[View project →](http://www.washingtonpost.com/graphics/sports/olympics/office-olympics/)**  
+*Published: 2016-08-08 | The Washington Post*

@@ -1,10 +1,13 @@
 ---
 title: "Test of Convictions"
-slug: "test-of-convictions"
 date: 2009-08-04
-tags: ["more"]
-hero: "/Users/mekot/mcp-files/timmeko-dot-com/flickr/test-of-convictions_3789163022_o.png"
+hero: "img/optimized/thumb/test-of-convictions_3789163022_o.png"
 link: "https://flickr.com/photos/timmeko/3789163022/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+I designed and programmed this interactive package about DNA testing for thirty Ohio inmates. This series is responsible for freeing two wrongly-convicted inmates. view interactive
+
+**[View project →](https://flickr.com/photos/timmeko/3789163022/)**  
+*Published: 2009-08-04 | The Washington Post*

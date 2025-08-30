@@ -1,10 +1,13 @@
 ---
 title: "Is it too close to the election to confirm a Supreme Court nominee?"
-slug: "is-it-too-close-to-the-election-to-confirm-a-supreme-court-nominee"
 date: 2020-09-19
-tags: ["more"]
-hero: "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/NKKSBY4RVNFBRILMTSZ3WGPNAY.jpg&w=1484"
+hero: "img/optimized/thumb/NKKSBY4RVNFBRILMTSZ3WGPNAY.jpg"
 link: "https://www.washingtonpost.com/politics/2020/09/19/is-it-too-close-election-confirm-supreme-court-nominee/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+Since 1975, it's taken about 71 days for a president's nomination to be confirmed in a vote on the Senate floor.
+
+**[View project →](https://www.washingtonpost.com/politics/2020/09/19/is-it-too-close-election-confirm-supreme-court-nominee/)**  
+*Published: 2020-09-19 | The Washington Post*

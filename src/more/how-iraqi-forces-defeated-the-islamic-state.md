@@ -1,10 +1,13 @@
 ---
 title: "How Iraqi forces defeated the Islamic State"
-slug: "how-iraqi-forces-defeated-the-islamic-state"
 date: 2017-07-10
-tags: ["more"]
-hero: "https://www.washingtonpost.com/graphics/2017/world/battle-for-mosul/img/MOSUL-ANIM-SOCIAL.gif"
+hero: "img/optimized/thumb/MOSUL-ANIM-SOCIAL.gif"
 link: "http://www.washingtonpost.com/graphics/2017/world/battle-for-mosul/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+Iraqi Prime Minister Haider al-Abadi declared the city of Mosul liberated from Islamic State control on July 9, a momentous occasion in a U.S.-backed Iraqi military campaign that began nearly three years ago.
+
+**[View project →](http://www.washingtonpost.com/graphics/2017/world/battle-for-mosul/)**  
+*Published: 2017-07-10 | The Washington Post*

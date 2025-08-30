@@ -1,10 +1,13 @@
 ---
 title: "The smelly seaweed that turned Mexican beaches into a rancid mess"
-slug: "the-smelly-seaweed-that-turned-mexican-beaches-into-a-rancid-mess"
 date: 2019-08-15
-tags: ["more"]
-hero: "https://www.washingtonpost.com/graphics/2019/world/amp-stories/seaweed-invasion/img/promo.jpg"
+hero: "img/optimized/thumb/promo.jpg"
 link: "https://www.washingtonpost.com/graphics/2019/world/amp-stories/seaweed-invasion/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+A birds-eye view of how tons of rancid seaweed clogged the white sand beaches of the Mexican Riviera, ruining vacations and devastating businesses.
+
+**[View project →](https://www.washingtonpost.com/graphics/2019/world/amp-stories/seaweed-invasion/)**  
+*Published: 2019-08-15 | The Washington Post*

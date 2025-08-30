@@ -1,10 +1,13 @@
 ---
 title: "California took a radical step to fix gerrymandering. Did it work?"
-slug: "california-took-a-radical-step-to-fix-gerrymandering-did-it-work"
 date: 2018-06-13
-tags: ["more"]
-hero: "https://www.washingtonpost.com/graphics/2018/national/gerrymandering-in-california-where-do-you-draw-the-lines/img/gerrymandering-social.jpg"
+hero: "img/optimized/thumb/gerrymandering-social.jpg"
 link: "http://www.washingtonpost.com/graphics/2018/national/gerrymandering-in-california-where-do-you-draw-the-lines/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+In most states, elected officials draw district lines to benefit politicians or parties. But California handed that power to ordinary citizens and other states are considering it.
+
+**[View project →](http://www.washingtonpost.com/graphics/2018/national/gerrymandering-in-california-where-do-you-draw-the-lines/)**  
+*Published: 2018-06-13 | The Washington Post*

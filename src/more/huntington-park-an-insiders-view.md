@@ -1,10 +1,13 @@
 ---
 title: "Huntington Park: An Insiders view"
-slug: "huntington-park-an-insiders-view"
 date: 2009-08-04
-tags: ["more"]
-hero: "/Users/mekot/mcp-files/timmeko-dot-com/flickr/huntington-park-an-insiders-view_3789165210_o.png"
+hero: "img/optimized/thumb/huntington-park-an-insiders-view_3789165210_o.png"
 link: "https://flickr.com/photos/timmeko/3789165210/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+Interactive look at the new Columbus Clippers baseball park. I shot 360 degree panoramic photographs from eight points within the park. audio.dispatch.com/flash/huntington/huntington.html
+
+**[View project →](https://flickr.com/photos/timmeko/3789165210/)**  
+*Published: 2009-08-04 | The Washington Post*

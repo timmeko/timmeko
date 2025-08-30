@@ -1,10 +1,13 @@
 ---
 title: "The uneasy mix of forces battling the Islamic State"
-slug: "the-uneasy-mix-of-forces-battling-the-islamic-state"
 date: 2016-10-24
-tags: ["more"]
-hero: "https://www.washingtonpost.com/graphics/world/who-is-fighting-the-islamic-state/img/2300who-is-fighting-isis-promo.jpg"
+hero: "img/optimized/thumb/2300who-is-fighting-isis-promo.jpg"
 link: "http://www.washingtonpost.com/graphics/world/who-is-fighting-the-islamic-state/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+As Iraqi forces advance toward Mosul, here are the groups that are fighting the Islamic State in Iraq and Syria.
+
+**[View project →](http://www.washingtonpost.com/graphics/world/who-is-fighting-the-islamic-state/)**  
+*Published: 2016-10-24 | The Washington Post*

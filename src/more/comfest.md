@@ -1,10 +1,13 @@
 ---
 title: "Comfest"
-slug: "comfest"
 date: 2010-01-30
-tags: ["more"]
-hero: "/Users/mekot/mcp-files/timmeko-dot-com/flickr/comfest_4314469833_o.jpg"
+hero: "img/optimized/thumb/comfest_4314469833_o.jpg"
 link: "https://flickr.com/photos/timmeko/4314469833/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+illustration for Columbus' annual 'community festival.' Everything was drawn in Adobe Illustrator.
+
+**[View project →](https://flickr.com/photos/timmeko/4314469833/)**  
+*Published: 2010-01-30 | The Washington Post*

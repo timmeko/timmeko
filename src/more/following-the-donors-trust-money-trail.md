@@ -1,10 +1,13 @@
 ---
 title: "Following the Donors Trust Money Trail"
-slug: "following-the-donors-trust-money-trail"
 date: 2013-03-26
-tags: ["more"]
-hero: "/Users/mekot/mcp-files/timmeko-dot-com/flickr/following-the-donors-trust-money-trail_8592634082_o.png"
+hero: "img/optimized/thumb/following-the-donors-trust-money-trail_8592634082_o.png"
 link: "https://flickr.com/photos/timmeko/8592634082/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+Interactive diagram for the Center for Public Integrity: www.publicintegrity.org/2013/02/14/12151/following-donors...
+
+**[View project →](https://flickr.com/photos/timmeko/8592634082/)**  
+*Published: 2013-03-26 | The Washington Post*

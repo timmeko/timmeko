@@ -1,10 +1,13 @@
 ---
 title: "How Francis, the second-oldest pope in modern history, compared with others"
-slug: "how-francis-the-second-oldest-pope-in-modern-history-compared-with-others"
 date: 2025-04-21
-tags: ["more"]
-hero: "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/UAKVR3JBAJFLRGZNRROHYU6W5U.jpg&w=1440"
+hero: "img/optimized/thumb/UAKVR3JBAJFLRGZNRROHYU6W5U.jpg"
 link: "https://www.washingtonpost.com/world/2025/04/21/pope-francis-age/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+Pope Francis, the second-oldest pope in modern history, has died at age 88, leaving behind a legacy of change in the Catholic Church.
+
+**[View project →](https://www.washingtonpost.com/world/2025/04/21/pope-francis-age/)**  
+*Published: 2025-04-21 | The Washington Post*

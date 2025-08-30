@@ -1,10 +1,13 @@
 ---
 title: "Feeling the sting"
-slug: "feeling-the-sting"
 date: 2010-01-30
-tags: ["more"]
-hero: "/Users/mekot/mcp-files/timmeko-dot-com/flickr/feeling-the-sting_4314470041_o.jpg"
+hero: "img/optimized/thumb/feeling-the-sting_4314470041_o.jpg"
 link: "https://flickr.com/photos/timmeko/4314470041/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+Illustration centerpiece design about the declining honey bee population
+
+**[View project →](https://flickr.com/photos/timmeko/4314470041/)**  
+*Published: 2010-01-30 | The Washington Post*

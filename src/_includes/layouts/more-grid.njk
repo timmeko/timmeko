@@ -13,8 +13,15 @@ layout: base
     <div class="more-grid">
       {% for item in collections.more %}
         <div class="more-card">
-          {% if item.data.hero %}
-            <img src="{{ item.data.hero }}" alt="{{ item.data.title }}" class="more-image">
+          {% if item.data.hero and item.data.hero != "img/raw/imrs.php" %}
+            {# Use optimized thumbnail if available, fallback to hero path #}
+            {% set heroBasename = item.data.hero | replace("img/raw/", "") | replace(".jpg", "") | replace(".png", "") | replace(".gif", "") %}
+            {% set optimizedAvif = "img/optimized/thumb/" + heroBasename + ".avif" %}
+            {% set optimizedJpg = "img/optimized/thumb/" + heroBasename + ".jpg" %}
+            <picture>
+              <source srcset="{{ optimizedAvif }}" type="image/avif">
+              <img src="{{ optimizedJpg }}" alt="{{ item.data.title }}" class="more-image">
+            </picture>
           {% endif %}
           {% if item.data.link %}
             <a href="{{ item.data.link }}" target="_blank" rel="noopener noreferrer" class="more-link" aria-label="{{ item.data.title }}"></a>

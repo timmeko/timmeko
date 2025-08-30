@@ -1,10 +1,13 @@
 ---
 title: "Increasing door security"
-slug: "increasing-door-security"
 date: 2010-03-03
-tags: ["more"]
-hero: "/Users/mekot/mcp-files/timmeko-dot-com/flickr/increasing-door-security_4404171179_o.jpg"
+hero: "img/optimized/thumb/increasing-door-security_4404171179_o.jpg"
 link: "https://flickr.com/photos/timmeko/4404171179/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+A look at a few ways to bulk up your doors.
+
+**[View project →](https://flickr.com/photos/timmeko/4404171179/)**  
+*Published: 2010-03-03 | The Washington Post*

@@ -1,10 +1,13 @@
 ---
 title: "Energy in Virginia"
-slug: "energy-in-virginia"
 date: 2011-08-25
-tags: ["more"]
-hero: "/Users/mekot/mcp-files/timmeko-dot-com/flickr/energy-in-virginia_6080829654_o.jpg"
+hero: "img/optimized/thumb/energy-in-virginia_6080829654_o.jpg"
 link: "https://flickr.com/photos/timmeko/6080829654/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+Poster that I created for the Science Museum of Virginia that displays everything about energy in Virginia. A super-high resolution zoomable version is available here: zoom.it/Vzn9
+
+**[View project →](https://flickr.com/photos/timmeko/6080829654/)**  
+*Published: 2011-08-25 | The Washington Post*

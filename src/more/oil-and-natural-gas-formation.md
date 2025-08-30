@@ -1,10 +1,13 @@
 ---
 title: "Oil and Natural Gas formation"
-slug: "oil-and-natural-gas-formation"
 date: 2010-11-05
-tags: ["more"]
-hero: "/Users/mekot/mcp-files/timmeko-dot-com/flickr/oil-and-natural-gas-formation_5147614068_o.jpg"
+hero: "img/optimized/thumb/oil-and-natural-gas-formation_5147614068_o.jpg"
 link: "https://flickr.com/photos/timmeko/5147614068/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+A look at how oil and natural gas were formed
+
+**[View project →](https://flickr.com/photos/timmeko/5147614068/)**  
+*Published: 2010-11-05 | The Washington Post*

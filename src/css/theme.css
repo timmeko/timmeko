@@ -86,6 +86,12 @@ header {
   padding: var(--space-lg) 0;
 }
 
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo svg {
   display: block;
   transition: all 0.3s ease;
@@ -97,6 +103,34 @@ header {
 
 .logo:hover .title-name {
   fill: var(--color-accent); /* Yellow on hover */
+}
+
+/* Navigation */
+.main-nav {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.main-nav a {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: var(--space-xs) 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.main-nav a:hover {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+  text-decoration: none;
+}
+
+.main-nav a:active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
 }
 
 /* Main Content */
@@ -448,6 +482,21 @@ footer {
   .card-image {
     height: 90px;
   }
+  
+  /* Navigation mobile adjustments */
+  .header-content {
+    flex-direction: column;
+    gap: var(--space-md);
+    align-items: center;
+  }
+  
+  .main-nav {
+    gap: var(--space-md);
+  }
+  
+  .main-nav a {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -469,5 +518,14 @@ footer {
   
   .card-image {
     height: 70px;
+  }
+  
+  /* Navigation very small screens */
+  .main-nav {
+    gap: var(--space-sm);
+  }
+  
+  .main-nav a {
+    font-size: 0.85rem;
   }
 }

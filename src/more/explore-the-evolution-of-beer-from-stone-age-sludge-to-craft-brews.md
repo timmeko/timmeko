@@ -1,10 +1,13 @@
 ---
 title: "Explore the evolution of beer, from Stone Age sludge to craft brews"
-slug: "explore-the-evolution-of-beer-from-stone-age-sludge-to-craft-brews"
 date: 2023-09-19
-tags: ["more"]
-hero: "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/2W3TZYRJAJGIBNMODJTL2FN2CI.png&w=1200"
+hero: "img/optimized/thumb/2W3TZYRJAJGIBNMODJTL2FN2CI.png"
 link: "https://www.washingtonpost.com/food/interactive/2023/beer-history-types-timeline/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+Beer is older than recorded history, but what we drink today looks and tastes far different than it did hundreds or thousands of years ago.
+
+**[View project →](https://www.washingtonpost.com/food/interactive/2023/beer-history-types-timeline/)**  
+*Published: 2023-09-19 | The Washington Post*

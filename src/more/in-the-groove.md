@@ -1,10 +1,13 @@
 ---
 title: "In the groove"
-slug: "in-the-groove"
 date: 2010-01-21
-tags: ["more"]
-hero: "/Users/mekot/mcp-files/timmeko-dot-com/flickr/in-the-groove_4292431022_o.jpg"
+hero: "img/optimized/thumb/in-the-groove_4292431022_o.jpg"
 link: "https://flickr.com/photos/timmeko/4292431022/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+The PGA is enacting new rules that change the way the grooves on the club face can be shaped.
+
+**[View project →](https://flickr.com/photos/timmeko/4292431022/)**  
+*Published: 2010-01-21 | The Washington Post*

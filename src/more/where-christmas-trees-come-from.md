@@ -1,10 +1,13 @@
 ---
 title: "Where Christmas trees come from"
-slug: "where-christmas-trees-come-from"
 date: 2019-12-12
-tags: ["more"]
-hero: "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/XHPHM2JQORGPPPXMPPU4M3IQJI.jpg&w=1484"
+hero: "img/optimized/thumb/XHPHM2JQORGPPPXMPPU4M3IQJI.jpg"
 link: "https://www.washingtonpost.com/nation/2019/12/12/where-christmas-trees-come/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+Every year, millions of Americans purchase and decorate Christmas trees to ring in the holiday season. Whether they are bought at a lawn and garden store, pop-up lot, or harvested from a tree farm or national forest, a live tree is an integral part of the tradition for many families.
+
+**[View project →](https://www.washingtonpost.com/nation/2019/12/12/where-christmas-trees-come/)**  
+*Published: 2019-12-12 | The Washington Post*

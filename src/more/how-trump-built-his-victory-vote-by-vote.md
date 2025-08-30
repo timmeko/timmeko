@@ -1,10 +1,13 @@
 ---
 title: "How Trump built his victory, vote by vote"
-slug: "how-trump-built-his-victory-vote-by-vote"
 date: 2024-11-08
-tags: ["more"]
-hero: "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/XLUSUBLFWVAS7JPFKKZJE4HBYE.jpg&w=1200"
+hero: "img/optimized/thumb/XLUSUBLFWVAS7JPFKKZJE4HBYE.jpg"
 link: "https://www.washingtonpost.com/elections/interactive/2024/2024-election-vote-map/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+Using sand to represent individual votes, The Post explains where key votes gave Trump a second term in the White House.
+
+**[View project →](https://www.washingtonpost.com/elections/interactive/2024/2024-election-vote-map/)**  
+*Published: 2024-11-08 | The Washington Post*

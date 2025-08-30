@@ -1,10 +1,13 @@
 ---
 title: "Backyard Barbecue History"
-slug: "backyard-barbecue-history"
 date: 2010-01-30
-tags: ["more"]
-hero: "/Users/mekot/mcp-files/timmeko-dot-com/flickr/backyard-barbecue-history_4314470119_o.jpg"
+hero: "img/optimized/thumb/backyard-barbecue-history_4314470119_o.jpg"
 link: "https://flickr.com/photos/timmeko/4314470119/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+Pull-apart graphic of the 'big mama burger.' I actually ate this monstrosity.
+
+**[View project →](https://flickr.com/photos/timmeko/4314470119/)**  
+*Published: 2010-01-30 | The Washington Post*

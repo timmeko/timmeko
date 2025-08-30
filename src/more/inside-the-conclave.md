@@ -1,10 +1,13 @@
 ---
 title: "Inside the Conclave"
-slug: "inside-the-conclave"
 date: 2013-02-28
-tags: ["more"]
-hero: "/Users/mekot/mcp-files/timmeko-dot-com/flickr/inside-the-conclave_8515024519_o.jpg"
+hero: "img/optimized/thumb/inside-the-conclave_8515024519_o.jpg"
 link: "https://flickr.com/photos/timmeko/8515024519/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+The world watches with interest as cardinals gather in conclave to elect the next pope. This infographic was produced for the Catholic News Service.    The making of video can be seen here: youtu.be/-HfeVTVHdUk
+
+**[View project →](https://flickr.com/photos/timmeko/8515024519/)**  
+*Published: 2013-02-28 | The Washington Post*

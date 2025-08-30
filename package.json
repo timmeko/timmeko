@@ -5,10 +5,21 @@
   "main": ".eleventy.js",
   "scripts": {
     "dev": "eleventy --serve --watch",
-    "build": "eleventy",
+    "build": "npm run optimize-images && eleventy",
+    "build:quick": "eleventy",
     "start": "eleventy --serve",
-    "ingest": "node csv-to-md.js",
-    "ingest:fetch": "node csv-to-md.js --fetch"
+    "setup": "npm run download-images && npm run update-paths",
+    "download-images": "node scripts/download-images.js",
+    "update-paths": "node scripts/update-image-paths.js",
+    "optimize-images": "node scripts/optimize-images.js",
+    "csv-to-md": "node scripts/csv-to-md.js",
+    "fix-paths": "node scripts/fix-image-paths.js",
+    "fix-broken-paths": "node scripts/fix-broken-paths.js",
+    "fix-hero-column": "node scripts/fix-hero-column.js",
+    "fix-placeholder-heroes": "node scripts/fix-placeholder-heroes.js",
+    "refresh-images": "npm run download-images && npm run update-paths",
+    "clean": "rm -rf _site && rm -rf img/raw/* && rm -rf img/optimized/*",
+    "full-rebuild": "npm run clean && npm run setup && npm run build"
   },
   "keywords": [
     "portfolio",
@@ -19,9 +30,13 @@
   "author": "Tim Meko",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "sharp": "^0.32.0"
   },
   "dependencies": {
     "papaparse": "^5.4.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }

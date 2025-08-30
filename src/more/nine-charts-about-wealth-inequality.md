@@ -1,10 +1,13 @@
 ---
 title: "Nine Charts about Wealth Inequality"
-slug: "nine-charts-about-wealth-inequality"
 date: 2015-12-14
-tags: ["more"]
-hero: "/Users/mekot/mcp-files/timmeko-dot-com/flickr/nine-charts-about-wealth-inequality_23453639040_o.png"
+hero: "img/optimized/thumb/nine-charts-about-wealth-inequality_23453639040_o.png"
 link: "https://flickr.com/photos/timmeko/23453639040/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+datatools.urban.org/Features/wealth-inequality-charts/
+
+**[View project →](https://flickr.com/photos/timmeko/23453639040/)**  
+*Published: 2015-12-14 | The Washington Post*

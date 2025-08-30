@@ -1,10 +1,13 @@
 ---
 title: "How many pain pills went to your pharmacy?"
-slug: "how-many-pain-pills-went-to-your-pharmacy"
 date: 2019-08-12
-tags: ["more"]
-hero: "https://www.washingtonpost.com/r/2010-2019/WashingtonPost/2019/08/06/Investigative/Graphics/2300-pharmacies-map-promo.jpg"
+hero: "img/optimized/thumb/2300-pharmacies-map-promo.jpg"
 link: "https://www.washingtonpost.com/graphics/2019/investigations/pharmacies-pain-pill-map/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+Look up data on nearly 83,000 pharmacies at the front lines of the opioid crisis.
+
+**[View project →](https://www.washingtonpost.com/graphics/2019/investigations/pharmacies-pain-pill-map/)**  
+*Published: 2019-08-12 | The Washington Post*

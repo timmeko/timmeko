@@ -1,10 +1,13 @@
 ---
 title: "NCAA special section front"
-slug: "ncaa-special-section-front"
 date: 2010-01-30
-tags: ["more"]
-hero: "/Users/mekot/mcp-files/timmeko-dot-com/flickr/ncaa-special-section-front_4314469925_o.jpg"
+hero: "img/optimized/thumb/ncaa-special-section-front_4314469925_o.jpg"
 link: "https://flickr.com/photos/timmeko/4314469925/"
+tags: ["more"]
+layout: page
 ---
 
-<!-- Content to be added -->
+Original design (2007) while I was a student at OU. This won the first place in the Michigan State SND student design competition that year.
+
+**[View project →](https://flickr.com/photos/timmeko/4314469925/)**  
+*Published: 2010-01-30 | The Washington Post*
