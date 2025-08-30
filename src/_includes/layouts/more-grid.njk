@@ -12,26 +12,120 @@ layout: base
     
     <div class="more-grid">
       {% for item in collections.more %}
-        <div class="more-card">
-          {% if item.data.hero and item.data.hero != "img/raw/imrs.php" %}
+        <div class="more-card" data-modal-target="modal-{{ loop.index }}">
+          {% if item.data.hero and item.data.hero != "img/raw/imrs.php" and item.data.hero != "/img/raw/imrs.php" %}
             {# Use optimized thumbnail if available, fallback to hero path #}
-            {% set heroBasename = item.data.hero | replace("img/raw/", "") | replace(".jpg", "") | replace(".png", "") | replace(".gif", "") %}
-            {% set optimizedAvif = "img/optimized/thumb/" + heroBasename + ".avif" %}
-            {% set optimizedJpg = "img/optimized/thumb/" + heroBasename + ".jpg" %}
+            {% set heroBasename = item.data.hero | replace("img/raw/", "") | replace("/img/raw/", "") | replace(".jpg", "") | replace(".png", "") | replace(".gif", "") %}
+            {% set optimizedAvif = "/img/optimized/thumb/" + heroBasename + ".avif" %}
+            {% set optimizedJpg = "/img/optimized/thumb/" + heroBasename + ".jpg" %}
+            {% set optimizedMediumJpg = "/img/optimized/medium/" + heroBasename + ".jpg" %}
             <picture>
               <source srcset="{{ optimizedAvif }}" type="image/avif">
               <img src="{{ optimizedJpg }}" alt="{{ item.data.title }}" class="more-image">
             </picture>
           {% endif %}
-          {% if item.data.link %}
-            <a href="{{ item.data.link }}" target="_blank" rel="noopener noreferrer" class="more-link" aria-label="{{ item.data.title }}"></a>
-          {% endif %}
+          
+          <div class="more-card-overlay">
+            <div class="more-card-title">{{ item.data.title }}</div>
+            {% if item.data.date %}
+              <div class="more-card-date">{{ item.data.date | dateFormat }}</div>
+            {% endif %}
+          </div>
         </div>
       {% endfor %}
     </div>
+    
+    <!-- Modals -->
+    {% for item in collections.more %}
+      <div class="more-modal" id="modal-{{ loop.index }}">
+        <div class="more-modal-content">
+          <button class="more-modal-close">&times;</button>
+          
+          {% if item.data.hero and item.data.hero != "img/raw/imrs.php" and item.data.hero != "/img/raw/imrs.php" %}
+            {% set heroBasename = item.data.hero | replace("img/raw/", "") | replace("/img/raw/", "") | replace(".jpg", "") | replace(".png", "") | replace(".gif", "") %}
+            {% set optimizedMediumJpg = "/img/optimized/medium/" + heroBasename + ".jpg" %}
+            <img src="{{ optimizedMediumJpg }}" alt="{{ item.data.title }}" class="more-modal-image">
+          {% endif %}
+          
+          <div class="more-modal-body">
+            <h3 class="more-modal-title">{{ item.data.title }}</h3>
+            {% if item.data.date %}
+              <div class="more-modal-date">{{ item.data.date | dateFormat }}</div>
+            {% endif %}
+            
+            {% if item.data.summary %}
+              <div class="more-modal-summary">{{ item.data.summary }}</div>
+            {% else %}
+              <div class="more-modal-summary">{{ item.templateContent | safe }}</div>
+            {% endif %}
+            
+            {% if item.data.link %}
+              <a href="{{ item.data.link }}" target="_blank" rel="noopener noreferrer" class="more-modal-link">
+                View Full Project
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
     
     <div class="more-content">
       {{ content | safe }}
     </div>
   </div>
 </section>
+
+<script>
+(function() {
+  // Modal functionality
+  const moreCards = document.querySelectorAll('.more-card[data-modal-target]');
+  const modals = document.querySelectorAll('.more-modal');
+  const closeButtons = document.querySelectorAll('.more-modal-close');
+  
+  // Open modal when card is clicked
+  moreCards.forEach(card => {
+    card.addEventListener('click', (e) => {
+      e.preventDefault();
+      const modalId = card.getAttribute('data-modal-target');
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+  
+  // Close modal when close button is clicked
+  closeButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      const modal = button.closest('.more-modal');
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  });
+  
+  // Close modal when background is clicked
+  modals.forEach(modal => {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  });
+  
+  // Close modal when escape key is pressed
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      const activeModal = document.querySelector('.more-modal.active');
+      if (activeModal) {
+        activeModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+  });
+})();
+</script>

@@ -1,12 +1,12 @@
 ---
 title: "Mapping America's natural disaster risks"
 date: 2019-04-25
-hero: "img/raw/FIRE.jpg"
+hero: "/img/raw/FIRE.jpg"
 tags: [maps, flagship]
 layout: page
 ---
 
-# Mapping America's natural disaster risks
+![Disaster fire map](/img/raw/FIRE.jpg)
 
 A striking six-map series showing that no region of the U.S. is immune to natural disaster. The visuals highlight the national footprint of risk, grounded in rigorous data and minimal cartographic design.
 
@@ -17,7 +17,9 @@ A striking six-map series showing that no region of the U.S. is immune to natura
 - Employed minimal, data-driven cartography to emphasize patterns without visual noise  
 - Reinforced the idea that risk is shared, even if its form varies regionally  
 
-![Disaster fire map](img/raw/FIRE.jpg)
+![Disaster flood map](/img/raw/FLOOD.jpg)
+![Disaster lightning map](/img/raw/LIGHTNING.jpg)
+![Disaster earthquakes map](/img/raw/GEOLOGIC.jpg)
 
 **[View project →](https://www.washingtonpost.com/graphics/2019/national/mapping-disasters/)**  
 *Published: April 25, 2019 | The Washington Post*

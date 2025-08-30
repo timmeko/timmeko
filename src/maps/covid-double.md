@@ -1,18 +1,16 @@
 ---
 title: "Visualizing the COVID pandemic"
 date: 2021-01-15
-hero: "img/raw/covid100kA1.jpeg"
+hero: "/img/raw/VZDXDDCB5ZEYZP3X4FOIOINYWQ.jpg"
 tags: [maps, flagship]
 layout: page
 ---
-
-# Visualizing the COVID pandemic
 
 Two projects that shaped how The Post captured the scale and complexity of the crisis.
 
 ---
 
-## Project 1: 100,000 lives lost  
+## 100,000 lives lost  
 **[View project →](https://www.washingtonpost.com/graphics/2020/national/100000-deaths-america/)**  
 *Published: May 2020 | The Washington Post*
 
@@ -25,11 +23,11 @@ A moving visual tribute to the first 100,000 Americans lost to COVID-19. Each li
 - Balanced emotional impact with data and layout constraints under extreme deadlines  
 - Anchored a high-impact front-page centerpiece, with the visual at the heart of both print and digital storytelling  
 
-![100K beam](img/raw/covid100kA1.jpeg)
-
 ---
 
-## Project 2: A year of COVID  
+![Covid timeline](/img/raw/VZDXDDCB5ZEYZP3X4FOIOINYWQ.jpg)
+
+## A year of COVID  
 **[View project →](https://www.washingtonpost.com/nation/interactive/2021/coronavirus-timeline/)**  
 *Published: January 2021 | The Washington Post*
 
@@ -40,5 +38,3 @@ An interactive, map-based timeline tracing the first year of the pandemic. It in
 - Guided the visual build—maps and graphics structured to anchor the timeline and narrative  
 - Balanced incomplete, evolving data with a compelling visual narrative that honored individual stories  
 - Aligned personalized portraits with geographic and temporal patterns to humanize the pandemic arc  
-
-![Covid timeline](img/raw/a-year-of-the-pandemic-sorrow-stamina-defiance-des-4c5a98ce-1200.jpg)

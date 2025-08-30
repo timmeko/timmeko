@@ -1,7 +1,7 @@
 ---
 title: "North Korea's missile ambitions, mapped"
 date: 2017-05-18
-hero: "img/raw/Screenshot 2025-08-29 at 11.29.26 AM.png"
+hero: "/img/raw/Screenshot2025-08-29at11.29.26AM.png"
 tags: [maps, flagship]
 layout: page
 ---
@@ -17,8 +17,8 @@ A cartographic analysis of North Korea's missile program, mapping potential targ
 - Incorporated lofted trajectory paths to convey estimated missile reach  
 - Helped visualize how North Korea's state media cues can signal intent, whether real or performative  
 
-![Propaganda screenshot](img/raw/Screenshot)  
-![Map of death](img/raw/downloaded-cefb78518026.gif)
+![Propaganda screenshot](/img/raw/Screenshot2025-08-29at11.29.26AM.png)  
+![Map of death](/img/raw/downloaded-cefb78518026.gif)
 
 **[View project →](https://www.washingtonpost.com/graphics/world/north-korea-targets/)**  
 *Published: May 18, 2017 | The Washington Post*

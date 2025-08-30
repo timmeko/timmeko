@@ -121,6 +121,14 @@ title: Tim Meko - Visual Journalist & Graphics Editor
           {% else %}
             <div class="more-image" data-placeholder="{{ item.data.title }}"></div>
           {% endif %}
+          
+          <div class="more-card-overlay">
+            <div class="more-card-title">{{ item.data.title }}</div>
+            {% if item.data.date %}
+              <div class="more-card-date">{{ item.data.date | dateFormat }}</div>
+            {% endif %}
+          </div>
+          
           {% if item.data.link %}
             <a href="{{ item.data.link }}" target="_blank" rel="noopener noreferrer" class="more-link" aria-label="{{ item.data.title }}"></a>
           {% endif %}

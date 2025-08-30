@@ -1,12 +1,12 @@
 ---
 title: "Anatomy of America's infrastructure"
 date: 2016-12-01
-hero: "img/raw/infrastructure-grid-promo.jpg"
+hero: "/img/raw/infrastructure-grid-promo.jpg"
 tags: [maps, flagship]
 layout: page
 ---
 
-# Anatomy of America's infrastructure
+![Power grid](/img/raw/electric-1480-1440x890.jpg)
 
 A clean, six-part tour of the systems that power, move, and connect the nation—depicting bridges, the electrical grid, pipelines, railroads, airports, and waterways as distinct layers of infrastructure.
 
@@ -16,8 +16,6 @@ A clean, six-part tour of the systems that power, move, and connect the nation�
 - Conceived and executed six bespoke thematic maps across key infrastructure sectors  
 - Used minimalist cartographic design to strip away population bias and highlight structural form  
 - Aligned visual storytelling with national infrastructure debates and planning policy  
-
-![Power grid](img/raw/electric-1480.jpg)
 
 ### Additional links  
 - **[Behind the scenes →](https://www.storybench.org/tim-meko-visualized-americas-vast-web-pipelines-railroads-electricity/)**  
