@@ -1,7 +1,7 @@
 ---
 title: "27 Weeks: Long-term Unemployment in America"
 date: 2014-03-18
-hero: "img/optimized/thumb/27-weeks-long-term-unemployment-in-america_13231831485_o.png"
+hero: "img/optimized/thumb/27-weeks-long-term-unemployment-in-america_13231831485_o.jpg"
 link: "https://flickr.com/photos/timmeko/13231831485/"
 tags: ["more"]
 layout: page

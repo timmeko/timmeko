@@ -1,7 +1,7 @@
 ---
 title: "Test of Convictions"
 date: 2009-08-04
-hero: "img/optimized/thumb/test-of-convictions_3789163022_o.png"
+hero: "img/optimized/thumb/test-of-convictions_3789163022_o.jpg"
 link: "https://flickr.com/photos/timmeko/3789163022/"
 tags: ["more"]
 layout: page

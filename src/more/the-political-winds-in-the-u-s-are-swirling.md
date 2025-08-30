@@ -1,7 +1,7 @@
 ---
 title: "The political winds in the U.S. are swirling"
 date: 2020-12-15
-hero: "img/optimized/thumb/R6DQLFPM2JDIVCQWKEZQK4IIPU.png"
+hero: "img/optimized/thumb/R6DQLFPM2JDIVCQWKEZQK4IIPU.jpg"
 link: "https://www.washingtonpost.com/graphics/2020/elections/electorate-changes-2016-election-vs-2020/"
 tags: ["more"]
 layout: page

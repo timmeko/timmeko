@@ -1,7 +1,7 @@
 ---
 title: "North Korea showed off a lot of missiles. What might be their targets?"
 date: 2017-05-18
-hero: "img/optimized/thumb/map-of-death.gif"
+hero: "img/optimized/thumb/map-of-death.jpg"
 link: "http://www.washingtonpost.com/graphics/world/north-korea-targets/"
 tags: ["more"]
 layout: page

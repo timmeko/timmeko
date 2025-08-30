@@ -1,7 +1,7 @@
 ---
 title: "Mapping America's Rental Housing Crisis"
 date: 2014-03-04
-hero: "img/optimized/thumb/mapping-americas-rental-housing-crisis_12938139454_o.png"
+hero: "img/optimized/thumb/mapping-americas-rental-housing-crisis_12938139454_o.jpg"
 link: "https://flickr.com/photos/timmeko/12938139454/"
 tags: ["more"]
 layout: page

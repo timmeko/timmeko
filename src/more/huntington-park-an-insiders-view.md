@@ -1,7 +1,7 @@
 ---
 title: "Huntington Park: An Insiders view"
 date: 2009-08-04
-hero: "img/optimized/thumb/huntington-park-an-insiders-view_3789165210_o.png"
+hero: "img/optimized/thumb/huntington-park-an-insiders-view_3789165210_o.jpg"
 link: "https://flickr.com/photos/timmeko/3789165210/"
 tags: ["more"]
 layout: page

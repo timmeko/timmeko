@@ -1,7 +1,7 @@
 ---
 title: "How Iraqi forces defeated the Islamic State"
 date: 2017-07-10
-hero: "img/optimized/thumb/MOSUL-ANIM-SOCIAL.gif"
+hero: "img/optimized/thumb/MOSUL-ANIM-SOCIAL.jpg"
 link: "http://www.washingtonpost.com/graphics/2017/world/battle-for-mosul/"
 tags: ["more"]
 layout: page

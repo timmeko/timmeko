@@ -115,8 +115,27 @@ function buildHeroPath(heroFilename) {
         return '';
     }
     
+    // Normalize file extension - optimization script converts everything to .jpg
+    // So if CSV has .png, .gif, etc., we need to look for the .jpg version
+    let normalizedFilename = cleanFilename;
+    const lowerFilename = normalizedFilename.toLowerCase();
+    
+    if (lowerFilename.endsWith('.png') || 
+        lowerFilename.endsWith('.gif') || 
+        lowerFilename.endsWith('.jpeg') ||
+        lowerFilename.endsWith('.webp') ||
+        lowerFilename.endsWith('.bmp') ||
+        lowerFilename.endsWith('.tiff') ||
+        lowerFilename.endsWith('.tif')) {
+        // Replace extension with .jpg
+        const nameWithoutExt = normalizedFilename.replace(/\.[^.]+$/i, '');
+        const oldExt = normalizedFilename.split('.').pop();
+        normalizedFilename = `${nameWithoutExt}.jpg`;
+        console.log(`    ↳ Normalized extension: ${oldExt} → jpg for ${nameWithoutExt}`);
+    }
+    
     // Build optimized thumb path (preferred for card layouts)
-    return `img/optimized/thumb/${cleanFilename}`;
+    return `img/optimized/thumb/${normalizedFilename}`;
 }
 
 // Main CSV processing function

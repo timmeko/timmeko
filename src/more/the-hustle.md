@@ -1,7 +1,7 @@
 ---
 title: "The Hustle"
 date: 2014-03-12
-hero: "img/optimized/thumb/the-hustle_13111871024_o.png"
+hero: "img/optimized/thumb/the-hustle_13111871024_o.jpg"
 link: "https://flickr.com/photos/timmeko/13111871024/"
 tags: ["more"]
 layout: page

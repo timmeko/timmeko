@@ -1,7 +1,7 @@
 ---
 title: "Small towns don't vote like other rural areas"
 date: 2023-08-09
-hero: "img/optimized/thumb/AX5IYJN22RH63I4OZGIOICXCII_size-normalized.png"
+hero: "img/optimized/thumb/AX5IYJN22RH63I4OZGIOICXCII_size-normalized.jpg"
 link: "https://www.washingtonpost.com/politics/2023/08/09/small-town-voting-trump/"
 tags: ["more"]
 layout: page

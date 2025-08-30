@@ -1,7 +1,7 @@
 ---
 title: "Ohio's hoops history"
 date: 2009-08-04
-hero: "img/optimized/thumb/ohios-hoops-history_3789162740_o.png"
+hero: "img/optimized/thumb/ohios-hoops-history_3789162740_o.jpg"
 link: "https://flickr.com/photos/timmeko/3789162740/"
 tags: ["more"]
 layout: page

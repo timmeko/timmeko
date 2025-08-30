@@ -1,7 +1,7 @@
 ---
 title: "What made North Korea's weapons programs so much scarier in 2017"
 date: 2017-12-21
-hero: "img/optimized/thumb/image-1.png"
+hero: "img/optimized/thumb/image-1.jpg"
 link: "https://www.washingtonpost.com/news/worldviews/wp/2017/12/21/what-made-north-koreas-weapons-programs-so-much-scarier-in-2017/"
 tags: ["more"]
 layout: page
