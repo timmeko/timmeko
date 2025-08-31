@@ -91,11 +91,7 @@ title: Tim Meko - Visual Journalist & Graphics Editor
           {% endif %}
           <div class="card-content">
             <h3 class="card-title">
-              {% if item.data.link %}
-                <a href="{{ item.data.link }}" target="_blank" rel="noopener noreferrer">{{ item.data.title }}</a>
-              {% else %}
-                {{ item.data.title }}
-              {% endif %}
+              <a href="{{ item.url }}">{{ item.data.title }}</a>
             </h3>
             {% if item.data.date %}
               <time class="card-date">{{ item.data.date | dateFormat }}</time>

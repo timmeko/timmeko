@@ -691,3 +691,30 @@ footer {
     font-size: 0.85rem;
   }
 }
+
+/* Video Styles */
+.page-content video {
+  max-width: 100%;
+  height: auto;
+  margin: var(--space-md) 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  background: var(--color-surface);
+}
+
+/* Video controls styling */
+video::-webkit-media-controls {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+video::-webkit-media-controls-panel {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive video containers */
+@media (max-width: 768px) {
+  .page-content video {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
