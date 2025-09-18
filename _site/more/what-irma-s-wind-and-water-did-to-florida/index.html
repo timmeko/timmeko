@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>What Irma&#39;s wind and water did to Florida - Tim Meko</title>
   <link rel="stylesheet" href="/css/theme.css">
-  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 <body>
+  <!-- Dark Mode Toggle - Hidden Dev Feature -->
+  <button class="dark-mode-toggle" id="dark-mode-toggle" title="Toggle Dark Mode">🌙</button>
   <header>
     <div class="container">
       <div class="header-content">
@@ -16,15 +18,15 @@
           <!-- TIM MEKO SVG Wordmark from existing site -->
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 472.7 47.8" enable-background="new 0 0 472.7 47.8" xml:space="preserve" width="300" height="auto">
               <polygon points="143,0 0,0 0,47.8 13.6,34 143,34" fill="#000000"></polygon>
-              <text class="title-name" transform="matrix(1 0 0 1 6.5537 25.5117)" fill="#FFFFFF" font-family="Lato" font-weight="900" font-size="23.7319" letter-spacing="1">TIM MEKO</text>
-              <text class="title-vis" transform="matrix(1 0 0 1 151.0425 25.5117)" fill="#00B7F4" font-family="Lato" font-weight="300" font-size="23.7319" letter-spacing="1">VISUAL COMMUNICATION</text>
+              <text class="title-name" transform="matrix(1 0 0 1 6.5537 25.5117)" fill="#FFFFFF" font-family="Inter" font-weight="900" font-size="23.7319" letter-spacing="1">TIM MEKO</text>
+              <text class="title-vis" transform="matrix(1 0 0 1 151.0425 25.5117)" fill="#00B7F4" font-family="Inter" font-weight="300" font-size="23.7319" letter-spacing="1">VISUAL COMMUNICATION</text>
           </svg>
         </a>
         
         <nav class="main-nav">
           <a href="#featured">Featured</a>
           <a href="#insights">Insights</a>
-          <a href="#editing">Editing</a>
+          <a href="#editing">Edited</a>
           <a href="#more-work">More work</a>
           <a href="#about-contact">About</a>
         </nav>
@@ -55,10 +57,96 @@
   <footer>
     <div class="container">
       <div class="social-links">
-        <a href="https://twitter.com/timmeko" target="_blank" rel="noopener noreferrer">Twitter</a>
         <a href="https://linkedin.com/in/timmeko" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </div>
   </footer>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      // Dark Mode Toggle - Hidden Dev Feature
+      const darkModeToggle = document.getElementById('dark-mode-toggle');
+      const body = document.body;
+      
+      // Check for saved dark mode preference
+      const isDarkMode = localStorage.getItem('darkMode') === 'true';
+      if (isDarkMode) {
+        body.classList.add('dark-mode');
+        darkModeToggle.textContent = '☀️'; // Sun emoji
+      }
+      
+      darkModeToggle.addEventListener('click', function() {
+        body.classList.toggle('dark-mode');
+        const isDark = body.classList.contains('dark-mode');
+        
+        // Update button icon
+        darkModeToggle.textContent = isDark ? '☀️' : '🌙'; // Sun or Moon
+        
+        // Save preference
+        localStorage.setItem('darkMode', isDark);
+      });
+      // Sticky nav shrink functionality
+      const header = document.querySelector('header');
+      let lastScrollY = window.scrollY;
+      
+      window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY > 60) { // Updated for smaller header
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+        
+        lastScrollY = currentScrollY;
+      });
+      
+      // Smooth scroll with header offset
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            const headerHeight = 60; // Reduced fixed header height + padding
+            const targetPosition = targetElement.offsetTop - headerHeight;
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+      
+      // Lazy loading for index cards - show 25 initially, load 25 more at a time
+      const loadMoreBtn = document.getElementById('load-more');
+      const indexGrid = document.getElementById('index-grid');
+      let itemsShown = 25; // Start with 25 items shown
+      
+      if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+          const hiddenItems = indexGrid.querySelectorAll('.index-card[data-index]:nth-child(n+' + (itemsShown + 1) + ')');
+          const itemsToShow = Array.from(hiddenItems).slice(0, 25); // Load 25 more at a time
+          
+          itemsToShow.forEach(item => {
+            item.style.display = 'block';
+          });
+          
+          itemsShown += itemsToShow.length;
+          
+          if (itemsToShow.length < 25) {
+            loadMoreBtn.style.display = 'none';
+          }
+        });
+        
+        // Hide button if no more items to show
+        const totalItems = indexGrid.querySelectorAll('.index-card').length;
+        if (totalItems <= 25) { // Updated threshold
+          loadMoreBtn.style.display = 'none';
+        }
+      }
+    });
+  </script>
 </body>
 </html>

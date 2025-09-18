@@ -3,29 +3,29 @@
   /* Colors - Based on existing timmeko.com */
   --color-primary: #1696d2;        /* Main brand blue */
   --color-secondary: #00B7F4;      /* Accent blue from logo */
-  --color-accent: #ffc002;         /* Yellow accent from hover states */
+  --color-accent: #f59e0b;         /* Adjusted yellow accent - better contrast */
   --color-text: #1e293b;
   --color-text-light: #64748b;
   --color-background: #ffffff;
   --color-surface: #f8fafc;
   --color-border: #e2e8f0;
   
-  /* Typography - Based on existing site */
-  --font-primary: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  /* Typography - Consolidated to Inter */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   --font-secondary: "Droid Serif", Georgia, "Times New Roman", serif;
   
-  /* Spacing */
-  --space-xs: 0.5rem;
-  --space-sm: 1rem;
-  --space-md: 1.5rem;
-  --space-lg: 2rem;
-  --space-xl: 3rem;
-  --space-2xl: 4rem;
+  /* Spacing - Tightened up */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.25rem;
+  --space-xl: 2rem;
+  --space-2xl: 2.5rem;
   
   /* Layout */
   --container-max: 1200px;
-  --border-radius: 8px;
-  --border-radius-lg: 12px;
+  --border-radius: 0px;
+  --border-radius-lg: 0px;
   
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -40,11 +40,11 @@
 
 body {
   font-family: var(--font-primary);
-  line-height: 1.6;
+  line-height: 1.5; /* Tighter line height */
   color: var(--color-text);
   background-color: var(--color-background);
   margin: 0;
-  padding: 0;
+  padding: 60px 0 0 0; /* Further reduced for compact header */
 }
 
 .container {
@@ -54,22 +54,22 @@ body {
   background: transparent; /* Ensure containers have no background */
 }
 
-/* Typography */
+/* Typography - Tighter hierarchy */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-secondary);
   font-style: italic;
-  line-height: 1.3;
-  margin-bottom: var(--space-md);
+  line-height: 1.2; /* Tighter line height */
+  margin-bottom: var(--space-sm); /* Much less space below headings */
   color: var(--color-text);
-  background: transparent; /* Ensure no background on headings */
+  background: transparent;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
+h1 { font-size: 2rem; } /* Smaller */
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
 
 p {
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm); /* Tighter paragraph spacing */
 }
 
 a {
@@ -81,9 +81,28 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header */
+/* Header - Sticky with shrink effect */
 header {
-  padding: var(--space-lg) 0;
+  padding: var(--space-md) 0; /* Reduced padding */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+header.scrolled {
+  padding: var(--space-sm) 0;
+  background: rgba(255, 255, 255, 0.98);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+header.scrolled .logo svg {
+  width: 200px;
 }
 
 .header-content {
@@ -91,6 +110,8 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+
 
 .logo svg {
   display: block;
@@ -105,10 +126,10 @@ header {
   fill: var(--color-accent); /* Yellow on hover */
 }
 
-/* Navigation */
+/* Navigation - more compact */
 .main-nav {
   display: flex;
-  gap: var(--space-lg);
+  gap: var(--space-md); /* Reduced gap */
   align-items: center;
 }
 
@@ -117,20 +138,20 @@ header {
   font-weight: 500;
   color: var(--color-text);
   text-decoration: none;
-  padding: var(--space-xs) 0;
-  border-bottom: 2px solid transparent;
+  padding: var(--space-xs); /* Smaller padding */
   transition: all 0.2s ease;
+  font-size: 0.9rem; /* Slightly smaller */
 }
 
 .main-nav a:hover {
   color: var(--color-primary);
-  border-bottom-color: var(--color-primary);
+  background: var(--color-surface);
   text-decoration: none;
 }
 
 .main-nav a:active {
   color: var(--color-accent);
-  border-bottom-color: var(--color-accent);
+  background: var(--color-surface);
 }
 
 /* Main Content */
@@ -155,7 +176,6 @@ main {
   max-width: 100%;
   height: auto;
   margin: var(--space-md) 0;
-  border-radius: var(--border-radius);
   box-shadow: var(--shadow-sm);
 }
 
@@ -164,41 +184,55 @@ main {
   margin-top: var(--space-sm);
 }
 
-/* Section Styles */
+/* Ensure sections don't get hidden under fixed header */
+.flagship.section,
+.insights.section,
+.editing.section,
+.index.section,
+.about-contact.section {
+  padding-top: var(--space-xl);
+}
+
+/* Section Styles - Much tighter */
 .section {
-  margin-bottom: var(--space-2xl);
-  background: transparent; /* Ensure no background */
+  margin-bottom: var(--space-xl); /* Reduced from 2xl */
+  background: transparent;
+  scroll-margin-top: 60px; /* Reduced for smaller header */
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: var(--space-xl);
-  background: transparent; /* Explicitly remove any background */
+  margin-bottom: var(--space-lg); /* Reduced from xl */
+  background: transparent;
   color: var(--color-text);
+  padding-top: 0; /* Remove extra padding */
+  position: relative;
+  z-index: 1;
 }
 
-/* Card Styles - Grid of 6 for Insights & Editing (3x2 desktop, 2x3 mobile) */
+/* Card Styles - Editing section (2 cols mobile → 4 cols desktop)
+   Hierarchy: Featured (2 cols) > Editing (4 cols) > More (5 cols) */
 .cards-grid {
   display: grid;
-  gap: var(--space-sm);
-  grid-template-columns: repeat(2, 1fr); /* Mobile: 2x3 */
-  margin-bottom: var(--space-xl);
+  gap: var(--space-xs); /* Much tighter gap */
+  grid-template-columns: repeat(2, 1fr); /* Mobile: 2x2 */
+  margin-bottom: var(--space-lg); /* Reduced */
   width: 100%;
 }
 
 .card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--border-radius-lg);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-1px); /* Subtle movement */
+  box-shadow: var(--shadow-md);
 }
 
 .card-image {
@@ -209,42 +243,46 @@ main {
 }
 
 .card-content {
-  padding: var(--space-sm);
+  padding: var(--space-xs); /* Much tighter */
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
 .card-title {
-  font-size: 1rem;
-  margin-bottom: var(--space-xs);
+  font-size: 0.875rem;
+  margin-bottom: 0;
   line-height: 1.3;
+  color: inherit; /* Use inherited color */
+  font-family: var(--font-secondary); /* Match featured work styling */
+  font-style: italic; /* Match featured work styling */
 }
 
-/* Hero Section */
+/* Hero Section - More compact */
 .hero {
   text-align: center;
-  padding: var(--space-2xl) 0;
+  padding: var(--space-xl) 0; /* Reduced from 2xl */
   background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-background) 100%);
+  margin-top: 0;
 }
 
 .hero h1 {
   font-family: var(--font-secondary);
   font-style: italic;
-  font-size: 2.5rem;
-  margin-bottom: var(--space-md);
+  font-size: 2rem; /* Smaller */
+  margin-bottom: var(--space-md); /* Reduced */
   color: var(--color-text);
   font-weight: 400;
 }
 
-.hero p {
+.hero-statement {
   font-family: var(--font-primary);
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.125rem; /* Slightly smaller */
   color: var(--color-text-light);
-  max-width: 600px;
+  max-width: 500px; /* Narrower */
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: 1.5; /* Tighter */
 }
 
 /* Card metadata */
@@ -316,100 +354,252 @@ img.more-image::before {
   display: none;
 }
 
-/* About content */
+/* About section - more compact */
 .about-content {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.about-content p {
-  font-size: 1.125rem;
-  margin-bottom: var(--space-md);
-}
-
-/* Featured Cards - Grid of 6 (3x2 desktop, 2x3 mobile) */
-.featured-grid {
   display: grid;
-  gap: var(--space-sm);
-  grid-template-columns: repeat(2, 1fr); /* Mobile: 2x3 */
-  margin-bottom: var(--space-xl);
+  gap: var(--space-lg); /* Reduced gap */
+  align-items: center;
+  max-width: 700px; /* Narrower */
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+}
+
+.about-text p {
+  font-size: 1rem; /* Smaller */
+  margin-bottom: var(--space-sm); /* Tighter */
+  line-height: 1.5;
+  text-align: left;
+}
+
+.about-links {
+  margin-top: var(--space-lg);
+}
+
+.about-link {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-primary);
+  color: white;
+  padding: var(--space-sm) var(--space-lg);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.about-link:hover {
+  background: var(--color-secondary);
+  text-decoration: none;
+}
+
+.about-photo {
+  text-align: center;
+}
+
+.headshot {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid var(--color-border);
+  transition: transform 0.3s ease;
+}
+
+.headshot:hover {
+  transform: scale(1.05);
+}
+
+.headshot-placeholder {
+  width: 200px;
+  height: 200px;
+  background: var(--color-surface);
+  border: 3px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+  transition: transform 0.3s ease;
+}
+
+.headshot-placeholder:hover {
+  transform: scale(1.05);
+}
+
+/* Flagship Section - Featured work (1 col mobile → 2 cols desktop)
+   Hierarchy: Largest cards for most important work */
+.flagship-grid {
+  display: grid;
+  gap: var(--space-md); /* Reduced gap */
+  grid-template-columns: 1fr; /* Mobile: 1-up */
+  margin-bottom: var(--space-lg); /* Reduced */
   width: 100%;
 }
 
-.featured-card {
+.flagship-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--border-radius-lg);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
+  cursor: pointer; /* Make entire card clickable */
 }
 
-.featured-card:hover {
-  transform: translateY(-2px);
+.flagship-card:hover {
+  transform: translateY(-2px); /* Reduced movement */
   box-shadow: var(--shadow-lg);
 }
 
-.featured-card .card-image {
+.flagship-image {
   width: 100%;
   aspect-ratio: 3/2;
   object-fit: cover;
   flex-shrink: 0;
 }
 
-.featured-card .card-content {
-  padding: var(--space-sm);
+.flagship-content {
+  padding: var(--space-md); /* Reduced padding */
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
-.featured-card .card-title {
-  font-size: 1.125rem;
+/* Remove old styles that are now redundant */
+.flagship-title {
+  font-size: 1.25rem;
   margin-bottom: var(--space-xs);
   line-height: 1.3;
+  font-family: var(--font-secondary);
+  font-style: italic;
+  color: inherit; /* Use inherited color */
 }
 
-/* More Grid - 4-5 across desktop, as deep as necessary */
-.more-grid {
-  display: grid;
+.flagship-dek {
+  font-size: 0.9rem; /* Smaller text */
+  color: var(--color-text-light);
+  margin-bottom: 0; /* Remove bottom margin */
+  flex-grow: 1;
+  line-height: 1.4;
+}
+
+/* Insights Section - Tighter list format */
+.insights-list {
+  max-width: 700px; /* Narrower */
+  margin: 0 auto;
+}
+
+.insight-item {
+  padding: var(--space-sm) 0; /* Tighter padding */
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.insight-item:last-child {
+  border-bottom: none;
+}
+
+.insight-title {
+  margin: 0;
+  font-size: 1rem; /* Smaller */
+  font-weight: 600;
+  font-family: var(--font-primary);
+}
+
+.insight-title a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.insight-title a:hover {
+  color: var(--color-primary);
+}
+
+/* Insights metadata styling */
+.insight-meta {
+  display: flex;
   gap: var(--space-sm);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.insight-type {
+  font-size: 0.875rem;
+  color: var(--color-primary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.insight-date {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+/* Flagship link styling */
+.flagship-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.flagship-link:hover .flagship-title {
+  color: var(--color-primary);
+}
+
+/* Card link styling */
+.card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:hover .card-title {
+  color: var(--color-primary);
+}
+
+/* Index/More Projects Grid - Tighter thumbnails */
+.index-grid {
+  display: grid;
+  gap: var(--space-xs); /* Much tighter gap */
   grid-template-columns: repeat(2, 1fr); /* Mobile: 2 across */
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg); /* Reduced */
   width: 100%;
 }
 
-.more-card {
+.index-card {
   position: relative;
-  aspect-ratio: 1;
+  aspect-ratio: 4/3; /* Uniform 4:3 ratio */
   overflow: hidden;
-  border-radius: var(--border-radius);
   background: var(--color-surface);
   cursor: pointer;
   border: 1px solid var(--color-border);
   transition: transform 0.2s ease;
 }
 
-.more-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+.index-card:hover {
+  transform: translateY(-1px); /* Subtle movement */
+  box-shadow: var(--shadow-md);
 }
 
-.more-image {
+.index-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.more-card:hover .more-image {
+.index-card:hover .index-image {
   transform: scale(1.05);
 }
 
-/* More card hover overlay */
-.more-card-overlay {
+/* Index card overlay */
+.index-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -423,27 +613,52 @@ img.more-image::before {
   z-index: 10;
 }
 
-.more-card:hover .more-card-overlay {
+.index-card:hover .index-overlay {
   opacity: 1;
   transform: translateY(0);
 }
 
-.more-card-title {
-  font-size: 0.875rem;
-  font-weight: 600;
+.index-title {
+  font-size: 0.8rem; /* Smaller */
+  font-weight: 500; /* Less bold */
   line-height: 1.2;
-  margin-bottom: var(--space-xs);
 }
 
-.more-card-date {
-  font-size: 0.75rem;
-  opacity: 0.9;
-}
-
-.more-link {
+.index-link {
   position: absolute;
   inset: 0;
   z-index: 20;
+}
+
+/* Load More Button - more compact */
+.load-more-container {
+  text-align: center;
+  margin-top: var(--space-md); /* Reduced */
+}
+
+.load-more-btn {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: var(--space-xs) var(--space-md); /* Smaller button */
+  font-size: 0.9rem; /* Smaller text */
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.load-more-btn:hover {
+  background: var(--color-secondary);
+}
+
+.load-more-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Hide items initially for lazy loading - show first 25 */
+.index-card[data-index]:nth-child(n+26) {
+  display: none;
 }
 
 /* Modal styles */
@@ -471,7 +686,6 @@ img.more-image::before {
 
 .more-modal-content {
   background: white;
-  border-radius: var(--border-radius-lg);
   max-width: 900px;
   width: 100%;
   max-height: 90vh;
@@ -492,7 +706,6 @@ img.more-image::before {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  border-radius: 50%;
   width: 32px;
   height: 32px;
   display: flex;
@@ -512,7 +725,6 @@ img.more-image::before {
   width: 100%;
   max-height: 60vh;
   object-fit: cover;
-  border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
 }
 
 .more-modal-body {
@@ -544,7 +756,6 @@ img.more-image::before {
   background: var(--color-primary);
   color: white;
   padding: var(--space-sm) var(--space-lg);
-  border-radius: var(--border-radius);
   text-decoration: none;
   font-weight: 500;
   transition: background 0.2s ease;
@@ -579,12 +790,12 @@ img.more-image::before {
   }
 }
 
-/* Footer */
+/* Footer - more compact */
 footer {
   background: var(--color-surface);
   border-top: 1px solid var(--color-border);
-  padding: var(--space-xl) 0;
-  margin-top: var(--space-2xl);
+  padding: var(--space-lg) 0; /* Reduced padding */
+  margin-top: var(--space-xl); /* Reduced margin */
 }
 
 .social-links {
@@ -609,61 +820,62 @@ footer {
 }
 
 @media (min-width: 768px) {
-  /* Desktop: 3x2 for featured and cards grids */
-  .featured-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-lg);
+  /* Featured: 2-up on desktop for better hierarchy */
+  .flagship-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
   
+  /* Editing: 4-up on desktop */
   .cards-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-lg);
+    grid-template-columns: repeat(4, 1fr);
   }
   
-  /* Image heights now handled by aspect-ratio */
-  
-  /* More grid: 4 across on tablet */
-  .more-grid {
+  /* Index grid: 4 across on tablet */
+  .index-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* About section: side-by-side layout */
+  .about-content {
+    grid-template-columns: 2fr 1fr;
+    text-align: left;
+  }
+  
+  .about-photo {
+    text-align: right;
   }
 }
 
 @media (min-width: 1024px) {
-  /* More grid: 5 across on larger screens */
-  .more-grid {
+  /* Index grid: 5 across on larger screens */
+  .index-grid {
     grid-template-columns: repeat(5, 1fr);
   }
 }
 
 @media (max-width: 640px) {
   .hero h1 {
-    font-size: 1.875rem;
-    line-height: 1.3;
+    font-size: 1.75rem; /* Adjusted */
   }
   
-  .hero p {
-    font-size: 1.125rem;
+  .hero-statement {
+    font-size: 1rem; /* Smaller on mobile */
   }
-  
-  .logo svg {
-    width: 250px;
-  }
-  
-  /* Image heights now handled by aspect-ratio */
   
   /* Navigation mobile adjustments */
   .header-content {
-    flex-direction: column;
-    gap: var(--space-md);
+    flex-direction: row; /* Keep horizontal */
+    gap: var(--space-sm);
     align-items: center;
   }
   
   .main-nav {
-    gap: var(--space-md);
+    gap: var(--space-sm);
   }
   
   .main-nav a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    padding: var(--space-xs);
   }
 }
 
@@ -672,15 +884,9 @@ footer {
     font-size: 1.5rem;
   }
   
-  .logo svg {
-    width: 200px;
-  }
-  
   h1 { font-size: 1.5rem; }
   h2 { font-size: 1.25rem; }
   h3 { font-size: 1.125rem; }
-  
-  /* Image heights now handled by aspect-ratio */
   
   /* Navigation very small screens */
   .main-nav {
@@ -690,6 +896,40 @@ footer {
   .main-nav a {
     font-size: 0.85rem;
   }
+  
+  .flagship-content {
+    padding: var(--space-md);
+  }
+  
+  .flagship-title {
+    font-size: 1.25rem;
+  }
+}
+
+/* Pull Quote Styles */
+blockquote {
+  font-family: var(--font-secondary);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--color-text);
+  border-left: 4px solid var(--color-primary);
+  margin: var(--space-xl) 0;
+  line-height: 1.4;
+  background: var(--color-surface);
+  padding: var(--space-lg);
+}
+
+.pull-quote {
+  font-family: var(--font-secondary);
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--color-text);
+  text-align: center;
+  margin: var(--space-xl) 0;
+  padding: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  line-height: 1.3;
 }
 
 /* Video Styles */
@@ -697,7 +937,6 @@ footer {
   max-width: 100%;
   height: auto;
   margin: var(--space-md) 0;
-  border-radius: var(--border-radius);
   box-shadow: var(--shadow-sm);
   background: var(--color-surface);
 }
@@ -717,4 +956,129 @@ video::-webkit-media-controls-panel {
     width: 100% !important;
     height: auto !important;
   }
+}
+
+/* Dark Mode Toggle - Hidden Dev Feature */
+.dark-mode-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.1;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode-toggle:hover {
+  opacity: 0.8;
+}
+
+.dark-mode-toggle:active {
+  opacity: 1;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  --color-text: #f1f5f9;
+  --color-text-light: #94a3b8;
+  --color-background: #111111; /* True dark gray */
+  --color-surface: #1a1a1a; /* Slightly lighter dark gray */
+  --color-border: #333333; /* Dark gray border */
+}
+
+body.dark-mode .dark-mode-toggle {
+  background: var(--color-accent);
+}
+
+body.dark-mode header {
+  background: rgba(17, 17, 17, 0.95); /* Match new dark background */
+  backdrop-filter: blur(10px);
+}
+
+body.dark-mode header.scrolled {
+  background: rgba(17, 17, 17, 0.98); /* Match new dark background */
+  backdrop-filter: blur(10px);
+}
+
+body.dark-mode .hero {
+  background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-background) 100%);
+}
+
+body.dark-mode .index-overlay {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+}
+
+/* Better dark mode support */
+body, h1, h2, h3, h4, h5, h6, .section-header, .main-nav a, .hero-statement {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.card, .flagship-card, .index-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Additional dark mode styles for complete coverage */
+body.dark-mode .card-image,
+body.dark-mode .flagship-image,
+body.dark-mode .index-image {
+  background: var(--color-surface);
+}
+
+body.dark-mode .headshot-placeholder {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+body.dark-mode footer {
+  background: var(--color-surface);
+  border-top-color: var(--color-border);
+}
+
+body.dark-mode .about-link {
+  background: var(--color-primary);
+}
+
+body.dark-mode .about-link:hover {
+  background: var(--color-secondary);
+}
+
+body.dark-mode .load-more-btn {
+  background: var(--color-primary);
+}
+
+body.dark-mode .load-more-btn:hover {
+  background: var(--color-secondary);
+}
+
+body.dark-mode .more-modal-content {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+body.dark-mode .more-modal-link {
+  background: var(--color-primary);
+}
+
+body.dark-mode .more-modal-link:hover {
+  background: var(--color-secondary);
+}
+
+body.dark-mode blockquote {
+  background: var(--color-surface);
+  border-left-color: var(--color-primary);
+}
+
+body.dark-mode .pull-quote {
+  border-top-color: var(--color-border);
+  border-bottom-color: var(--color-border);
 }

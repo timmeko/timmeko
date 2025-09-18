@@ -5,7 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "dev": "eleventy --serve --watch",
-    "build": "npm run optimize-media && eleventy",
+    "build": "npm run optimize-images && eleventy",
     "build:quick": "eleventy",
     "start": "eleventy --serve",
     "setup": "npm run download-images && npm run update-paths",
@@ -14,6 +14,7 @@
     "optimize-images": "node scripts/optimize-images.js",
     "optimize-videos": "node scripts/optimize-videos.js",
     "optimize-media": "npm run optimize-images && npm run optimize-videos",
+    "build:with-videos": "npm run optimize-media && eleventy",
     "csv-to-md": "node scripts/csv-to-md.js",
     "fix-paths": "node scripts/fix-image-paths.js",
     "fix-broken-paths": "node scripts/fix-broken-paths.js",

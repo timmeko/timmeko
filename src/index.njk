@@ -6,34 +6,34 @@ title: Tim Meko - Visual Journalist & Graphics Editor
 <section class="hero section">
   <div class="container">
     <div class="hero-content">
-      <h1>Hi, I'm Tim</h1>
-      <p>I explain ideas and tell stories using data visualization, design, and illustration</p>
+      <h1>Maps and data visualization</h1>
+      <p class="hero-statement">I lead teams that explain the world's most important stories with maps, data visualization, and design.</p>
     </div>
   </div>
 </section>
 
-<section id="featured" class="featured section">
+<section id="featured" class="flagship section">
   <div class="container">
     <header class="section-header">
       <h2>Featured Work</h2>
     </header>
     
-    <div class="featured-grid">
+    <div class="flagship-grid">
       {% for item in collections.flagship %}
-        <article class="featured-card">
-          {% if item.data.hero %}
-            <img src="{{ item.data.hero }}" alt="{{ item.data.title }}" class="card-image">
-          {% else %}
-            <div class="card-image" data-placeholder="{{ item.data.title }}"></div>
-          {% endif %}
-          <div class="card-content">
-            <h3 class="card-title">
-              <a href="{{ item.url }}">{{ item.data.title }}</a>
-            </h3>
-            {% if item.data.date %}
-              <time class="card-date">{{ item.data.date | dateFormat }}</time>
+        <article class="flagship-card">
+          <a href="{{ item.url }}" class="flagship-link">
+            {% if item.data.hero %}
+              <img src="{{ item.data.hero }}" alt="{{ item.data.title }}" class="flagship-image">
+            {% else %}
+              <div class="flagship-image" data-placeholder="{{ item.data.title }}"></div>
             {% endif %}
-          </div>
+            <div class="flagship-content">
+              <h3 class="flagship-title">{{ item.data.title }}</h3>
+              {% if item.data.summary %}
+                <p class="flagship-dek">{{ item.data.summary }}</p>
+              {% endif %}
+            </div>
+          </a>
         </article>
       {% endfor %}
     </div>
@@ -43,33 +43,28 @@ title: Tim Meko - Visual Journalist & Graphics Editor
 <section id="insights" class="insights section">
   <div class="container">
     <header class="section-header">
-      <h2>Insights & Talks</h2>
+      <h2>Talks & Articles</h2>
     </header>
     
-    <div class="cards-grid">
+    <div class="insights-list">
       {% for item in collections.insights %}
-        <article class="card">
-          {% if item.data.hero %}
-            <img src="{{ item.data.hero }}" alt="{{ item.data.title }}" class="card-image">
-          {% else %}
-            <div class="card-image" data-placeholder="{{ item.data.title }}"></div>
-          {% endif %}
-          <div class="card-content">
-            <h3 class="card-title">
-              {% if item.data.external %}
-                <a href="{{ item.data.external }}" target="_blank" rel="noopener noreferrer">{{ item.data.title }}</a>
-              {% else %}
-                {{ item.data.title }}
-              {% endif %}
-            </h3>
-            {% if item.data.date %}
-              <time class="card-date">{{ item.data.date | dateFormat }}</time>
+        <div class="insight-item">
+          <h3 class="insight-title">
+            {% if item.data.link %}
+              <a href="{{ item.data.link }}" target="_blank" rel="noopener noreferrer">{{ item.data.title }}</a>
+            {% else %}
+              {{ item.data.title }}
             {% endif %}
+          </h3>
+          <div class="insight-meta">
             {% if item.data.type %}
-              <span class="card-type">{{ item.data.type | capitalize }}</span>
+              <span class="insight-type">{{ item.data.type | capitalize }}</span>
+            {% endif %}
+            {% if item.data.date %}
+              <time class="insight-date">{{ item.data.date | dateFormat }}</time>
             {% endif %}
           </div>
-        </article>
+        </div>
       {% endfor %}
     </div>
   </div>
@@ -78,58 +73,56 @@ title: Tim Meko - Visual Journalist & Graphics Editor
 <section id="editing" class="editing section">
   <div class="container">
     <header class="section-header">
-      <h2>Editing & Production</h2>
+      <h2>Work I Edited</h2>
     </header>
     
     <div class="cards-grid">
       {% for item in collections.editing %}
         <article class="card">
-          {% if item.data.hero %}
-            <img src="{{ item.data.hero }}" alt="{{ item.data.title }}" class="card-image">
-          {% else %}
-            <div class="card-image" data-placeholder="{{ item.data.title }}"></div>
-          {% endif %}
-          <div class="card-content">
-            <h3 class="card-title">
-              <a href="{{ item.url }}">{{ item.data.title }}</a>
-            </h3>
-            {% if item.data.date %}
-              <time class="card-date">{{ item.data.date | dateFormat }}</time>
+          <a href="{% if item.data.link %}{{ item.data.link }}{% else %}{{ item.url }}{% endif %}" {% if item.data.link %}target="_blank" rel="noopener noreferrer"{% endif %} class="card-link">
+            {% if item.data.hero %}
+              <img src="{{ item.data.hero }}" alt="{{ item.data.title }}" class="card-image">
+            {% else %}
+              <div class="card-image" data-placeholder="{{ item.data.title }}"></div>
             {% endif %}
-          </div>
+            <div class="card-content">
+              <h3 class="card-title">{{ item.data.title }}</h3>
+            </div>
+          </a>
         </article>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section id="more-work" class="more-work section">
+<section id="more-work" class="index section">
   <div class="container">
     <header class="section-header">
       <h2>More Work</h2>
     </header>
     
-    <div class="more-grid">
+    <div class="index-grid" id="index-grid">
       {% for item in collections.more %}
-        <div class="more-card">
+        <div class="index-card" data-index="{{ loop.index }}">
           {% if item.data.hero %}
-            <img src="{{ item.data.hero }}" alt="{{ item.data.title }}" class="more-image">
+            <img src="{{ item.data.hero }}" alt="{{ item.data.title }}" class="index-image" loading="lazy">
           {% else %}
-            <div class="more-image" data-placeholder="{{ item.data.title }}"></div>
+            <div class="index-image" data-placeholder="{{ item.data.title }}"></div>
           {% endif %}
           
-          <div class="more-card-overlay">
-            <div class="more-card-title">{{ item.data.title }}</div>
-            {% if item.data.date %}
-              <div class="more-card-date">{{ item.data.date | dateFormat }}</div>
-            {% endif %}
+          <div class="index-overlay">
+            <div class="index-title">{{ item.data.title }}</div>
           </div>
           
           {% if item.data.link %}
-            <a href="{{ item.data.link }}" target="_blank" rel="noopener noreferrer" class="more-link" aria-label="{{ item.data.title }}"></a>
+            <a href="{{ item.data.link }}" target="_blank" rel="noopener noreferrer" class="index-link" aria-label="{{ item.data.title }}"></a>
           {% endif %}
         </div>
       {% endfor %}
+    </div>
+    
+    <div class="load-more-container">
+      <button id="load-more" class="load-more-btn">Show more</button>
     </div>
   </div>
 </section>
@@ -141,8 +134,20 @@ title: Tim Meko - Visual Journalist & Graphics Editor
     </header>
     
     <div class="about-content">
-      <p>I'm passionate about visual storytelling and helping people understand complex information through thoughtful design and data visualization.</p>
-      <p><a href="/about">Learn more about my background and approach →</a></p>
+      <div class="about-text">
+        <p>Tim Meko is a graphics editor and visual journalist with nearly 20 years of experience turning complex ideas into clear stories. At The Washington Post he leads cross-disciplinary teams that create maps, data visualizations, and design for some of the newsroom's most impactful work. Previously he led teams at the Urban Institute and worked at the National Energy Education Development Project and the Columbus Dispatch.</p>
+        
+        <div class="about-links">
+          <a href="https://linkedin.com/in/timmeko" target="_blank" rel="noopener noreferrer" class="about-link">LinkedIn</a>
+        </div>
+      </div>
+      
+      <div class="about-photo">
+        <!-- <img src="/img/headshot.jpg" alt="Tim Meko" class="headshot"> -->
+        <div class="headshot-placeholder">
+          <span>Headshot needed</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>

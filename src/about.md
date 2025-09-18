@@ -3,14 +3,16 @@ layout: page
 title: About
 ---
 
-I'm a data-viz and multimedia designer from Washington, DC. Right now, I am a graphics reporter at the Washington Post. Before joining the Post I led a team of designers and developers at the Urban Institute.
+Tim Meko is a graphics editor and visual journalist with nearly 20 years of experience turning complex ideas into clear stories. At The Washington Post he leads cross-disciplinary teams that create maps, data visualizations, and design for some of the newsroom's most impactful work. Previously he led teams at the Urban Institute and worked at the National Energy Education Development Project and the Columbus Dispatch.
 
-## "Just because you can, doesn't mean you should"
+## Leadership & Recognition
 
-### What you can expect when working with me
+I lead the graphics team at The Washington Post, where I've worked on award-winning projects that blend storytelling with cartography, design, and interactive graphics.
 
-A good designer will push and pull. As a client, you bring a designer in because you need somebody with a specialized set of skills—somebody who can help you translate your work to your intended audiences. A good designer is a partner, not a service provider. I know which questions to ask, and I always make sure I understand the content before trying to communicate it to somebody else. 
+The Washington Post was named the World's Best Digital Design in 2024 by the Society for News Design (SND) — one of the highest honors in the visual media industry — and our team has contributed to multiple **Pulitzer-winning** packages, alongside honors from the Information Is Beautiful Awards and others.
 
-The greatest skill I have is my ability to solve problems. Projects succeed when clients come to me and say, *"We have this great work and we want to showcase it with an illustration. We like your work, knock yourself out."* Or, *"I've got this dataset that shows some interesting trends. How should we bring it to life?"* 
+I'm a people-first leader who helps multidisciplinary teams thrive. Beyond maps, I love building clear, ambitious visual stories and the systems that enable them.
 
-I love it when a client understands that they're good at what they do and that I'm good at what I do. That's how we make magic.
+## Connect
+
+[LinkedIn](https://linkedin.com/in/timmeko)
