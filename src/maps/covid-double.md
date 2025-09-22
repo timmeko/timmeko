@@ -11,7 +11,7 @@ Two projects that shaped how The Post captured the scale and complexity of the c
 ---
 
 ## 100,000 lives lost  
-**[View project →](https://www.washingtonpost.com/graphics/2020/national/100000-deaths-america/)**  
+**[View project →](https://www.washingtonpost.com/graphics/2020/national/100000-deaths-american-coronavirus/)**  
 *Published: May 2020 | The Washington Post*
 
 A moving visual tribute to the first 100,000 Americans lost to COVID-19. Each life is represented as a mark in a growing vertical beam of light, conveying collective grief through solemn accumulation.

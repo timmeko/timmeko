@@ -92,7 +92,7 @@ async function convertVideo(inputPath, outputPath, config, format) {
     return new Promise((resolve) => {
         const args = [
             '-i', inputPath,
-            '-vf', `scale=${config.width}:${config.height}:force_original_aspect_ratio=decrease,pad=${config.width}:${config.height}:-1:-1:color=black`,
+            '-vf', `scale=${config.width}:${config.height}:force_original_aspect_ratio=decrease`,
             '-b:v', config.bitrate,
             '-maxrate', config.bitrate,
             '-bufsize', `${parseInt(config.bitrate) * 2}k`,

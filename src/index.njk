@@ -12,28 +12,43 @@ title: Tim Meko - Visual Journalist & Graphics Editor
   </div>
 </section>
 
-<section id="featured" class="flagship section">
+<section id="featured" class="featured section">
   <div class="container">
     <header class="section-header">
       <h2>Featured Work</h2>
     </header>
     
-    <div class="flagship-grid">
+    <div class="featured-list">
       {% for item in collections.flagship %}
-        <article class="flagship-card">
-          <a href="{{ item.url }}" class="flagship-link">
-            {% if item.data.hero %}
-              <img src="{{ item.data.hero }}" alt="{{ item.data.title }}" class="flagship-image">
-            {% else %}
-              <div class="flagship-image" data-placeholder="{{ item.data.title }}"></div>
-            {% endif %}
-            <div class="flagship-content">
-              <h3 class="flagship-title">{{ item.data.title }}</h3>
-              {% if item.data.summary %}
-                <p class="flagship-dek">{{ item.data.summary }}</p>
-              {% endif %}
-            </div>
-          </a>
+        <article class="featured-project {{ 'featured-project--reverse' if loop.index0 % 2 == 1 }}" data-project-index="{{ loop.index0 }}">
+          <div class="featured-project__media">
+            <a href="{{ item.url }}" class="featured-project__media-link">
+              <video class="featured-project__video" muted loop playsinline preload="metadata">
+                <source src="/assets/videos/{{ item.fileSlug }}.mp4" type="video/mp4">
+              </video>
+            </a>
+          </div>
+          
+          <div class="featured-project__content">
+            <a href="{{ item.url }}" class="featured-project__content-link">
+              <h3 class="featured-project__title">{{ item.data.title }}</h3>
+              <p class="featured-project__description">
+                {% if item.fileSlug == 'election-winds-sand-map' %}
+                  Led a team creating innovative visualizations for two landmark election stories, including the viral "sand map" that showed every vote as individual grains and wind-pattern maps revealing political currents across America.
+                {% elif item.fileSlug == 'wicked-weather' %}
+                  Directed the visual strategy for this comprehensive investigation into America's weather disasters, combining climate data with human impact stories through interactive maps and compelling design.
+                {% elif item.fileSlug == 'infrastructure' %}
+                  Managed the graphics team for this deep dive into America's infrastructure, creating six distinct map perspectives that made complex infrastructure data accessible to millions of readers.
+                {% elif item.fileSlug == 'north-korea-targets' %}
+                  Led the rapid-response visual journalism for this breaking news analysis, transforming complex missile trajectory data into clear, impactful maps that explained global security implications.
+                {% elif item.fileSlug == 'covid-double' %}
+                  Oversaw two of the pandemic's most powerful visual stories - from the stark memorial marking 100,000 deaths to comprehensive year-in-review mapping that helped readers understand the pandemic's scope.
+                {% else %}
+                  {{ item.data.summary }}
+                {% endif %}
+              </p>
+            </a>
+          </div>
         </article>
       {% endfor %}
     </div>

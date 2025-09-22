@@ -48,7 +48,7 @@
       <p>Two projects that shaped how The Post captured the scale and complexity of the crisis.</p>
 <hr>
 <h2>100,000 lives lost</h2>
-<p><strong><a href="https://www.washingtonpost.com/graphics/2020/national/100000-deaths-america/">View project →</a></strong><br>
+<p><strong><a href="https://www.washingtonpost.com/graphics/2020/national/100000-deaths-american-coronavirus/">View project →</a></strong><br>
 <em>Published: May 2020 | The Washington Post</em></p>
 <p>A moving visual tribute to the first 100,000 Americans lost to COVID-19. Each life is represented as a mark in a growing vertical beam of light, conveying collective grief through solemn accumulation.</p>
 <p><strong>Role:</strong> Editor and visual lead<br>
@@ -110,6 +110,79 @@
         // Save preference
         localStorage.setItem('darkMode', isDark);
       });
+      
+      // Featured project animations and video controls
+      const setupFeaturedProjects = () => {
+        const projects = document.querySelectorAll('.featured-project');
+        const playedOnScroll = new Set();
+        
+        // Intersection observer for scroll animations
+        const projectObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const project = entry.target;
+                const index = project.dataset.projectIndex;
+                const video = project.querySelector('.featured-project__video');
+                
+                // Trigger entrance animation
+                project.classList.add('animate-in');
+                
+                // Play video once on scroll
+                if (video && !playedOnScroll.has(index)) {
+                  video.play().catch(() => {});
+                  playedOnScroll.add(index);
+                  
+                  // Pause after 3 seconds
+                  setTimeout(() => {
+                    video.pause();
+                  }, 3000);
+                }
+                
+                // Stop observing this project
+                projectObserver.unobserve(project);
+              }
+            });
+          },
+          { 
+            threshold: 0.3,
+            rootMargin: '0px 0px -20% 0px'
+          }
+        );
+        
+        // Observe all projects
+        projects.forEach(project => {
+          projectObserver.observe(project);
+        });
+        
+        // Hover controls for videos
+        projects.forEach(project => {
+          const video = project.querySelector('.featured-project__video');
+          const mediaLink = project.querySelector('.featured-project__media-link');
+          const contentLink = project.querySelector('.featured-project__content-link');
+          
+          if (video) {
+            // Play on hover over video or content
+            const startVideo = () => {
+              video.play().catch(() => {});
+            };
+            
+            const stopVideo = () => {
+              video.pause();
+              video.currentTime = 0;
+            };
+            
+            mediaLink?.addEventListener('mouseenter', startVideo);
+            mediaLink?.addEventListener('mouseleave', stopVideo);
+            contentLink?.addEventListener('mouseenter', startVideo);
+            contentLink?.addEventListener('mouseleave', stopVideo);
+          }
+        });
+      };
+      
+      // Initialize functionality
+      setupFeaturedProjects();
+      
       // Sticky nav shrink functionality
       const header = document.querySelector('header');
       let lastScrollY = window.scrollY;
