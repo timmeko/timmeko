@@ -2,6 +2,7 @@
 title: "North Korea's missile ambitions, mapped"
 date: 2017-05-18
 hero: "/img/raw/Screenshot2025-08-29at11.29.26AM.png"
+homepage_description: "Led the rapid-response visual journalism for this breaking news analysis, transforming complex missile trajectory data into clear, impactful maps that explained global security implications."
 tags: [maps, flagship]
 layout: page
 ---

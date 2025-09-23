@@ -2,6 +2,7 @@
 title: "Mapping America's natural disaster risks"
 date: 2019-04-25
 hero: "/img/raw/FIRE.jpg"
+homepage_description: "Directed the visual strategy for this comprehensive investigation into America's weather disasters, combining climate data with human impact stories through interactive maps and compelling design."
 tags: [maps, flagship]
 layout: page
 ---

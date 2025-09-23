@@ -110,10 +110,9 @@
         localStorage.setItem('darkMode', isDark);
       });
       
-      // Featured project animations and video controls
+      // Featured project animations
       const setupFeaturedProjects = () => {
         const projects = document.querySelectorAll('.featured-project');
-        const playedOnScroll = new Set();
         
         // Intersection observer for scroll animations
         const projectObserver = new IntersectionObserver(
@@ -121,21 +120,14 @@
             entries.forEach((entry) => {
               if (entry.isIntersecting) {
                 const project = entry.target;
-                const index = project.dataset.projectIndex;
                 const video = project.querySelector('.featured-project__video');
                 
                 // Trigger entrance animation
                 project.classList.add('animate-in');
                 
-                // Play video once on scroll
-                if (video && !playedOnScroll.has(index)) {
+                // Start video playing when it comes into view
+                if (video) {
                   video.play().catch(() => {});
-                  playedOnScroll.add(index);
-                  
-                  // Pause after 3 seconds
-                  setTimeout(() => {
-                    video.pause();
-                  }, 3000);
                 }
                 
                 // Stop observing this project
@@ -152,30 +144,6 @@
         // Observe all projects
         projects.forEach(project => {
           projectObserver.observe(project);
-        });
-        
-        // Hover controls for videos
-        projects.forEach(project => {
-          const video = project.querySelector('.featured-project__video');
-          const mediaLink = project.querySelector('.featured-project__media-link');
-          const contentLink = project.querySelector('.featured-project__content-link');
-          
-          if (video) {
-            // Play on hover over video or content
-            const startVideo = () => {
-              video.play().catch(() => {});
-            };
-            
-            const stopVideo = () => {
-              video.pause();
-              video.currentTime = 0;
-            };
-            
-            mediaLink?.addEventListener('mouseenter', startVideo);
-            mediaLink?.addEventListener('mouseleave', stopVideo);
-            contentLink?.addEventListener('mouseenter', startVideo);
-            contentLink?.addEventListener('mouseleave', stopVideo);
-          }
         });
       };
       

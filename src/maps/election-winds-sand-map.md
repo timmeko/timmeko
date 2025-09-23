@@ -2,6 +2,7 @@
 title: "Visualizing American democracy"
 date: 2024-11-08
 hero: "/img/raw/XLUSUBLFWVAS7JPFKKZJE4HBYE.jpg"
+homepage_description: "Led a team creating innovative visualizations for two landmark election stories, including the viral 'sand map' that showed every vote as individual grains and wind-pattern maps revealing political currents across America."
 tags: [maps, flagship]
 layout: page
 ---

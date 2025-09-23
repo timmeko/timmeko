@@ -23,7 +23,7 @@
   --space-2xl: 2.5rem;
   
   /* Layout */
-  --container-max: 1200px;
+  --container-max: 1000px;
   --border-radius: 0px;
   --border-radius-lg: 0px;
   
@@ -65,8 +65,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 2rem; } /* Smaller */
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.25rem; }
+h2 { font-size: 1.75rem; } /* Increased from 1.5rem */
+h3 { font-size: 1.25rem; } /* Decreased from 1.75rem for featured titles */
 
 p {
   margin-bottom: var(--space-sm); /* Tighter paragraph spacing */
@@ -436,9 +436,11 @@ img.more-image::before {
   gap: 60px;
   align-items: center;
   margin-bottom: 100px;
+  padding: 40px;
+  border-radius: 8px;
   opacity: 0;
   transform: translateY(60px);
-  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
 }
 
 /* Animation trigger */
@@ -473,7 +475,7 @@ img.more-image::before {
 .featured-project__video {
   width: 100%;
   height: auto;
-  aspect-ratio: 16/9;
+  aspect-ratio: 1.5/1;
   object-fit: cover;
   border: 1px solid var(--color-border);
 }
@@ -496,7 +498,7 @@ img.more-image::before {
 .featured-project__title {
   font-family: var(--font-secondary);
   font-style: italic;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   margin-bottom: 20px;
   color: var(--color-text);
@@ -511,13 +513,17 @@ img.more-image::before {
 }
 
 /* Hover effects */
-.featured-project__media-link:hover .featured-project__video {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+.featured-project:hover {
+  background-color: #fafafa;
 }
 
 .featured-project__content-link:hover .featured-project__title {
   color: var(--color-primary);
+}
+
+/* Dark mode hover */
+body.dark-mode .featured-project:hover {
+  background-color: #1f1f1f;
 }
 
 /* Insights Section - Tighter list format */
@@ -851,6 +857,7 @@ footer {
     grid-template-columns: 1fr;
     gap: 30px;
     margin-bottom: 60px;
+    padding: 20px;
   }
   
   .featured-project--reverse .featured-project__media,
@@ -858,8 +865,12 @@ footer {
     order: initial;
   }
   
+  .featured-project__content {
+    padding: 0;
+  }
+  
   .featured-project__title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   
   .featured-project__description {

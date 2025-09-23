@@ -2,6 +2,7 @@
 title: "Anatomy of America's infrastructure"
 date: 2016-12-01
 hero: "/img/raw/infrastructure-grid-promo.jpg"
+homepage_description: "Managed the graphics team for this deep dive into America's infrastructure, creating six distinct map perspectives that made complex infrastructure data accessible to millions of readers."
 tags: [maps, flagship]
 layout: page
 ---
