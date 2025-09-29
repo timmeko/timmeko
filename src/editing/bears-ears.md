@@ -1,5 +1,5 @@
 ---
-title: "Bears Ears"
+title: "What remains of Bears Ears"
 slug: "bears-ears"
 date: "2019-01-01"
 hero: "/img/optimized/hero/bearsEarsStill.jpg"
@@ -15,13 +15,6 @@ layout: page
 This was one of those rare stories that began with visuals, not words. The team was made up entirely of visual journalists, and from the start we treated Bears Ears as an inherently visual story. Instead of squeezing images into a traditional structure, we built the reporting and design together—drone flights, photogrammetry, and interactive mapping—so the format matched the place.  
 
 What made it special to me was the balance: a team working with extreme sensitivity on a subject that demanded care, while also creating visuals that were striking and immersive. It showed how powerful this approach can be when visuals lead the storytelling from the ground up.  
-
-**Role:** Graphics editor and visual coordinator  
-**Highlights:**  
-- Led entirely visual-first approach to sensitive cultural story  
-- Coordinated drone photography, photogrammetry, and interactive mapping  
-- Balanced striking visuals with cultural sensitivity and respect  
-- Integrated multiple visual techniques into cohesive narrative experience  
 
 ### Video assets  
 <video width="800" height="450" controls poster="/img/optimized/hero/bearsEarsVideo-poster.jpg">

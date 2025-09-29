@@ -1,7 +1,7 @@
 ---
 title: "Why North Carolina's House Districts may be redrawn"
 date: 2018-08-31
-hero: "img/optimized/thumb/2300-ncgerrymandering0831.jpg"
+hero: "img/optimized/thumb/why-north-carolina-s-house-districts-may-be-redrawn-9da8f43f.jpg"
 link: "http://www.washingtonpost.com/graphics/2018/politics/north-carolina-redistricting/"
 tags: ["more"]
 layout: page

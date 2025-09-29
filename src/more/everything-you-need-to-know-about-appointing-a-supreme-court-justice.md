@@ -1,7 +1,7 @@
 ---
 title: "Everything you need to know about appointing a Supreme Court justice"
 date: 2016-02-20
-hero: "img/optimized/thumb/promo-nomination-process-2.jpg"
+hero: "img/optimized/thumb/everything-you-need-to-know-about-appointing-a-supreme-court-justice-947a6d94.jpg"
 link: "http://www.washingtonpost.com/graphics/politics/scotus-nominees/"
 tags: ["more"]
 layout: page

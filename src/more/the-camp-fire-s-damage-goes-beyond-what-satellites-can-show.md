@@ -1,7 +1,7 @@
 ---
 title: "The Camp Fire's damage goes beyond what satellites can show"
 date: 2018-11-21
-hero: "img/optimized/thumb/paradise-before-after-promo.jpg"
+hero: "img/optimized/thumb/the-camp-fire-s-damage-goes-beyond-what-satellites-can-show-a2c0935d.jpg"
 link: "http://www.washingtonpost.com/graphics/2018/national/camp-fire-before-after/"
 tags: ["more"]
 layout: page

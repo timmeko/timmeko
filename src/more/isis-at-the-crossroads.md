@@ -1,7 +1,7 @@
 ---
 title: "ISIS at the crossroads"
 date: 2019-12-24
-hero: "img/optimized/thumb/YKLAGLRAZUI6VMBU3Z64FNIZTM.jpg"
+hero: "img/optimized/thumb/isis-at-the-crossroads-31ac5bf0.jpg"
 link: "https://www.washingtonpost.com/graphics/2019/world/whats-next-isis/"
 tags: ["more"]
 layout: page

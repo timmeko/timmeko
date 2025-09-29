@@ -1,7 +1,7 @@
 ---
 title: "A net result?"
 date: 2018-05-27
-hero: "img/optimized/thumb/holtby-fluery-promo.jpg"
+hero: "img/optimized/thumb/a-net-result-01479a06.jpg"
 link: "http://www.washingtonpost.com/graphics/2018/sports/holtby-fleury/"
 tags: ["more"]
 layout: page

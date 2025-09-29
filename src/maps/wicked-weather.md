@@ -2,14 +2,14 @@
 title: "Mapping America's natural disaster risks"
 date: 2019-04-25
 hero: "/img/raw/FIRE.jpg"
-homepage_description: "Directed the visual strategy for this comprehensive investigation into America's weather disasters, combining climate data with human impact stories through interactive maps and compelling design."
+homepage_description: "A visual investigation into America's weather disasters, exploring how every part of the country faces unique risks."
 tags: [maps, flagship]
 layout: page
 ---
 
 ![Disaster fire map](/img/raw/FIRE.jpg)
 
-A striking six-map series showing that no region of the U.S. is immune to natural disaster. The visuals highlight the national footprint of risk, grounded in rigorous data and minimal cartographic design.
+A striking map series showing that no region of the U.S. is immune to natural disaster. The visuals highlight the national footprint of risk, grounded in rigorous data and minimal cartographic design.
 
 **Role:** Lead author, cartographer, and visual editor  
 **Highlights:**  

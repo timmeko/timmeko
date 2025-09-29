@@ -1,7 +1,7 @@
 ---
 title: "How a surge of coronavirus patients could stretch hospital resources in your area"
 date: 2020-04-09
-hero: "img/optimized/thumb/EJYGQQDZ3QI6VG7OYW7Z2LRSRA.jpg"
+hero: "img/optimized/thumb/how-a-surge-of-coronavirus-patients-could-stretch-hospital-resources-in-your-area-70877213.jpg"
 link: "https://www.washingtonpost.com/graphics/2020/investigations/coronavirus-hospitals-data/"
 tags: ["more"]
 layout: page

@@ -1,7 +1,7 @@
 ---
 title: "The 'ethnic cleansing' of the Rohingya"
 date: 2017-09-18
-hero: "img/optimized/thumb/847485626.jpg"
+hero: "img/optimized/thumb/the-ethnic-cleansing-of-the-rohingya-3db1c677.jpg"
 link: "http://www.washingtonpost.com/graphics/2017/world/rohingya/"
 tags: ["more"]
 layout: page

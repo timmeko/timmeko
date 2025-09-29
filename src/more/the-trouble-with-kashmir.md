@@ -1,7 +1,7 @@
 ---
 title: "The trouble with Kashmir"
 date: 2019-02-28
-hero: "img/optimized/thumb/promo-india-pakistan-conflict0228.jpg"
+hero: "img/optimized/thumb/the-trouble-with-kashmir-136915d7.jpg"
 link: "http://www.washingtonpost.com/graphics/2019/world/india-pakistan-conflict/"
 tags: ["more"]
 layout: page

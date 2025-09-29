@@ -1,7 +1,7 @@
 ---
 title: "Dipping low: Washington's historical winter temperatures"
 date: 2019-12-04
-hero: "img/optimized/thumb/7YD6NT7Z2VGGBNKHPG64D2MBX4.jpg"
+hero: "img/optimized/thumb/dipping-low-washington-s-historical-winter-temperatures-0495d5bb.jpg"
 link: "https://www.washingtonpost.com/weather/2019/12/04/dipping-low-washingtons-historical-winter-temperatures/"
 tags: ["more"]
 layout: page

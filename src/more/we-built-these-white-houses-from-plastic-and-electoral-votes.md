@@ -1,7 +1,7 @@
 ---
 title: "We built these White Houses from plastic…and electoral votes"
 date: 2016-11-05
-hero: "img/optimized/thumb/apple-touch-icon-144-precomposed.jpg"
+hero: "img/optimized/thumb/we-built-these-white-houses-from-plastic-and-electoral-votes-e09618ca.jpg"
 link: "https://www.washingtonpost.com/sf/national/2016/11/05/electoral-vote-tracking-election-day/"
 tags: ["more"]
 layout: page

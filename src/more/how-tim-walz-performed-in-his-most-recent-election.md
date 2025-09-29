@@ -1,7 +1,7 @@
 ---
 title: "How Tim Walz performed in his most recent election"
 date: 2024-08-06
-hero: "img/optimized/thumb/6AIALHU6KUI6RI65FIMZD4DV2U_size-normalized.jpg"
+hero: "img/optimized/thumb/how-tim-walz-performed-in-his-most-recent-election-5837da40.jpg"
 link: "https://www.washingtonpost.com/politics/2024/08/02/harris-vp-candidates-elections/"
 tags: ["more"]
 layout: page

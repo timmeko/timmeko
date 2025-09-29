@@ -1,7 +1,7 @@
 ---
 title: "Here's how the Seoul Halloween crush happened"
 date: 2022-10-30
-hero: "img/optimized/thumb/FF3YRIBBJHZC6UFNSA3FQZAJ6Y_size-normalized.jpg"
+hero: "img/optimized/thumb/here-s-how-the-seoul-halloween-crush-happened-53a918ca.jpg"
 link: "https://www.washingtonpost.com/world/2022/10/29/where-how-seoul-itaewon-stampede/"
 tags: ["more"]
 layout: page

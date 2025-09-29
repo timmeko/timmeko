@@ -2,20 +2,20 @@
 title: "Experiments with mapping in Blender"
 date: 2025-09-01
 hero: "/img/raw/3dmaps.jpg"
-homepage_description: "Small, dynamic scenes that establish place and use animation to explain."
+homepage_description: "Dynamic scenes that establish place and use animation to explain."
 tags: [maps, flagship]
 layout: page
 ---
 
-![3d globes map](/img/raw/3dmaps.jpg)
+{% video "/video/3dmapping.mp4", "3d maps in Blender" %}
 
-Starting in QGIS, processing in Blender and finishing in After Effects, my workflow allows for flexible and dramatic maps about our physical world that captivate readers. 
+Starting in QGIS, processing in Blender and finishing in After Effects, my workflow allows for flexible and dramatic maps about our physical world that captivate readers. Analytics placed within the stories show that readers complete these animated maps at much higher rates than other video formats, proving that they resonate and drive engagement. 
 
-**Role:** Cartographer visual editor  
 **Highlights:**  
 - Mixing realism with cinematic camera movement to develop a signature style with 3d terrain-focused maps 
 - Animations lean into the extra dimension of time, allowing a more focused visual story within the map.
-- Workflows allow for fast iteration and flexibility. 
+- AI-fueled Workflows allow for fast iteration and flexibility. 
+
 
 ![whistler everest map](/img/raw/xx.jpg)
 ![klamath](/img/raw/xx.jpg)

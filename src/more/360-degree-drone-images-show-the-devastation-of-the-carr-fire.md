@@ -1,7 +1,7 @@
 ---
 title: "360-degree drone images show the devastation of the Carr Fire"
 date: 2018-08-10
-hero: "img/optimized/thumb/promo-Carr360-0810.jpg"
+hero: "img/optimized/thumb/360-degree-drone-images-show-the-devastation-of-the-carr-fire-99b73869.jpg"
 link: "http://www.washingtonpost.com/graphics/2018/national/carr-fire-360/"
 tags: ["more"]
 layout: page

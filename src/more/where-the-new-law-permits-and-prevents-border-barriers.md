@@ -1,7 +1,7 @@
 ---
 title: "Where the new law permits - and prevents - border barriers"
 date: 2019-02-16
-hero: "img/optimized/thumb/2300-promo-trump-allowed-wall.jpg"
+hero: "img/optimized/thumb/where-the-new-law-permits-and-prevents-border-barriers-2328ad9f.jpg"
 link: "http://www.washingtonpost.com/graphics/2019/politics/trump-allowed-wall/"
 tags: ["more"]
 layout: page

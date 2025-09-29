@@ -1,7 +1,7 @@
 ---
 title: "We're at the peak of the global fire season"
 date: 2019-08-30
-hero: "img/optimized/thumb/SYBNXQWJVII6TFQVR4NDFFROAQ.jpg"
+hero: "img/optimized/thumb/we-re-at-the-peak-of-the-global-fire-season-5decc9ff.jpg"
 link: "https://www.washingtonpost.com/climate-environment/2019/08/30/were-peak-global-fire-season/"
 tags: ["more"]
 layout: page

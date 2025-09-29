@@ -1,5 +1,5 @@
 ---
-title: "What spicy food does to your body"
+title: "Love spicy food? Hate it? Watch a hot wing’s trip through your body."
 slug: "spicy-food"
 date: "2024-01-01"
 hero: "/img/optimized/hero/spicyDetail924AM.jpg"
@@ -12,16 +12,9 @@ layout: page
 **[Read the story →](https://www.washingtonpost.com/wellness/interactive/2024/spicy-food-does-to-body-health/)**  
 *Published: 2024 | The Washington Post*
 
-Everyone's got a story about eating something too hot. This piece let us turn that everyday experience into a full-body journey—tracking what happens from the first bite to the last burn.
+Everyone's got a story about eating something too spicy. This piece let us turn that everyday experience into a full-body journey—tracking what happens from the first bite to the last burn.
 
-We used a building as the visual metaphor for the body, walking readers room by room as the spicy chicken wing made its way through. I loved that choice because it was playful, relatable, and instantly clear. It was science explained in a way you could almost feel as you scrolled.
-
-**Role:** Graphics editor and visual storytelling lead  
-**Highlights:**  
-- Developed building-as-body metaphor for complex physiological story  
-- Coordinated room-by-room visual narrative structure  
-- Balanced scientific accuracy with playful, relatable design  
-- Created immersive scroll-based experience for mobile-first audience  
+We used a building as the visual metaphor for the body, walking readers room by room as the spicy chicken wing made its way through. I loved that choice because it was playful, smart, and instantly clear. The building's systems mimic those of the human body in very relatable ways. It was science explained in a way you could almost feel as you scrolled.
 
 ### Visual journey  
 ![Detail 827](/img/optimized/medium/spicyDetail827AM.jpg)  

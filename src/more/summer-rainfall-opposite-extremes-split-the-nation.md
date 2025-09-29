@@ -1,7 +1,7 @@
 ---
 title: "Summer rainfall: opposite extremes split the nation"
 date: 2018-09-26
-hero: "img/optimized/thumb/2300-promo-summer-rain0925.jpg"
+hero: "img/optimized/thumb/summer-rainfall-opposite-extremes-split-the-nation-0ef64acb.jpg"
 link: "http://www.washingtonpost.com/graphics/2018/national/summer-rain/"
 tags: ["more"]
 layout: page

@@ -4,10 +4,94 @@ title: Tim Meko - Visual Journalist & Graphics Editor
 ---
 
 <section class="hero section">
+  <div class="hero-background">
+    <div class="scrolling-grid">
+      <!-- Row 1: Images 0-24% from thumb directory -->
+      <div class="scroll-row scroll-row--1">
+        {% set all_images = ["1731686560841.jpg", "2018-house-election-results-virginia-and-maryland-ed3b1aa1.jpg", "227WTMDU7NE6ZCCBSWBS4DQOQQ.jpg", "2300-Montecito_Bef_Aft-promo.jpg", "2300-doping-promo-2.png", "2300-foreignfighters-promo.jpg", "2300-rocket-promo.jpg", "2300-swing-state-margins-1.jpg", "2300-where-polls-were-wrong.jpg", "2300trumptweetpromo.jpg", "2300weather-promo.jpg", "2300who-is-fighting-isis-promo.jpg", "27-weeks-long-term-unemployment-in-america_13231831485_o.jpg", "2GRH7MZGGJFPFL3IQNA2CLLRJ4.jpg", "2RQ7GMCI55BH7PAB7AOHERH2HE.jpg", "2W3TZYRJAJGIBNMODJTL2FN2CI.jpg", "360-degree-drone-images-show-the-devastation-of-the-carr-fire-99b73869.jpg", "3H3YV7MT7FEFRM3HTXE7GAQSSI.jpg", "3JSKQKOPSJHMPE7P7U6VNQITAY.jpg", "4ZQHOBX5CBHTTJC66CA2UBWPJQ.jpg", "67U3JA7XRRCHBD3KGEIA3K7UVQ.jpg", "6AIALHU6KUI6RI65FIMZD4DV2U_size-normalized.jpg", "7YD6NT7Z2VGGBNKHPG64D2MBX4.jpg", "847485626.jpg", "ANOYXYUDBJC25FWYZUAZKI3274.jpg"] %}
+        <!-- Repeat this segment 8 times for seamless coverage -->
+        {% for repeat in range(1, 9) %}
+          {% for image in all_images %}
+            <div class="scroll-tile">
+              <img src="/img/optimized/thumb/{{ image }}" alt="Project thumbnail" loading="lazy">
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+      
+      <!-- Row 2: Images 25-49% from thumb directory -->
+      <div class="scroll-row scroll-row--2">
+        {% set all_images = ["AX5IYJN22RH63I4OZGIOICXCII_size-normalized.jpg", "B5KSYU4W25EHXM7P4WDVNHEMJU.jpg", "BOV3H5XI5QI6VP2EBUY4QWBYUU.jpg", "BorderlinePROMO.jpg", "CKIXBTAI7NAXFN5D23JI7NWXPM.jpg", "DP7LVHH73ZCZHBQTBWCWBDE6IU.jpg", "EHS2IOHS3JBOJJX5E7CW46EAKY.jpg", "ENHR5EAHCNHE5JJYJFKOVNSDEA.jpg", "FF3YRIBBJHZC6UFNSA3FQZAJ6Y_size-normalized.jpg", "FIRE.jpg", "FLOOD.jpg", "GEOLOGIC.jpg", "GK5EBTWAKMI6TKFQP3MKBVO4LU.jpg", "GZW3YZMKX5AVDLCKTDMN4HYV6I.jpg", "HUZMMAHQOVDC3LF6CKQ47NWDSM.jpg", "IPNWGSVANVBZDG2WFFCI7EVNKM.jpg", "J2VH3NMSSVFHROKKNFKRCO5VKE.jpg", "KTZGYCM6MBHJDP2WHJC2NP6C6A.jpg", "LIGHTNING.jpg", "LX7MICW5Y4I6ZPBVVEOQVFESHM_size-normalized.jpg", "MOSUL-ANIM-SOCIAL.jpg", "NKKSBY4RVNFBRILMTSZ3WGPNAY.jpg", "NX7VJNBMR4I6VP76AIGIRM7REA.jpg", "ODNMT4ECUMI6XPRCGLJTDWDVGA.jpg", "OEMVBNZ33ZGQDAO5S4ILC3DUMM.jpg"] %}
+        <!-- Repeat this segment 8 times for seamless coverage -->
+        {% for repeat in range(1, 9) %}
+          {% for image in all_images %}
+            <div class="scroll-tile">
+              <img src="/img/optimized/thumb/{{ image }}" alt="Project thumbnail" loading="lazy">
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+      
+      <!-- Row 3: Images 50-74% from thumb directory -->
+      <div class="scroll-row scroll-row--3">
+        {% set all_images = ["OFYJ3YVCMJCLVI2WYPXLQCXOME.jpg", "PFXBVBYG6BA6PLQJ2UPUTZPT7U.jpg", "R6DQLFPM2JDIVCQWKEZQK4IIPU.jpg", "RT474X2MH5A4RAGY72NPF7A3DY.jpg", "S6IOGFE4OQI6XMXVPUXQDATVBU.jpg", "SQSX3D3EO5G2HCHWIM7VHBQJMM.jpg", "SYBNXQWJVII6TFQVR4NDFFROAQ.jpg", "SZSMIXPU3JE67GHYABG4VT3I6M.jpg", "TEMPS.jpg", "UAKVR3JBAJFLRGZNRROHYU6W5U.jpg", "VZDXDDCB5ZEYZP3X4FOIOINYWQ.jpg", "WIND.jpg", "WK5NOP4B7FBFZGMW43NUMR7A6Y.jpg", "WYUL5YK6SFDA3J2RQ4S7FPKFPM.jpg", "X4BBHCPG6ZETHHQ7BNTK325PCA.jpg", "XHPHM2JQORGPPPXMPPU4M3IQJI.jpg", "XLUSUBLFWVAS7JPFKKZJE4HBYE.jpg", "YKLAGLRAZUI6VMBU3Z64FNIZTM.jpg", "YZQULNRHZVEALPP5JZ2E3DIIKU_size-normalized.jpg", "a-net-result-01479a06.jpg", "a-snapshot-of-ohios-cities_3786326724_o.jpg", "a-timeline-of-the-escalation-in-the-middle-east-3c23ad7c.jpg", "ardi_3990346735_o.jpg", "backyard-barbecue-history_4314470119_o.jpg", "bearsEarsMap.jpg"] %}
+        <!-- Repeat this segment 8 times for seamless coverage -->
+        {% for repeat in range(1, 9) %}
+          {% for image in all_images %}
+            <div class="scroll-tile">
+              <img src="/img/optimized/thumb/{{ image }}" alt="Project thumbnail" loading="lazy">
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+      
+      <!-- Row 4: Images 75-100% from thumb directory -->
+      <div class="scroll-row scroll-row--4">
+        {% set all_images = ["bearsEarsStill.jpg", "boom-with-a-view_3785525539_o.jpg", "border-construction-promo.jpg", "building-a-snow-fort_3786346248_o.jpg", "cave-dwellers_3786335734_o.jpg", "comfest_4314469833_o.jpg", "counting-down-to-zero_3785522615_o.jpg", "cracking-the-codes_8522010140_l.jpg", "dipping-low-washington-s-historical-winter-temperatures-0495d5bb.jpg", "downloaded-05edadbc4798.jpg", "downloaded-8b9c0ffb244c.jpg", "downloaded-96c94bede777.jpg", "downloaded-cefb78518026.jpg", "eclipse-scroll-promo3.jpg", "electric-1480-1440x890.jpg", "energy-in-virginia_6080829654_o.jpg", "everything-you-need-to-know-about-appointing-a-supreme-court-justice-947a6d94.jpg", "exploring-the-buckeye-state_3785534349_o.jpg", "feeling-the-sting_4314470041_o.jpg", "flora_3909049075_o.jpg", "following-the-donors-trust-money-trail_8592634082_o.jpg", "geology-of-natural-gas-resources_6106057777_o.jpg", "gerrymandering-social.jpg", "globe-heat.jpg", "happy-700-promo.jpg"] %}
+        <!-- Repeat this segment 8 times for seamless coverage -->
+        {% for repeat in range(1, 9) %}
+          {% for image in all_images %}
+            <div class="scroll-tile">
+              <img src="/img/optimized/thumb/{{ image }}" alt="Project thumbnail" loading="lazy">
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+      
+      <!-- Mobile-only rows for better vertical coverage -->
+      <div class="scroll-row scroll-row--5 mobile-only">
+        {% set all_images = ["here-s-how-california-s-worst-ever-wildfire-siege-occurred-d3460386.jpg", "here-s-how-the-seoul-halloween-crush-happened-53a918ca.jpg", "holtby-fluery-promo.jpg", "hoop-dreams_3785535077_o.jpg", "how-a-surge-of-coronavirus-patients-could-stretch-hospital-resources-in-your-area-70877213.jpg", "how-many-pain-pills-went-to-your-pharmacy-c4994767.jpg", "how-ted-cruz-held-off-beto-o-rourke-in-texas-1e71d89a.jpg", "how-tim-walz-performed-in-his-most-recent-election-5837da40.jpg", "huntington-park-an-insiders-view_3789165210_o.jpg", "image-1.jpg", "in-the-groove_4292431022_o.jpg", "increasing-door-security_4404171179_o.jpg", "infrastructure-grid-promo.jpg", "inside-a-scrubber_3785528835_o.jpg", "inside-the-conclave_8515024519_o.jpg", "irma-before-after-promo.jpg", "isis-at-the-crossroads-31ac5bf0.jpg", "lake-testing_3896989871_o.jpg", "lost-amphibians_5147018449_o.jpg", "map-of-death.jpg"] %}
+        <!-- Repeat this segment 8 times for seamless coverage -->
+        {% for repeat in range(1, 9) %}
+          {% for image in all_images %}
+            <div class="scroll-tile">
+              <img src="/img/optimized/thumb/{{ image }}" alt="Project thumbnail" loading="lazy">
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+      
+      <div class="scroll-row scroll-row--6 mobile-only">
+        {% set all_images = ["mapping-america-s-wicked-weather-and-deadly-disasters-d208479d.jpg", "mapping-americas-rental-housing-crisis_12938139454_o.jpg", "mapping-inequality-in-nyc_23666975871_o.jpg", "maps-show-where-coronavirus-started-and-why-officials-are-so-worried-4888955f.jpg", "maria-s-deluge-on-puerto-rico-187debe4.jpg", "ncaa-09-special-section_3786325520_o.jpg", "ncaa-special-section-front_4314469925_o.jpg", "nfl-draft-history-flat-promo.jpg", "nine-charts-about-wealth-inequality_23453639040_o.jpg", "northNACIS.jpg", "office-olympics-promo.jpg", "ohios-hoops-history_3789162740_o.jpg", "ohios-most-dangerous-bridges_3786330380_o.jpg", "oil-and-natural-gas-formation_5147614068_o.jpg", "old-bones_3786327194_o.jpg", "olympic-scale-promo.jpg", "on-the-brink-can-ohios-big-cities-be-saved_3789161438_o.jpg", "one-woman-s-fight-to-save-her-land-from-a-pipeline-that-tore-a-region-apart-48818f52.jpg", "promo.jpg", "promo-Carr360-0810.jpg"] %}
+        <!-- Repeat this segment 8 times for seamless coverage -->
+        {% for repeat in range(1, 9) %}
+          {% for image in all_images %}
+            <div class="scroll-tile">
+              <img src="/img/optimized/thumb/{{ image }}" alt="Project thumbnail" loading="lazy">
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+    
+    <!-- Semi-transparent overlay -->
+    <div class="hero-overlay"></div>
+  </div>
+  
   <div class="container">
     <div class="hero-content">
-      <h1>Maps and data visualization</h1>
-      <p class="hero-statement">I lead teams that explain the world's most important stories with maps, data visualization, and design.</p>
+      <h1>Tim Meko</h1>
+      <p class="hero-statement">I tell the world’s most important stories with maps, data visualization, and design—and I lead teams who do the same.</p>
     </div>
   </div>
 </section>

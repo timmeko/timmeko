@@ -23,7 +23,16 @@
           </svg>
         </a>
         
-        <nav class="main-nav">
+        <!-- Mobile nav toggle button -->
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <span class="hamburger-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        
+        <nav class="main-nav" id="main-nav">
           <a href="#featured">Featured</a>
           <a href="#insights">Insights</a>
           <a href="#editing">Edited</a>
@@ -33,6 +42,9 @@
       </div>
     </div>
   </header>
+  
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
 
   <main>
     
@@ -46,7 +58,7 @@
     
     <div class="page-content">
       <p><img src="/img/raw/FIRE.jpg" alt="Disaster fire map"></p>
-<p>A striking six-map series showing that no region of the U.S. is immune to natural disaster. The visuals highlight the national footprint of risk, grounded in rigorous data and minimal cartographic design.</p>
+<p>A striking map series showing that no region of the U.S. is immune to natural disaster. The visuals highlight the national footprint of risk, grounded in rigorous data and minimal cartographic design.</p>
 <p><strong>Role:</strong> Lead author, cartographer, and visual editor<br>
 <strong>Highlights:</strong></p>
 <ul>
@@ -76,6 +88,51 @@
   
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      
+      // Mobile Navigation Toggle
+      const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+      const mainNav = document.getElementById('main-nav');
+      const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+      
+      function toggleMobileNav() {
+        const isOpen = mainNav.classList.contains('mobile-nav-open');
+        
+        if (isOpen) {
+          // Close menu
+          mainNav.classList.remove('mobile-nav-open');
+          mobileNavOverlay.classList.remove('mobile-nav-open');
+          mobileNavToggle.classList.remove('active');
+          document.body.style.overflow = '';
+        } else {
+          // Open menu
+          mainNav.classList.add('mobile-nav-open');
+          mobileNavOverlay.classList.add('mobile-nav-open');
+          mobileNavToggle.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      }
+      
+      // Toggle on button click
+      mobileNavToggle.addEventListener('click', toggleMobileNav);
+      
+      // Close on overlay click
+      mobileNavOverlay.addEventListener('click', toggleMobileNav);
+      
+      // Close on nav link click
+      mainNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          if (mainNav.classList.contains('mobile-nav-open')) {
+            toggleMobileNav();
+          }
+        });
+      });
+      
+      // Close on escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mainNav.classList.contains('mobile-nav-open')) {
+          toggleMobileNav();
+        }
+      });
       
       // Dark Mode Toggle - Hidden Dev Feature
       const darkModeToggle = document.getElementById('dark-mode-toggle');
@@ -139,14 +196,23 @@
       // Initialize functionality
       setupFeaturedProjects();
       
-      // Sticky nav shrink functionality
+      // Scroll-triggered sticky nav functionality
       const header = document.querySelector('header');
       let lastScrollY = window.scrollY;
+      let heroHeight = window.innerHeight; // Full viewport height
       
       window.addEventListener('scroll', () => {
         const currentScrollY = window.scrollY;
         
-        if (currentScrollY > 60) { // Updated for smaller header
+        // Show header after scrolling past hero section (100vh)
+        if (currentScrollY > heroHeight * 0.8) { // Show when 80% through hero
+          header.classList.add('show');
+        } else {
+          header.classList.remove('show');
+        }
+        
+        // Add scrolled class for additional styling after more scrolling
+        if (currentScrollY > heroHeight + 100) {
           header.classList.add('scrolled');
         } else {
           header.classList.remove('scrolled');
@@ -155,14 +221,19 @@
         lastScrollY = currentScrollY;
       });
       
-      // Smooth scroll with header offset
+      // Update hero height on resize
+      window.addEventListener('resize', () => {
+        heroHeight = window.innerHeight;
+      });
+      
+      // Smooth scroll with dynamic header offset
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
           e.preventDefault();
           const targetId = this.getAttribute('href');
           const targetElement = document.querySelector(targetId);
           if (targetElement) {
-            const headerHeight = 60; // Reduced fixed header height + padding
+            const headerHeight = header.classList.contains('show') ? 80 : 0;
             const targetPosition = targetElement.offsetTop - headerHeight;
             window.scrollTo({
               top: targetPosition,

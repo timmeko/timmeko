@@ -1,9 +1,9 @@
 ---
 title: "North is a societal construct: when to break the rules with your map"
-date: "2023-10-01"
+date: "2018-10-01"
 type: "talk"
 hero: "/img/optimized/hero/northNACIS.jpg"
-external: "https://www.youtube.com/watch?v=ytOXCSgnvs4"
+external: "https://www.youtube.com/watch?v=55ka3-gr_NA"
 tags: ["insights"]
 ---
 
