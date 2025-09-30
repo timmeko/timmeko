@@ -98,10 +98,6 @@ title: Tim Meko - Visual Journalist & Graphics Editor
 
 <section id="featured" class="featured section">
   <div class="container">
-    <header class="section-header">
-      <h2>Featured stories</h2>
-    </header>
-    
     <div class="featured-list">
       {% for item in collections.flagship %}
         <article class="featured-project {{ 'featured-project--reverse' if loop.index0 % 2 == 1 }}" data-project-index="{{ loop.index0 }}">
@@ -130,15 +126,15 @@ title: Tim Meko - Visual Journalist & Graphics Editor
 <section id="insights" class="insights section">
   <div class="container">
     <header class="section-header">
-      <h2>Talks & Articles</h2>
+      <h2>Talks and articles</h2>
     </header>
     
     <div class="insights-list">
       {% for item in collections.insights %}
         <div class="insight-item">
           <h3 class="insight-title">
-            {% if item.data.link %}
-              <a href="{{ item.data.link }}" target="_blank" rel="noopener noreferrer">{{ item.data.title }}</a>
+            {% if item.data.external %}
+              <a href="{{ item.data.external }}" target="_blank" rel="noopener noreferrer">{{ item.data.title }}</a>
             {% else %}
               {{ item.data.title }}
             {% endif %}
@@ -222,7 +218,9 @@ title: Tim Meko - Visual Journalist & Graphics Editor
     
     <div class="about-content">
       <div class="about-text">
-        <p>Tim Meko is a graphics editor and visual journalist with nearly 20 years of experience turning complex ideas into clear stories. At The Washington Post he leads cross-disciplinary teams that create maps, data visualizations, and design for some of the newsroom's most impactful work. Previously he led teams at the Urban Institute and worked at the National Energy Education Development Project and the Columbus Dispatch.</p>
+        <p>Tim Meko is a graphics editor and visual journalist with nearly 20 years of experience turning complex ideas into clear stories.</p>
+        <p>At The Washington Post he leads cross-disciplinary teams that create maps, data visualizations, and design for some of the newsroom's most impactful work. The Post was named the World's Best Digital Design in 2024 by the Society for News Design (SND) — one of the highest honors in the visual media industry — and the graphics team has contributed to multiple Pulitzer-winning packages, alongside honors from the Information Is Beautiful Awards and others.</p>
+        <p>Previously he led teams at the Urban Institute and worked at the National Energy Education Development Project and the Columbus Dispatch.</p>
         
         <div class="about-links">
           <a href="https://linkedin.com/in/timmeko" target="_blank" rel="noopener noreferrer" class="about-link">LinkedIn</a>
@@ -230,10 +228,7 @@ title: Tim Meko - Visual Journalist & Graphics Editor
       </div>
       
       <div class="about-photo">
-        <!-- <img src="/img/headshot.jpg" alt="Tim Meko" class="headshot"> -->
-        <div class="headshot-placeholder">
-          <span>Headshot needed</span>
-        </div>
+        <img src="/assets/images/mekoHeadshot.jpg" alt="Tim Meko" class="headshot"> 
       </div>
     </div>
   </div>

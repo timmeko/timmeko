@@ -208,6 +208,10 @@ main {
   margin-bottom: var(--space-xl); /* Reduced from 2xl */
   background: transparent;
   scroll-margin-top: 80px; /* Adjust for when header appears */
+  position: relative !important;
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .section-header {
@@ -241,6 +245,29 @@ main {
   margin-top: var(--space-xl); /* Smaller top margin for first section after hero */
 }
 
+/* Specific section header positioning fixes */
+#featured .section-header,
+#insights .section-header,
+#editing .section-header,
+#more-work .section-header,
+#about-contact .section-header {
+  position: static !important;
+  display: block !important;
+  margin-top: var(--space-2xl) !important;
+  margin-bottom: var(--space-lg) !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: auto !important;
+}
+
+#featured .section-header {
+  margin-top: var(--space-xl) !important; /* First section gets less space */
+}
+
 /* Override any potential conflicting opacity rules */
 .section-header,
 .section-header *,
@@ -248,6 +275,29 @@ header.section-header,
 h2.section-header {
   opacity: 1 !important;
   visibility: visible !important;
+}
+
+/* Reset any inherited positioning or transform issues */
+.section-header {
+  position: relative !important;
+  transform: none !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  float: none !important;
+  clear: both !important;
+}
+
+.section-header h2 {
+  position: relative !important;
+  transform: none !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  float: none !important;
+  clear: both !important;
 }
 
 /* Card Styles - Editing section (2 cols mobile → 4 cols desktop)
@@ -444,7 +494,8 @@ h2.section-header {
 .hero h1 {
   font-family: var(--font-secondary);
   font-style: italic;
-  font-size: 2rem;
+  font-size: 3rem;
+  margin-top: 0px;
   margin-bottom: var(--space-md);
   color: var(--color-text);
   font-weight: 400;
@@ -612,12 +663,19 @@ img.more-image::before {
   margin-bottom: 100px;
   padding: 40px;
   border-radius: 0;
-  opacity: 0;
-  transform: translateY(60px);
+  /* Remove initial opacity/transform that might affect layout */
+  opacity: 1;
+  transform: translateY(0);
   transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
+  position: relative;
 }
 
-/* Animation trigger */
+/* Animation trigger - only apply transform/opacity when specifically animating in */
+.featured-project:not(.animate-in) {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
 .featured-project.animate-in {
   opacity: 1;
   transform: translateY(0);
@@ -1155,7 +1213,8 @@ footer {
   }
   
   .hero h1 {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
+    margin-top: 0px;
   }
   
   .hero-statement {
@@ -1258,7 +1317,8 @@ footer {
 
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-top: 0px;
   }
   
   .hero .hero-content {

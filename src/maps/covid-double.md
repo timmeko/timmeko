@@ -11,7 +11,7 @@ Two projects that shaped how The Post used visualization to capture the scale an
 
 ---
 
-![Covid A1 image](img/raw/EZEPNUbXgAIHIpO.jpg)
+
 
 ## 100,000 lives lost  
 **[View project →](https://www.washingtonpost.com/graphics/2020/national/100000-deaths-american-coronavirus/)**  
@@ -22,7 +22,7 @@ A moving visual tribute to the first 100,000 Americans lost to COVID-19. Each li
 **Highlights:**  
 - Defined the core metaphor: a memorial column of individual marks and directed the visual pacing of the digital presentation to evoke dignified reflection.  
 - Anchored a high-impact front-page centerpiece, with the visual at the heart of both print and digital storytelling  
-
+![Covid A1 image](/img/raw/EZEPNUbXgAIHIpO.jpg)
 
 ---
 
