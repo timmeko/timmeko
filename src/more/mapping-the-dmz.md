@@ -4,7 +4,7 @@ date: 2017-11-13
 hero: "img/optimized/thumb/promo-DMZKorea.jpg"
 link: "http://www.washingtonpost.com/graphics/2017/world/mapping-the-dmz/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 This thin ribbon of land separates North and South Korea, why should we care?

@@ -4,7 +4,7 @@ date: 2019-02-11
 hero: "img/optimized/thumb/border-construction-promo.jpg"
 link: "http://www.washingtonpost.com/graphics/2019/national/border-wall-construction/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 Efforts are already underway to shore up sections of the southern border in two Texas counties

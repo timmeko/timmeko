@@ -4,7 +4,7 @@ date: 2016-06-28
 hero: "img/optimized/thumb/2300-doping-promo.jpg"
 link: "http://www.washingtonpost.com/graphics/sports/olympics/doping/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 Why there will be drug cheats at Rio, and why some won't be caught. A look at doping in the Summer Olympics.

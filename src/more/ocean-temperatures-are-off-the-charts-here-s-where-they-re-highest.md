@@ -4,7 +4,7 @@ date: 2023-07-28
 hero: "img/optimized/thumb/ENHR5EAHCNHE5JJYJFKOVNSDEA.jpg"
 link: "https://www.washingtonpost.com/weather/2023/07/28/ocean-temperature-maps-heat-records/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 The North Atlantic has baked in record daily warmth every day since early March. The average sea surface temperature is as hot as it's ever been.

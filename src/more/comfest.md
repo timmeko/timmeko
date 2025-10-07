@@ -4,7 +4,7 @@ date: 2010-01-30
 hero: "img/optimized/thumb/comfest_4314469833_o.jpg"
 link: "https://flickr.com/photos/timmeko/4314469833/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 illustration for Columbus' annual 'community festival.' Everything was drawn in Adobe Illustrator.

@@ -4,7 +4,7 @@ date: 2018-11-07
 hero: "img/optimized/thumb/how-ted-cruz-held-off-beto-o-rourke-in-texas-1e71d89a.jpg"
 link: "http://www.washingtonpost.com/graphics/2018/politics/texas-election-results-analysis/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 The marquee senate race was one of several key victories for Republicans.

@@ -1,8 +1,18 @@
 ---
-layout: base
+layout: layouts/base
 title: Tim Meko - Visual Journalist & Graphics Editor
 ---
 
+<!-- A/B Test Controller - Hidden configuration element -->
+<div id="ab-test-controller" 
+     data-test-active="{{ abtest.heroTest.active }}"
+     data-split-ratio="{{ abtest.heroTest.splitRatio }}"
+     data-test-name="{{ abtest.heroTest.testName }}"
+     data-ga-tracking-id="{{ abtest.heroTest.gaTrackingId }}"
+     style="display: none;"></div>
+
+<!-- Variant A: Scrolling Hero (your existing design) -->
+<div class="ab-variant ab-variant-scrolling">
 <section class="hero section">
   <div class="hero-background">
     <div class="scrolling-grid">
@@ -95,6 +105,17 @@ title: Tim Meko - Visual Journalist & Graphics Editor
     </div>
   </div>
 </section>
+</div>
+
+<!-- Variant B: Traditional Hero -->
+<div class="ab-variant ab-variant-traditional">
+<section class="hero-traditional section">
+  <div class="container">
+    <h1>Tim Meko</h1>
+    <p class="hero-statement">I tell the world's most important stories with maps, data visualization, and design—and I lead teams who do the same.</p>
+  </div>
+</section>
+</div>
 
 <section id="featured" class="featured section">
   <div class="container">
@@ -144,7 +165,7 @@ title: Tim Meko - Visual Journalist & Graphics Editor
               <span class="insight-type">{{ item.data.type | capitalize }}</span>
             {% endif %}
             {% if item.data.date %}
-              <time class="insight-date">{{ item.data.date | dateFormat }}</time>
+              <time class="insight-date">{{ item.data.date | dateDisplay }}</time>
             {% endif %}
           </div>
         </div>

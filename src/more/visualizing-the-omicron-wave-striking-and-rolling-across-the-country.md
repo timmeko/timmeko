@@ -4,7 +4,7 @@ date: 2022-01-28
 hero: "img/optimized/thumb/visualizing-the-omicron-wave-striking-and-rolling-across-the-country-79164896.jpg"
 link: "https://www.washingtonpost.com/health/interactive/2022/omicron-wave-spread-maps/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 Covid's omicron wave blew case rates and hospitalization to new national records as it hit the Northeast in January, but it has already turned elsewhere. This story also brings data and maps to compare how omicron and delta waves spread across the country

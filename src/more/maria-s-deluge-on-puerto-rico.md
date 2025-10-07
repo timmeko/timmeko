@@ -4,7 +4,7 @@ date: 2017-09-21
 hero: "img/optimized/thumb/maria-s-deluge-on-puerto-rico-187debe4.jpg"
 link: "http://www.washingtonpost.com/graphics/2017/national/maria-puerto-rico/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 <!-- Content to be added -->

@@ -4,7 +4,7 @@ date: 2025-04-21
 hero: "img/optimized/thumb/UAKVR3JBAJFLRGZNRROHYU6W5U.jpg"
 link: "https://www.washingtonpost.com/world/2025/04/21/pope-francis-age/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 Pope Francis, the second-oldest pope in modern history, has died at age 88, leaving behind a legacy of change in the Catholic Church.

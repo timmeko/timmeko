@@ -4,7 +4,7 @@ date: 2012-04-27
 hero: "img/optimized/thumb/transylvania-university_6973063396_o.jpg"
 link: "https://flickr.com/photos/timmeko/6973063396/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 Campus map for Transylvania University.

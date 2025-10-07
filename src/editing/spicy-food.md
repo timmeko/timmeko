@@ -4,7 +4,7 @@ slug: "spicy-food"
 date: "2024-01-01"
 hero: "/img/optimized/hero/spicyDetail924AM.jpg"
 tags: ["editing"]
-layout: page
+layout: layouts/page
 ---
 
 ![Spicy food hero](/img/optimized/hero/spicyDetail924AM.jpg)

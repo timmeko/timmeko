@@ -4,7 +4,7 @@ date: 2024-08-06
 hero: "img/optimized/thumb/how-tim-walz-performed-in-his-most-recent-election-5837da40.jpg"
 link: "https://www.washingtonpost.com/politics/2024/08/02/harris-vp-candidates-elections/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 Tim Walz's election for governor largely mirrored Joe Biden's 2020 win in Minnesota.

@@ -4,7 +4,7 @@ date: 2017-05-18
 hero: "img/optimized/thumb/map-of-death.jpg"
 link: "http://www.washingtonpost.com/graphics/world/north-korea-targets/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 No one knows for sure what Kim Jong Un is thinking, but his propaganda provides clues to his nuclear strategy.

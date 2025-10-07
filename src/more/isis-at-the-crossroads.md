@@ -4,7 +4,7 @@ date: 2019-12-24
 hero: "img/optimized/thumb/isis-at-the-crossroads-31ac5bf0.jpg"
 link: "https://www.washingtonpost.com/graphics/2019/world/whats-next-isis/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 Across many parts of the vast territory it once controlled, the Islamic State is scrambling to reassert its presence. The coming months could determine whether it is fatally crippled or poised for a comeback.

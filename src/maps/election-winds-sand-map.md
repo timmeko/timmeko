@@ -4,8 +4,9 @@ date: 2024-11-08
 hero: "/img/raw/XLUSUBLFWVAS7JPFKKZJE4HBYE.jpg"
 homepage_description: "Innovative visualizations for two landmark elections, including the viral 'sand map' that showed every vote as individual grains and wind-pattern maps revealing political currents across America."
 tags: [maps, flagship]
-layout: page
+layout: layouts/page
 ---
+# Visualizing American democracy
 
 ![Sand map](/img/raw/XLUSUBLFWVAS7JPFKKZJE4HBYE.jpg)
 ## 2024: Every vote, visualized  
@@ -27,9 +28,11 @@ A cinematic, three-dimensional map where over 144 million votes become grains of
 
 ---
 
-![Election winds](/img/raw/R6DQLFPM2JDIVCQWKEZQK4IIPU.png)
 
 ## 2020: How political winds shifted across America  
+
+![Election winds](/img/raw/R6DQLFPM2JDIVCQWKEZQK4IIPU.png)
+
 **[View project →](https://www.washingtonpost.com/graphics/2020/elections/electorate-changes-2016-election-vs-2020/)**  
 *Published: November 2020 | The Washington Post*
 

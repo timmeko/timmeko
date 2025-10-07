@@ -1,0 +1,9 @@
+{
+  "heroTest": {
+    "active": true,
+    "splitRatio": 0.5,
+    "testName": "hero-design-2025",
+    "variants": ["scrolling", "traditional"],
+    "gaTrackingId": "G-RFFKWQDXGN"
+  }
+}

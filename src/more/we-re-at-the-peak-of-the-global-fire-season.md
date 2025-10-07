@@ -4,7 +4,7 @@ date: 2019-08-30
 hero: "img/optimized/thumb/we-re-at-the-peak-of-the-global-fire-season-5decc9ff.jpg"
 link: "https://www.washingtonpost.com/climate-environment/2019/08/30/were-peak-global-fire-season/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 According to an analysis of NASA data, the global fire season peaks every year in July and August.

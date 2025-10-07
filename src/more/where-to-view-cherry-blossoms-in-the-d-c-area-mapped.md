@@ -4,7 +4,7 @@ date: 2025-03-13
 hero: "img/optimized/thumb/KTZGYCM6MBHJDP2WHJC2NP6C6A.jpg"
 link: "https://www.washingtonpost.com/dc-md-va/2025/cherry-blossom-map-dc-region/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 These maps show some of the best places to see cherry blossoms in Washington D.C., Maryland and Virginia.

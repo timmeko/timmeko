@@ -4,7 +4,7 @@ date: 2023-02-03
 hero: "img/optimized/thumb/4ZQHOBX5CBHTTJC66CA2UBWPJQ.jpg"
 link: "https://www.washingtonpost.com/weather/2023/02/03/us-snowfall-extremes-map/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 In this odd winter for U.S. snowfall, western peaks are loaded but New York and D.C. are nearly bare.

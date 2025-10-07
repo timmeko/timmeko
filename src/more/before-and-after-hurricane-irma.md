@@ -4,7 +4,7 @@ date: 2017-09-11
 hero: "img/optimized/thumb/irma-before-after-promo.jpg"
 link: "http://www.washingtonpost.com/graphics/2017/national/hurricane-irma-before-after/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 Now that storm clouds are clearing, satellites are able to capture the devastation of Hurricane Irma.

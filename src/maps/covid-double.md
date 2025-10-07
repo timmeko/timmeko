@@ -4,8 +4,9 @@ date: 2021-01-15
 hero: "/img/raw/VZDXDDCB5ZEYZP3X4FOIOINYWQ.jpg"
 homepage_description: "Two of the pandemic's most powerful visual stories - from the stark memorial marking 100,000 deaths to comprehensive year-in-review mapping that helped readers understand the pandemic's scope."
 tags: [maps, flagship]
-layout: page
+layout: layouts/page
 ---
+# Visualizing the COVID crisis
 
 Two projects that shaped how The Post used visualization to capture the scale and complexity of the COVID crisis.
 
@@ -14,6 +15,9 @@ Two projects that shaped how The Post used visualization to capture the scale an
 
 
 ## 100,000 lives lost  
+
+![Covid A1 image](/img/raw/EZEPNUbXgAIHIpO.jpg)
+
 **[View project →](https://www.washingtonpost.com/graphics/2020/national/100000-deaths-american-coronavirus/)**  
 *Published: May 2020 | The Washington Post*
 
@@ -22,13 +26,14 @@ A moving visual tribute to the first 100,000 Americans lost to COVID-19. Each li
 **Highlights:**  
 - Defined the core metaphor: a memorial column of individual marks and directed the visual pacing of the digital presentation to evoke dignified reflection.  
 - Anchored a high-impact front-page centerpiece, with the visual at the heart of both print and digital storytelling  
-![Covid A1 image](/img/raw/EZEPNUbXgAIHIpO.jpg)
 
 ---
 
-![Covid timeline](/img/raw/VZDXDDCB5ZEYZP3X4FOIOINYWQ.jpg)
 
 ## A year of COVID  
+
+![Covid timeline](/img/raw/VZDXDDCB5ZEYZP3X4FOIOINYWQ.jpg)
+
 **[View project →](https://www.washingtonpost.com/nation/interactive/2021/coronavirus-timeline/)**  
 *Published: January 2021 | The Washington Post*
 

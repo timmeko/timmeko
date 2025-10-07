@@ -4,7 +4,7 @@ date: 2021-04-14
 hero: "img/optimized/thumb/satellite-images-show-st-vincent-blanketed-with-volcanic-ash-as-eruptions-continue-1dc71b1a.jpg"
 link: "https://www.washingtonpost.com/world/2021/04/14/st-vincent-volcano-eruption-images/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 Images reveal ash covering much of the island.

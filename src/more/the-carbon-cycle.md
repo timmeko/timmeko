@@ -4,7 +4,7 @@ date: 2011-09-02
 hero: "img/optimized/thumb/the-carbon-cycle_6106058409_o.jpg"
 link: "https://flickr.com/photos/timmeko/6106058409/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 <!-- Content to be added -->

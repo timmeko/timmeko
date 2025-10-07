@@ -4,7 +4,7 @@ date: 2010-01-21
 hero: "img/optimized/thumb/in-the-groove_4292431022_o.jpg"
 link: "https://flickr.com/photos/timmeko/4292431022/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 The PGA is enacting new rules that change the way the grooves on the club face can be shaped.

@@ -4,7 +4,7 @@ date: 2017-12-07
 hero: "img/optimized/thumb/utah-promo-static.jpg"
 link: "http://www.washingtonpost.com/graphics/2017/national/utah-monuments/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 President Trump drastically reduced the size of two national monuments in Utah, potentially opening about 2 million acres of public land to mineral extraction and other activities in a state in which about 65 percent of all land is federally owned.

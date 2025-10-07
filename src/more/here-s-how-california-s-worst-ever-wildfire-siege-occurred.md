@@ -4,7 +4,7 @@ date: 2020-08-28
 hero: "img/optimized/thumb/here-s-how-california-s-worst-ever-wildfire-siege-occurred-d3460386.jpg"
 link: "https://www.washingtonpost.com/weather/2020/08/28/heres-how-californias-worst-ever-wildfire-siege-occurred/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 The recent outbreak of fires in California was caused by an extraordinary lightning barrage that hit when the state was unusually hot and dry.

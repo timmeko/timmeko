@@ -4,7 +4,7 @@ date: 2016-12-01
 hero: "img/optimized/thumb/infrastructure-grid-promo.jpg"
 link: "http://www.washingtonpost.com/graphics/national/maps-of-american-infrastrucure/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 A look at the United States's bridges, electrical grid, pipelines, railroads, airports and waterways.

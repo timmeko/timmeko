@@ -4,7 +4,7 @@ slug: "recycling-quiz"
 date: "2023-01-01"
 hero: "/img/optimized/hero/recyclingPROMO.jpg"
 tags: ["editing"]
-layout: page
+layout: layouts/page
 ---
 
 ![Recycling quiz promo](/img/optimized/hero/recyclingPROMO.jpg)

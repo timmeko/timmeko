@@ -4,7 +4,7 @@ slug: "bears-ears"
 date: "2019-01-01"
 hero: "/img/optimized/hero/bearsEarsStill.jpg"
 tags: ["editing"]
-layout: page
+layout: layouts/page
 ---
 
 ![Bears Ears hero](/img/optimized/hero/bearsEarsStill.jpg)

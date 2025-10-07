@@ -4,7 +4,7 @@ date: 2009-08-03
 hero: "img/optimized/thumb/stag-moose_3786329180_o.jpg"
 link: "https://flickr.com/photos/timmeko/3786329180/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 <!-- Content to be added -->

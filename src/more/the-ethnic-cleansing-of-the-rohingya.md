@@ -4,7 +4,7 @@ date: 2017-09-18
 hero: "img/optimized/thumb/the-ethnic-cleansing-of-the-rohingya-3db1c677.jpg"
 link: "http://www.washingtonpost.com/graphics/2017/world/rohingya/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 Scorched earth. Harrowing escapes. Half a million on the move.

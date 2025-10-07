@@ -1,0 +1,102 @@
+/* A/B TEST STYLES - Non-destructive additions only */
+
+/* Hide all variants by default */
+.ab-variant {
+  display: none !important;
+}
+
+/* Show appropriate variant based on body class */
+.ab-variant-scrolling .ab-variant.ab-variant-scrolling {
+  display: block !important;
+}
+
+.ab-variant-traditional .ab-variant.ab-variant-traditional {
+  display: block !important;
+}
+
+/* TRADITIONAL HERO VARIANT STYLES */
+.hero-traditional {
+  min-height: 60vh;
+  background: url('/assets/images/covidyear-0221.jpg') center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 6rem 2rem 4rem; /* Extra top padding for fixed header */
+}
+
+/* Overlay to fade the background image */
+.hero-traditional::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-traditional .container {
+  max-width: 600px;
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-traditional h1 {
+  font-size: clamp(2.2rem, 4vw, 3.5rem); /* Same as main H1 */
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.hero-traditional .hero-statement {
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* A/B TEST CONTROLLER (HIDDEN) */
+#ab-test-controller {
+  display: none !important;
+}
+
+/* TRADITIONAL VARIANT: ALWAYS SHOW HEADER */
+.ab-variant-traditional header {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.ab-variant-traditional header.show {
+  transform: translateY(0) !important;
+}
+
+/* RESPONSIVE DESIGN FOR TRADITIONAL HERO */
+@media (max-width: 768px) {
+  .hero-traditional {
+    min-height: 50vh;
+    padding: 5rem 1rem 3rem; /* Adjusted for header on mobile */
+  }
+  
+  .hero-traditional .container {
+    padding: 2rem 1.5rem;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-traditional .container {
+    padding: 1.5rem 1rem;
+  }
+}

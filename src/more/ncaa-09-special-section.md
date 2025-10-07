@@ -4,7 +4,7 @@ date: 2009-08-03
 hero: "img/optimized/thumb/ncaa-09-special-section_3786325520_o.jpg"
 link: "https://flickr.com/photos/timmeko/3786325520/"
 tags: ["more"]
-layout: page
+layout: layouts/page
 ---
 
 2009 NCAA basketball tournament special section cover. This is based on a design I did as a student at Ohio University.

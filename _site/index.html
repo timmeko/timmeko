@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tim Meko - Visual Journalist &amp; Graphics Editor - Tim Meko</title>
   <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/ab-test.css">
   <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
@@ -48,6 +49,16 @@
 
   <main>
     
+<!-- A/B Test Controller - Hidden configuration element -->
+<div id="ab-test-controller" 
+     data-test-active="true"
+     data-split-ratio="0.5"
+     data-test-name="hero-design-2025"
+     data-ga-tracking-id="G-RFFKWQDXGN"
+     style="display: none;"></div>
+
+<!-- Variant A: Scrolling Hero (your existing design) -->
+<div class="ab-variant ab-variant-scrolling">
 <section class="hero section">
   <div class="hero-background">
     <div class="scrolling-grid">
@@ -4680,6 +4691,17 @@
     </div>
   </div>
 </section>
+</div>
+
+<!-- Variant B: Traditional Hero -->
+<div class="ab-variant ab-variant-traditional">
+<section class="hero-traditional section">
+  <div class="container">
+    <h1>Tim Meko</h1>
+    <p class="hero-statement">I tell the world's most important stories with maps, data visualization, and design—and I lead teams who do the same.</p>
+  </div>
+</section>
+</div>
 
 <section id="featured" class="featured section">
   <div class="container">
@@ -4687,81 +4709,24 @@
       
         <article class="featured-project " data-project-index="0">
           <div class="featured-project__media">
-            <a href="/maps/3dmapping/" class="featured-project__media-link">
+            <a href="/maps/infrastructure/" class="featured-project__media-link">
               <video class="featured-project__video" muted loop playsinline preload="metadata">
-                <source src="/assets/videos/3dmapping.mp4" type="video/mp4">
+                <source src="/assets/videos/infrastructure.mp4" type="video/mp4">
               </video>
             </a>
           </div>
           
           <div class="featured-project__content">
-            <a href="/maps/3dmapping/" class="featured-project__content-link">
-              <h3 class="featured-project__title">Experiments with mapping in Blender</h3>
+            <a href="/maps/infrastructure/" class="featured-project__content-link">
+              <h3 class="featured-project__title">Anatomy of America&#39;s infrastructure</h3>
               <p class="featured-project__description">
-                Dynamic scenes that establish place and use animation to explain.
+                A deep dive into America&#39;s infrastructure, creating six distinct map perspectives that made complex infrastructure data accessible to millions of readers.
               </p>
             </a>
           </div>
         </article>
       
         <article class="featured-project featured-project--reverse" data-project-index="1">
-          <div class="featured-project__media">
-            <a href="/maps/election-winds-sand-map/" class="featured-project__media-link">
-              <video class="featured-project__video" muted loop playsinline preload="metadata">
-                <source src="/assets/videos/election-winds-sand-map.mp4" type="video/mp4">
-              </video>
-            </a>
-          </div>
-          
-          <div class="featured-project__content">
-            <a href="/maps/election-winds-sand-map/" class="featured-project__content-link">
-              <h3 class="featured-project__title">Visualizing American democracy</h3>
-              <p class="featured-project__description">
-                Innovative visualizations for two landmark elections, including the viral &#39;sand map&#39; that showed every vote as individual grains and wind-pattern maps revealing political currents across America.
-              </p>
-            </a>
-          </div>
-        </article>
-      
-        <article class="featured-project " data-project-index="2">
-          <div class="featured-project__media">
-            <a href="/maps/covid-double/" class="featured-project__media-link">
-              <video class="featured-project__video" muted loop playsinline preload="metadata">
-                <source src="/assets/videos/covid-double.mp4" type="video/mp4">
-              </video>
-            </a>
-          </div>
-          
-          <div class="featured-project__content">
-            <a href="/maps/covid-double/" class="featured-project__content-link">
-              <h3 class="featured-project__title">Visualizing the COVID pandemic</h3>
-              <p class="featured-project__description">
-                Two of the pandemic&#39;s most powerful visual stories - from the stark memorial marking 100,000 deaths to comprehensive year-in-review mapping that helped readers understand the pandemic&#39;s scope.
-              </p>
-            </a>
-          </div>
-        </article>
-      
-        <article class="featured-project featured-project--reverse" data-project-index="3">
-          <div class="featured-project__media">
-            <a href="/maps/wicked-weather/" class="featured-project__media-link">
-              <video class="featured-project__video" muted loop playsinline preload="metadata">
-                <source src="/assets/videos/wicked-weather.mp4" type="video/mp4">
-              </video>
-            </a>
-          </div>
-          
-          <div class="featured-project__content">
-            <a href="/maps/wicked-weather/" class="featured-project__content-link">
-              <h3 class="featured-project__title">Mapping America&#39;s natural disaster risks</h3>
-              <p class="featured-project__description">
-                A visual investigation into America&#39;s weather disasters, exploring how every part of the country faces unique risks.
-              </p>
-            </a>
-          </div>
-        </article>
-      
-        <article class="featured-project " data-project-index="4">
           <div class="featured-project__media">
             <a href="/maps/north-korea-targets/" class="featured-project__media-link">
               <video class="featured-project__video" muted loop playsinline preload="metadata">
@@ -4780,20 +4745,77 @@
           </div>
         </article>
       
-        <article class="featured-project featured-project--reverse" data-project-index="5">
+        <article class="featured-project " data-project-index="2">
           <div class="featured-project__media">
-            <a href="/maps/infrastructure/" class="featured-project__media-link">
+            <a href="/maps/wicked-weather/" class="featured-project__media-link">
               <video class="featured-project__video" muted loop playsinline preload="metadata">
-                <source src="/assets/videos/infrastructure.mp4" type="video/mp4">
+                <source src="/assets/videos/wicked-weather.mp4" type="video/mp4">
               </video>
             </a>
           </div>
           
           <div class="featured-project__content">
-            <a href="/maps/infrastructure/" class="featured-project__content-link">
-              <h3 class="featured-project__title">Anatomy of America&#39;s infrastructure</h3>
+            <a href="/maps/wicked-weather/" class="featured-project__content-link">
+              <h3 class="featured-project__title">Mapping America&#39;s natural disaster risks</h3>
               <p class="featured-project__description">
-                A deep dive into America&#39;s infrastructure, creating six distinct map perspectives that made complex infrastructure data accessible to millions of readers.
+                A visual investigation into America&#39;s weather disasters, exploring how every part of the country faces unique risks.
+              </p>
+            </a>
+          </div>
+        </article>
+      
+        <article class="featured-project featured-project--reverse" data-project-index="3">
+          <div class="featured-project__media">
+            <a href="/maps/covid-double/" class="featured-project__media-link">
+              <video class="featured-project__video" muted loop playsinline preload="metadata">
+                <source src="/assets/videos/covid-double.mp4" type="video/mp4">
+              </video>
+            </a>
+          </div>
+          
+          <div class="featured-project__content">
+            <a href="/maps/covid-double/" class="featured-project__content-link">
+              <h3 class="featured-project__title">Visualizing the COVID pandemic</h3>
+              <p class="featured-project__description">
+                Two of the pandemic&#39;s most powerful visual stories - from the stark memorial marking 100,000 deaths to comprehensive year-in-review mapping that helped readers understand the pandemic&#39;s scope.
+              </p>
+            </a>
+          </div>
+        </article>
+      
+        <article class="featured-project " data-project-index="4">
+          <div class="featured-project__media">
+            <a href="/maps/election-winds-sand-map/" class="featured-project__media-link">
+              <video class="featured-project__video" muted loop playsinline preload="metadata">
+                <source src="/assets/videos/election-winds-sand-map.mp4" type="video/mp4">
+              </video>
+            </a>
+          </div>
+          
+          <div class="featured-project__content">
+            <a href="/maps/election-winds-sand-map/" class="featured-project__content-link">
+              <h3 class="featured-project__title">Visualizing American democracy</h3>
+              <p class="featured-project__description">
+                Innovative visualizations for two landmark elections, including the viral &#39;sand map&#39; that showed every vote as individual grains and wind-pattern maps revealing political currents across America.
+              </p>
+            </a>
+          </div>
+        </article>
+      
+        <article class="featured-project featured-project--reverse" data-project-index="5">
+          <div class="featured-project__media">
+            <a href="/maps/3dmapping/" class="featured-project__media-link">
+              <video class="featured-project__video" muted loop playsinline preload="metadata">
+                <source src="/assets/videos/3dmapping.mp4" type="video/mp4">
+              </video>
+            </a>
+          </div>
+          
+          <div class="featured-project__content">
+            <a href="/maps/3dmapping/" class="featured-project__content-link">
+              <h3 class="featured-project__title">Experiments with mapping in Blender</h3>
+              <p class="featured-project__description">
+                Dynamic scenes that establish place and use animation to explain.
               </p>
             </a>
           </div>
@@ -4814,39 +4836,7 @@
         <div class="insight-item">
           <h3 class="insight-title">
             
-              <a href="https://www.linkedin.com/pulse/fast-flexible-pipeline-3d-globe-maps-tim-meko-cicme/" target="_blank" rel="noopener noreferrer">Fast, flexible pipeline for 3D globe maps</a>
-            
-          </h3>
-          <div class="insight-meta">
-            
-              <span class="insight-type">Article</span>
-            
-            
-              <time class="insight-date">June 2025</time>
-            
-          </div>
-        </div>
-      
-        <div class="insight-item">
-          <h3 class="insight-title">
-            
-              <a href="https://www.linkedin.com/pulse/enter-sand-map-how-we-visualized-every-vote-grains-tim-meko-ba3ge/" target="_blank" rel="noopener noreferrer">Every vote, visualized as a grain of sand</a>
-            
-          </h3>
-          <div class="insight-meta">
-            
-              <span class="insight-type">Article</span>
-            
-            
-              <time class="insight-date">November 2024</time>
-            
-          </div>
-        </div>
-      
-        <div class="insight-item">
-          <h3 class="insight-title">
-            
-              <a href="https://www.youtube.com/watch?v=cvhZRUhJE3c" target="_blank" rel="noopener noreferrer">How political winds changed the U.S.</a>
+              <a href="https://www.youtube.com/watch?v=55ka3-gr_NA" target="_blank" rel="noopener noreferrer">North is a societal construct: when to break the rules with your map</a>
             
           </h3>
           <div class="insight-meta">
@@ -4854,7 +4844,7 @@
               <span class="insight-type">Talk</span>
             
             
-              <time class="insight-date">October 2021</time>
+              <time class="insight-date">Invalid DateTime</time>
             
           </div>
         </div>
@@ -4870,7 +4860,7 @@
               <span class="insight-type">Talk</span>
             
             
-              <time class="insight-date">October 2019</time>
+              <time class="insight-date">Invalid DateTime</time>
             
           </div>
         </div>
@@ -4878,7 +4868,7 @@
         <div class="insight-item">
           <h3 class="insight-title">
             
-              <a href="https://www.youtube.com/watch?v=55ka3-gr_NA" target="_blank" rel="noopener noreferrer">North is a societal construct: when to break the rules with your map</a>
+              <a href="https://www.youtube.com/watch?v=cvhZRUhJE3c" target="_blank" rel="noopener noreferrer">How political winds changed the U.S.</a>
             
           </h3>
           <div class="insight-meta">
@@ -4886,7 +4876,39 @@
               <span class="insight-type">Talk</span>
             
             
-              <time class="insight-date">October 2018</time>
+              <time class="insight-date">Invalid DateTime</time>
+            
+          </div>
+        </div>
+      
+        <div class="insight-item">
+          <h3 class="insight-title">
+            
+              <a href="https://www.linkedin.com/pulse/enter-sand-map-how-we-visualized-every-vote-grains-tim-meko-ba3ge/" target="_blank" rel="noopener noreferrer">Every vote, visualized as a grain of sand</a>
+            
+          </h3>
+          <div class="insight-meta">
+            
+              <span class="insight-type">Article</span>
+            
+            
+              <time class="insight-date">Invalid DateTime</time>
+            
+          </div>
+        </div>
+      
+        <div class="insight-item">
+          <h3 class="insight-title">
+            
+              <a href="https://www.linkedin.com/pulse/fast-flexible-pipeline-3d-globe-maps-tim-meko-cicme/" target="_blank" rel="noopener noreferrer">Fast, flexible pipeline for 3D globe maps</a>
+            
+          </h3>
+          <div class="insight-meta">
+            
+              <span class="insight-type">Article</span>
+            
+            
+              <time class="insight-date">Invalid DateTime</time>
             
           </div>
         </div>
@@ -4904,23 +4926,12 @@
     <div class="cards-grid">
       
         <article class="card">
-          <a href="/editing/spicy-food/"  class="card-link">
+          <a href="/editing/borderline/"  class="card-link">
             
-              <img src="/img/optimized/hero/spicyDetail924AM.jpg" alt="Love spicy food? Hate it? Watch a hot wing’s trip through your body." class="card-image">
-            
-            <div class="card-content">
-              <h3 class="card-title">Love spicy food? Hate it? Watch a hot wing’s trip through your body.</h3>
-            </div>
-          </a>
-        </article>
-      
-        <article class="card">
-          <a href="/editing/recycling-quiz/"  class="card-link">
-            
-              <img src="/img/optimized/hero/recyclingPROMO.jpg" alt="You’re probably recycling wrong. This quiz will help you sort it out." class="card-image">
+              <img src="/img/optimized/hero/BorderlinePROMO.jpg" alt="Borderline: Navigating the invisible boundary and physical barriers that define the U.S.-Mexico border" class="card-image">
             
             <div class="card-content">
-              <h3 class="card-title">You’re probably recycling wrong. This quiz will help you sort it out.</h3>
+              <h3 class="card-title">Borderline: Navigating the invisible boundary and physical barriers that define the U.S.-Mexico border</h3>
             </div>
           </a>
         </article>
@@ -4937,12 +4948,23 @@
         </article>
       
         <article class="card">
-          <a href="/editing/borderline/"  class="card-link">
+          <a href="/editing/recycling-quiz/"  class="card-link">
             
-              <img src="/img/optimized/hero/BorderlinePROMO.jpg" alt="Borderline: Navigating the invisible boundary and physical barriers that define the U.S.-Mexico border" class="card-image">
+              <img src="/img/optimized/hero/recyclingPROMO.jpg" alt="You’re probably recycling wrong. This quiz will help you sort it out." class="card-image">
             
             <div class="card-content">
-              <h3 class="card-title">Borderline: Navigating the invisible boundary and physical barriers that define the U.S.-Mexico border</h3>
+              <h3 class="card-title">You’re probably recycling wrong. This quiz will help you sort it out.</h3>
+            </div>
+          </a>
+        </article>
+      
+        <article class="card">
+          <a href="/editing/spicy-food/"  class="card-link">
+            
+              <img src="/img/optimized/hero/spicyDetail924AM.jpg" alt="Love spicy food? Hate it? Watch a hot wing’s trip through your body." class="card-image">
+            
+            <div class="card-content">
+              <h3 class="card-title">Love spicy food? Hate it? Watch a hot wing’s trip through your body.</h3>
             </div>
           </a>
         </article>
@@ -7147,5 +7169,8 @@
       }
     });
   </script>
+  
+  <!-- A/B Test JavaScript -->
+  <script src="/assets/js/ab-test.js"></script>
 </body>
 </html>
