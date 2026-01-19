@@ -4,7 +4,7 @@ date: 2009-08-03
 hero: "img/optimized/thumb/old-bones_3786327194_o.jpg"
 link: "https://flickr.com/photos/timmeko/3786327194/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Mastodon bones were found in western Ohio. Which ones they recovered.

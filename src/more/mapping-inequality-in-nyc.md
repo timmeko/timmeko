@@ -4,7 +4,7 @@ date: 2015-12-14
 hero: "img/optimized/thumb/mapping-inequality-in-nyc_23666975871_o.jpg"
 link: "https://flickr.com/photos/timmeko/23666975871/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 www.urban.org/interactive-map-where-are-unbanked-and-unde...

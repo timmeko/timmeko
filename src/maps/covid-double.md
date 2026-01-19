@@ -4,7 +4,7 @@ date: 2021-01-15
 hero: "/img/raw/VZDXDDCB5ZEYZP3X4FOIOINYWQ.jpg"
 homepage_description: "Two of the pandemic's most powerful visual stories - from the stark memorial marking 100,000 deaths to comprehensive year-in-review mapping that helped readers understand the pandemic's scope."
 tags: [maps, flagship]
-layout: layouts/page
+layout: page
 ---
 # Visualizing the COVID crisis
 

@@ -4,7 +4,7 @@ date: 2009-08-03
 hero: "img/optimized/thumb/ohios-most-dangerous-bridges_3786330380_o.jpg"
 link: "https://flickr.com/photos/timmeko/3786330380/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Ohio's most dangerous bridges. I also photographed the inset photo, which is a bridge in my hometown of Russell, Kentucky.

@@ -1,0 +1,127 @@
+TIM MEKO - VISUAL STORYTELLER, CARTOGRAPHER & LEADER
+CONTEXT PROFILE FOR AI ASSISTANTS
+
+---
+CONTACT & LINKS
+---
+Email: timmeko@gmail.com
+Location: Falls Church, VA
+LinkedIn: https://linkedin.com/in/timmeko
+Portfolio Website: https://timmeko.com
+
+---
+PROFESSIONAL SUMMARY
+---
+Senior visual and editorial leader with nearly 20 years of experience translating complex data, spatial analysis, and reporting into visual presentations readers trust. Currently leading cross-disciplinary teams at The Washington Post that create maps, data visualizations, and design for some of the newsroom's most impactful work.
+
+Known for judgment under pressure, editorial framing, and setting visual standards in high-stakes environments. Operates across strategy, execution, and systems, remaining hands-on when complexity or risk is high. A people-first leader who helps multidisciplinary teams thrive.
+
+---
+LEADERSHIP PHILOSOPHY & IMPACT
+---
+*   **People-First Leadership**: Prioritizes the growth and well-being of multidisciplinary teams (cartographers, designers, developers), fostering an environment where diverse skills converge to solve complex storytelling challenges.
+*   **Systems Thinking**: profound interest in building the "systems that enable" visual stories – from toolchain design to workflow optimization – allowing teams to scale high-quality output.
+*   **High-Stakes Judgment**: Routinely brought in to manage visual reporting on stories involving significant legal, ethical, or reputational risk (e.g.,conflict reporting, election integrity, forensic analysis).
+*   **Cross-Disciplinary Bridge**: Serves as a translator and connector between traditional text editors and visual reporters, ensuring seamless integration of visual evidence into the broader editorial narrative.
+*   **Recognition**: Led teams contributing to multiple Pulitzer-winning packages. The Washington Post was named the World's Best Digital Design in 2024 by the Society for News Design (SND) under his visual leadership.
+
+---
+VISUAL STYLE & TECHNICAL ANALYSIS
+---
+A visual analysis of Tim Meko's portfolio reveals a distinct, consistent aesthetic and technical approach characterized by:
+
+1.  **Forensic Cartography**:
+    *   **Satellite Imagery**: Heavy utilization of high-resolution satellite imagery as a base layer for storytelling.
+    *   **Annotation**: Use of clear, high-contrast labeling directly on imagery to guide the reader's eye to evidence.
+    *   **Change Detection**: Extensive use of before/after comparisons and time-series mapping to show progression/regression of events.
+
+2.  **Granular Data Visualization**:
+    *   **Particle/Dot Density**: Capability to visualize individual data points at massive scale (e.g., representing 107,000 individual votes as grains of sand).
+    *   **Clean Aesthetic**: Data visualizations feature minimal chart junk, utilizing white or neutral backgrounds to let data patterns stand out. Colors are used purposefully for semantic meaning.
+
+3.  **Visual Reporting**:
+    *   **Integration**: Maps and charts are central reporting assets that carry the narrative weight, not just illustrations.
+    *   **Clarity**: A focus on "explaining" complex systems through clear diagrams and spatial layouts.
+
+---
+TOOLS & TECHNOLOGIES
+---
+*   **AI & Automation**: Research agents, n8n workflow automation, Claude MCP & tool creation.
+*   **Cartography & GIS**: QGIS, ArcGIS, GDAL, Command-line mapping tools.
+*   **Design & Web**: Adobe Illustrator, Photoshop, HTML, CSS.
+*   **Data Analysis**: Python, R, Excel/Google Sheets.
+
+---
+SELECTED WRITING & TALKS
+---
+*   **"Every vote, visualized as a grain of sand"** (Article, 2024): Exploring the visualization of granular election data.
+*   **"Planning a 3D Globe Pipeline"** (Talk): Developing workflows for 3D geospatial storytelling.
+*   **"North is a Societal Construct"** (Article): Discussing map projections and orientation.
+*   **"The Political Winds"** (NACIS Talk, 2021): Presenting on visualizing political shifts.
+*   **"Screenshot for the Win"**: Discussing practical visual journalism techniques.
+
+---
+CORE CAPABILITIES
+---
+*   Editorial judgment and problem framing under ambiguity
+*   Visual storytelling, data visualization, and cartography
+*   Decision support for senior stakeholders
+*   Standards-setting and quality control at scale
+*   Cross-functional leadership and mentorship
+*   Workflow and toolchain design
+*   Hands-on execution on high-level, complex or time-sensitive work
+
+---
+PROFESSIONAL EXPERIENCE
+---
+
+THE WASHINGTON POST (Washington, DC)
+*   **Deputy Director of Graphics** | May 2018 – Present
+*   **Senior Graphics Editor** | April 2018 – May 2018
+*   **Graphics Reporter** | January 2016 – April 2018
+
+THE URBAN INSTITUTE (Washington, DC)
+*   **Associate Director of Design and Visuals** | January 2016
+*   **Visuals and Design Manager** | April 2013 – December 2015
+*   **Infographics Specialist** | September 2011 – March 2013
+
+FREELANCE (Washington, DC)
+*   **Visual Reporting & Infographics** | 2007 – 2016
+
+THE NEED PROJECT
+*   **Creative Director** | 2010 – 2011
+
+THE COLUMBUS DISPATCH
+*   **Infographics Artist** | 2007 – 2010
+
+---
+PORTFOLIO SYNTHESIS (Selected Works)
+---
+
+**CARTOGRAPHY & ENVIRONMENT**
+Expertise in communicating the scale and impact of climate change and natural disasters through spatial analysis.
+*   **Natural Disasters**: "Mapping America's wicked weather," "California's worst-ever wildfire siege," and "Hurricane Helene flooding" demonstrate ability to map real-time disaster impact.
+*   **Climate Change**: "Ocean temperatures are off the charts," "Peru's melting glaciers," and "Mississippi River drought" visualize long-term environmental shifts.
+*   **Detailed Mapping**: "Where to view cherry blossoms in D.C." and "Every inch of snow" show capacity for high-fidelity, local-interest mapping.
+
+**VISUAL FORENSICS & CONFLICT**
+Using visual evidence to reconstruct events and explain military/geopolitical dynamics.
+*   **Conflict Mapping**: "The rise and fall of ISIS," "Mapping the DMZ," and "The 'ethnic cleansing' of the Rohingya" utilize time-series data to show territorial shifts and humanitarian crises.
+*   **Reconstruction**: "Here's how the Seoul Halloween crush happened" and "Brussels airport attacks" use spatial reconstruction to explain tragedies.
+*   **Military Tech**: "Israel's air defense against Iran" and "Massive Ordnance Penetrator" explain technical military concepts to a lay audience.
+
+**POLITICS & ELECTIONS**
+Innovative visualization of electoral data to reveal underlying trends.
+*   **Election Analysis**: "How Trump built his victory (vote by vote)" and "Where polling underestimated Trump" move beyond standard choropleth maps to show granular voting behaviors.
+*   **Gerrymandering**: Visual comparisons of district shapes and independent redistricting efforts.
+
+**EXPLANATORY GRAPHICS**
+Breaking down complex systems and histories.
+*   **Infrastructure & Tech**: "Anatomy of America's vast infrastructure" and "The new space race" (commercial rocketry).
+*   **Cultural History**: "The evolution of beer" and "Where Christmas trees come from" show range in soft-news storytelling.
+
+---
+EDUCATION
+---
+Ohio University | M.A. Visual Communication (Information Graphics)
+Transylvania University | B.A. Digital Imaging and Application Design

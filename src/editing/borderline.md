@@ -4,8 +4,9 @@ slug: "borderline"
 date: "2018-01-01"
 hero: "/img/optimized/hero/BorderlinePROMO.jpg"
 tags: ["editing"]
-layout: layouts/page
+layout: page
 ---
+# Borderline
 
 ![Borderline promo](/img/optimized/hero/BorderlinePROMO.jpg)
 

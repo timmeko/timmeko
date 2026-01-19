@@ -15,41 +15,20 @@ const BASE_DIR = path.join(__dirname, '..');
 const SRC_DIR = path.join(BASE_DIR, 'src');
 const CSV_FILE = path.join(BASE_DIR, 'data', 'portfolio_combined.csv');
 
-// Parse CSV content
-function parseCSV(content) {
-    const lines = content.trim().split('\n');
-    const headers = lines[0].split(',').map(h => h.trim());
-    
-    return lines.slice(1).map(line => {
-        const values = parseCSVLine(line);
-        const row = {};
-        headers.forEach((header, index) => {
-            row[header] = values[index] ? values[index].trim() : '';
-        });
-        return row;
-    });
-}
+const Papa = require('papaparse');
 
-function parseCSVLine(line) {
-    const result = [];
-    let current = '';
-    let inQuotes = false;
-    
-    for (let i = 0; i < line.length; i++) {
-        const char = line[i];
-        
-        if (char === '"') {
-            inQuotes = !inQuotes;
-        } else if (char === ',' && !inQuotes) {
-            result.push(current);
-            current = '';
-        } else {
-            current += char;
-        }
+// Parse CSV content using Papaparse
+function parseCSV(content) {
+    const output = Papa.parse(content.trim(), {
+        header: true,
+        skipEmptyLines: true
+    });
+
+    if (output.errors.length > 0) {
+        console.warn('⚠️ CSV Parsing warnings:', output.errors);
     }
-    
-    result.push(current);
-    return result.map(field => field.replace(/^"|"$/g, ''));
+
+    return output.data;
 }
 
 // Generate slug from title
@@ -63,10 +42,10 @@ function generateSlug(title) {
 // Format date for frontmatter
 function formatDate(dateStr) {
     if (!dateStr) return new Date().toISOString().split('T')[0];
-    
+
     try {
         let date = new Date(dateStr);
-        
+
         if (isNaN(date.getTime())) {
             // Try MM/DD/YY format
             if (dateStr.match(/^\d{1,2}\/\d{1,2}\/\d{2}$/)) {
@@ -82,7 +61,7 @@ function formatDate(dateStr) {
                 date = new Date(`${fullYear}-${monthNum.toString().padStart(2, '0')}-${day.padStart(2, '0')}`);
             }
         }
-        
+
         return isNaN(date.getTime()) ? new Date().toISOString().split('T')[0] : date.toISOString().split('T')[0];
     } catch (e) {
         return new Date().toISOString().split('T')[0];
@@ -92,12 +71,12 @@ function formatDate(dateStr) {
 // Determine section for content
 function determineSection(row) {
     const { section } = row;
-    
+
     // Use explicit section from CSV if provided
     if (section && section.trim()) {
         return section.toLowerCase().trim();
     }
-    
+
     // Default to more for items without explicit section
     return 'more';
 }
@@ -107,21 +86,21 @@ function buildHeroPath(heroFilename) {
     if (!heroFilename || heroFilename.trim() === '') {
         return ''; // No hero image
     }
-    
+
     const cleanFilename = heroFilename.trim();
-    
+
     // Skip problematic placeholders
     if (cleanFilename === 'imrs.php' || cleanFilename === 'img/raw/imrs.php' || cleanFilename.includes('imrs.php')) {
         return '';
     }
-    
+
     // Normalize file extension - optimization script converts everything to .jpg
     // So if CSV has .png, .gif, etc., we need to look for the .jpg version
     let normalizedFilename = cleanFilename;
     const lowerFilename = normalizedFilename.toLowerCase();
-    
-    if (lowerFilename.endsWith('.png') || 
-        lowerFilename.endsWith('.gif') || 
+
+    if (lowerFilename.endsWith('.png') ||
+        lowerFilename.endsWith('.gif') ||
         lowerFilename.endsWith('.jpeg') ||
         lowerFilename.endsWith('.webp') ||
         lowerFilename.endsWith('.bmp') ||
@@ -133,7 +112,7 @@ function buildHeroPath(heroFilename) {
         normalizedFilename = `${nameWithoutExt}.jpg`;
         console.log(`    ↳ Normalized extension: ${oldExt} → jpg for ${nameWithoutExt}`);
     }
-    
+
     // Build optimized thumb path (preferred for card layouts)
     return `img/optimized/thumb/${normalizedFilename}`;
 }
@@ -141,41 +120,41 @@ function buildHeroPath(heroFilename) {
 // Main CSV processing function
 async function processCSV() {
     console.log('📄 Converting master CSV to markdown...\n');
-    
+
     try {
         const content = await fs.readFile(CSV_FILE, 'utf-8');
         const rows = parseCSV(content);
-        
+
         // Filter included rows
         const includedRows = rows.filter(row => row.include === '1');
         console.log(`Found ${includedRows.length} included rows from ${rows.length} total\n`);
-        
+
         let createdCount = 0;
         let skippedCount = 0;
-        
+
         // Process each row
         for (const row of includedRows) {
             const slug = generateSlug(row.title || row.Headline);
             const section = determineSection(row);
-            
+
             // Skip if this would overwrite an existing featured project
             const featuredSlugs = [
                 'election-winds-sand-map',
-                'covid-double', 
+                'covid-double',
                 'wicked-weather',
-                'infrastructure',  
+                'infrastructure',
                 'north-korea-targets'
             ];
-            
+
             if (section === 'featured' && featuredSlugs.includes(slug)) {
                 console.log(`⭐ Skipping protected featured project: ${slug}`);
                 skippedCount++;
                 continue;
             }
-            
+
             // Create markdown file path
             const markdownPath = path.join(SRC_DIR, section, `${slug}.md`);
-            
+
             // Check if file already exists with substantial content
             try {
                 const existingContent = await fs.readFile(markdownPath, 'utf-8');
@@ -187,17 +166,17 @@ async function processCSV() {
             } catch (e) {
                 // File doesn't exist, proceed with creation
             }
-            
+
             // Build hero path from CSV hero column
             const heroPath = buildHeroPath(row.hero);
-            
+
             // Create frontmatter
             const title = row.title || row.Headline;
             const tags = section === 'insights' ? [section, 'article'] : [section];
-            
+
             // Create markdown content based on section
             let markdownContent;
-            
+
             if (section === 'insights') {
                 // Insights are link-out only
                 markdownContent = `---
@@ -208,11 +187,11 @@ type: "article"
 tags: ${JSON.stringify(tags)}
 layout: page
 ---`;
-                
+
             } else {
                 // Full card layout for other sections
                 const heroLine = heroPath ? `hero: "${heroPath}"` : `# hero: "" # No image available`;
-                
+
                 markdownContent = `---
 title: "${title.replace(/"/g, '\\"')}"
 date: ${formatDate(row.Date)}
@@ -228,30 +207,30 @@ ${row.description || '<!-- Content to be added -->'}
 *Published: ${formatDate(row.Date)} | The Washington Post*
 `;
             }
-            
+
             try {
                 // Ensure section directory exists
                 await fs.mkdir(path.join(SRC_DIR, section), { recursive: true });
-                
+
                 // Write markdown file
                 await fs.writeFile(markdownPath, markdownContent, 'utf-8');
-                
+
                 const imageStatus = heroPath ? '✅' : '⚠️ ';
                 const imageNote = heroPath ? '' : ' (no image)';
                 console.log(`${imageStatus} Created: ${section}/${slug}.md${imageNote}`);
                 createdCount++;
-                
+
             } catch (error) {
                 console.error(`❌ Failed to create ${slug}.md: ${error.message}`);
             }
         }
-        
+
         console.log(`\n📊 Summary:`);
         console.log(`  ✅ Created: ${createdCount} files`);
         console.log(`  ⏭️  Skipped: ${skippedCount} files`);
         console.log(`  📁 Total processed: ${includedRows.length} rows`);
         console.log('\n✅ Master CSV processing complete!');
-        
+
     } catch (error) {
         console.error(`❌ Failed to process CSV file: ${error.message}`);
         process.exit(1);

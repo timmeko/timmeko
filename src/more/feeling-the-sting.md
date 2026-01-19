@@ -4,7 +4,7 @@ date: 2010-01-30
 hero: "img/optimized/thumb/feeling-the-sting_4314470041_o.jpg"
 link: "https://flickr.com/photos/timmeko/4314470041/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Illustration centerpiece design about the declining honey bee population

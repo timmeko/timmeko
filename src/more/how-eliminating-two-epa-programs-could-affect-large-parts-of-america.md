@@ -4,7 +4,7 @@ date: 2017-03-24
 hero: "img/optimized/thumb/trump-epa-promo.jpg"
 link: "http://www.washingtonpost.com/graphics/national/trump-epa-rollbacks/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Efforts to clean up the Chesapeake Bay and the Great Lakes stretch across multiple regions. Trump wants to cut these programs.

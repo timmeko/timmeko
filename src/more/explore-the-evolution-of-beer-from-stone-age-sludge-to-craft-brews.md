@@ -4,7 +4,7 @@ date: 2023-09-19
 hero: "img/optimized/thumb/2W3TZYRJAJGIBNMODJTL2FN2CI.jpg"
 link: "https://www.washingtonpost.com/food/interactive/2023/beer-history-types-timeline/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Beer is older than recorded history, but what we drink today looks and tastes far different than it did hundreds or thousands of years ago.

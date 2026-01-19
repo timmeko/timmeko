@@ -4,7 +4,7 @@ date: 2009-08-04
 hero: "img/optimized/thumb/test-of-convictions_3789163022_o.jpg"
 link: "https://flickr.com/photos/timmeko/3789163022/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 I designed and programmed this interactive package about DNA testing for thirty Ohio inmates. This series is responsible for freeing two wrongly-convicted inmates. view interactive

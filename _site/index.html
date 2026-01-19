@@ -10,8 +10,6 @@
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <!-- Dark Mode Toggle - Hidden Dev Feature -->
-  <button class="dark-mode-toggle" id="dark-mode-toggle" title="Toggle Dark Mode">🌙</button>
   <header>
     <div class="container">
       <div class="header-content">
@@ -34,11 +32,11 @@
         </button>
         
         <nav class="main-nav" id="main-nav">
-          <a href="#featured">Featured</a>
-          <a href="#insights">Insights</a>
-          <a href="#editing">Edited</a>
-          <a href="#more-work">More work</a>
-          <a href="#about-contact">About</a>
+          <a href="/#featured">Featured</a>
+          <a href="/#insights">Insights</a>
+          <a href="/#editing">Edited</a>
+          <a href="/#more-work">More work</a>
+          <a href="/#about-contact">About</a>
         </nav>
       </div>
     </div>
@@ -4703,87 +4701,65 @@
 </section>
 </div>
 
+<section id="chatbot-cta" class="chatbot-cta section">
+  <div class="container">
+    <h3 class="chatbot-heading"><span class="beta-label">Beta</span> Click below to copy a prompt and ask your favorite chatbot about me</h3>
+    <div class="chatbot-icons">
+      <div class="chatbot-icon-wrapper" data-chatbot="chatgpt">
+        <button class="chatbot-icon-button" aria-label="Ask ChatGPT about Tim Meko">
+          <img src="/assets/icons/chatgpt-logo.svg" alt="ChatGPT" class="chatbot-icon">
+        </button>
+        <span class="chatbot-toast">Prompt copied to clipboard</span>
+      </div>
+      
+      <div class="chatbot-icon-wrapper" data-chatbot="claude">
+        <button class="chatbot-icon-button" aria-label="Ask Claude about Tim Meko">
+          <img src="/assets/icons/claude-logo.svg" alt="Claude" class="chatbot-icon">
+        </button>
+        <span class="chatbot-toast">Prompt copied to clipboard</span>
+      </div>
+      
+      <div class="chatbot-icon-wrapper" data-chatbot="gemini">
+        <button class="chatbot-icon-button" aria-label="Ask Gemini about Tim Meko">
+          <img src="/assets/icons/gemini-logo.svg" alt="Gemini" class="chatbot-icon">
+        </button>
+        <span class="chatbot-toast">Prompt copied to clipboard</span>
+      </div>
+    </div>
+    <p class="chatbot-context-link">
+      <a href="/assets/tim-meko-context.txt" download>Download my context profile for AI</a>
+    </p>
+
+  </div>
+</section>
+
 <section id="featured" class="featured section">
   <div class="container">
+    <header class="section-header">
+      <h2>Featured Work</h2>
+    </header>
     <div class="featured-list">
       
         <article class="featured-project " data-project-index="0">
           <div class="featured-project__media">
-            <a href="/maps/infrastructure/" class="featured-project__media-link">
+            <a href="/maps/3dmapping/" class="featured-project__media-link">
               <video class="featured-project__video" muted loop playsinline preload="metadata">
-                <source src="/assets/videos/infrastructure.mp4" type="video/mp4">
+                <source src="/assets/videos/3dmapping.mp4" type="video/mp4">
               </video>
             </a>
           </div>
           
           <div class="featured-project__content">
-            <a href="/maps/infrastructure/" class="featured-project__content-link">
-              <h3 class="featured-project__title">Anatomy of America&#39;s infrastructure</h3>
+            <a href="/maps/3dmapping/" class="featured-project__content-link">
+              <h3 class="featured-project__title">Experiments with mapping in Blender</h3>
               <p class="featured-project__description">
-                A deep dive into America&#39;s infrastructure, creating six distinct map perspectives that made complex infrastructure data accessible to millions of readers.
+                Dynamic scenes that establish place and use animation to explain.
               </p>
             </a>
           </div>
         </article>
       
         <article class="featured-project featured-project--reverse" data-project-index="1">
-          <div class="featured-project__media">
-            <a href="/maps/north-korea-targets/" class="featured-project__media-link">
-              <video class="featured-project__video" muted loop playsinline preload="metadata">
-                <source src="/assets/videos/north-korea-targets.mp4" type="video/mp4">
-              </video>
-            </a>
-          </div>
-          
-          <div class="featured-project__content">
-            <a href="/maps/north-korea-targets/" class="featured-project__content-link">
-              <h3 class="featured-project__title">North Korea&#39;s missile ambitions, mapped</h3>
-              <p class="featured-project__description">
-                Led the rapid-response visual journalism for this breaking news analysis, transforming complex missile trajectory data into clear, impactful maps that explained global security implications.
-              </p>
-            </a>
-          </div>
-        </article>
-      
-        <article class="featured-project " data-project-index="2">
-          <div class="featured-project__media">
-            <a href="/maps/wicked-weather/" class="featured-project__media-link">
-              <video class="featured-project__video" muted loop playsinline preload="metadata">
-                <source src="/assets/videos/wicked-weather.mp4" type="video/mp4">
-              </video>
-            </a>
-          </div>
-          
-          <div class="featured-project__content">
-            <a href="/maps/wicked-weather/" class="featured-project__content-link">
-              <h3 class="featured-project__title">Mapping America&#39;s natural disaster risks</h3>
-              <p class="featured-project__description">
-                A visual investigation into America&#39;s weather disasters, exploring how every part of the country faces unique risks.
-              </p>
-            </a>
-          </div>
-        </article>
-      
-        <article class="featured-project featured-project--reverse" data-project-index="3">
-          <div class="featured-project__media">
-            <a href="/maps/covid-double/" class="featured-project__media-link">
-              <video class="featured-project__video" muted loop playsinline preload="metadata">
-                <source src="/assets/videos/covid-double.mp4" type="video/mp4">
-              </video>
-            </a>
-          </div>
-          
-          <div class="featured-project__content">
-            <a href="/maps/covid-double/" class="featured-project__content-link">
-              <h3 class="featured-project__title">Visualizing the COVID pandemic</h3>
-              <p class="featured-project__description">
-                Two of the pandemic&#39;s most powerful visual stories - from the stark memorial marking 100,000 deaths to comprehensive year-in-review mapping that helped readers understand the pandemic&#39;s scope.
-              </p>
-            </a>
-          </div>
-        </article>
-      
-        <article class="featured-project " data-project-index="4">
           <div class="featured-project__media">
             <a href="/maps/election-winds-sand-map/" class="featured-project__media-link">
               <video class="featured-project__video" muted loop playsinline preload="metadata">
@@ -4802,20 +4778,77 @@
           </div>
         </article>
       
-        <article class="featured-project featured-project--reverse" data-project-index="5">
+        <article class="featured-project " data-project-index="2">
           <div class="featured-project__media">
-            <a href="/maps/3dmapping/" class="featured-project__media-link">
+            <a href="/maps/covid-double/" class="featured-project__media-link">
               <video class="featured-project__video" muted loop playsinline preload="metadata">
-                <source src="/assets/videos/3dmapping.mp4" type="video/mp4">
+                <source src="/assets/videos/covid-double.mp4" type="video/mp4">
               </video>
             </a>
           </div>
           
           <div class="featured-project__content">
-            <a href="/maps/3dmapping/" class="featured-project__content-link">
-              <h3 class="featured-project__title">Experiments with mapping in Blender</h3>
+            <a href="/maps/covid-double/" class="featured-project__content-link">
+              <h3 class="featured-project__title">Visualizing the COVID pandemic</h3>
               <p class="featured-project__description">
-                Dynamic scenes that establish place and use animation to explain.
+                Two of the pandemic&#39;s most powerful visual stories - from the stark memorial marking 100,000 deaths to comprehensive year-in-review mapping that helped readers understand the pandemic&#39;s scope.
+              </p>
+            </a>
+          </div>
+        </article>
+      
+        <article class="featured-project featured-project--reverse" data-project-index="3">
+          <div class="featured-project__media">
+            <a href="/maps/wicked-weather/" class="featured-project__media-link">
+              <video class="featured-project__video" muted loop playsinline preload="metadata">
+                <source src="/assets/videos/wicked-weather.mp4" type="video/mp4">
+              </video>
+            </a>
+          </div>
+          
+          <div class="featured-project__content">
+            <a href="/maps/wicked-weather/" class="featured-project__content-link">
+              <h3 class="featured-project__title">Mapping America&#39;s natural disaster risks</h3>
+              <p class="featured-project__description">
+                A visual investigation into America&#39;s weather disasters, exploring how every part of the country faces unique risks.
+              </p>
+            </a>
+          </div>
+        </article>
+      
+        <article class="featured-project " data-project-index="4">
+          <div class="featured-project__media">
+            <a href="/maps/north-korea-targets/" class="featured-project__media-link">
+              <video class="featured-project__video" muted loop playsinline preload="metadata">
+                <source src="/assets/videos/north-korea-targets.mp4" type="video/mp4">
+              </video>
+            </a>
+          </div>
+          
+          <div class="featured-project__content">
+            <a href="/maps/north-korea-targets/" class="featured-project__content-link">
+              <h3 class="featured-project__title">North Korea&#39;s missile ambitions, mapped</h3>
+              <p class="featured-project__description">
+                Led the rapid-response visual journalism for this breaking news analysis, transforming complex missile trajectory data into clear, impactful maps that explained global security implications.
+              </p>
+            </a>
+          </div>
+        </article>
+      
+        <article class="featured-project featured-project--reverse" data-project-index="5">
+          <div class="featured-project__media">
+            <a href="/maps/infrastructure/" class="featured-project__media-link">
+              <video class="featured-project__video" muted loop playsinline preload="metadata">
+                <source src="/assets/videos/infrastructure.mp4" type="video/mp4">
+              </video>
+            </a>
+          </div>
+          
+          <div class="featured-project__content">
+            <a href="/maps/infrastructure/" class="featured-project__content-link">
+              <h3 class="featured-project__title">Anatomy of America&#39;s infrastructure</h3>
+              <p class="featured-project__description">
+                A deep dive into America&#39;s infrastructure, creating six distinct map perspectives that made complex infrastructure data accessible to millions of readers.
               </p>
             </a>
           </div>
@@ -4836,47 +4869,15 @@
         <div class="insight-item">
           <h3 class="insight-title">
             
-              <a href="https://www.youtube.com/watch?v=55ka3-gr_NA" target="_blank" rel="noopener noreferrer">North is a societal construct: when to break the rules with your map</a>
+              <a href="https://www.linkedin.com/pulse/fast-flexible-pipeline-3d-globe-maps-tim-meko-cicme/" target="_blank" rel="noopener noreferrer">Fast, flexible pipeline for 3D globe maps</a>
             
           </h3>
           <div class="insight-meta">
             
-              <span class="insight-type">Talk</span>
+              <span class="insight-type">Article</span>
             
             
-              <time class="insight-date">Invalid DateTime</time>
-            
-          </div>
-        </div>
-      
-        <div class="insight-item">
-          <h3 class="insight-title">
-            
-              <a href="https://www.youtube.com/watch?v=55ka3-gr_NA" target="_blank" rel="noopener noreferrer">Screenshot for the Win</a>
-            
-          </h3>
-          <div class="insight-meta">
-            
-              <span class="insight-type">Talk</span>
-            
-            
-              <time class="insight-date">Invalid DateTime</time>
-            
-          </div>
-        </div>
-      
-        <div class="insight-item">
-          <h3 class="insight-title">
-            
-              <a href="https://www.youtube.com/watch?v=cvhZRUhJE3c" target="_blank" rel="noopener noreferrer">How political winds changed the U.S.</a>
-            
-          </h3>
-          <div class="insight-meta">
-            
-              <span class="insight-type">Talk</span>
-            
-            
-              <time class="insight-date">Invalid DateTime</time>
+              <time class="insight-date">June 2025</time>
             
           </div>
         </div>
@@ -4892,7 +4893,7 @@
               <span class="insight-type">Article</span>
             
             
-              <time class="insight-date">Invalid DateTime</time>
+              <time class="insight-date">November 2024</time>
             
           </div>
         </div>
@@ -4900,15 +4901,47 @@
         <div class="insight-item">
           <h3 class="insight-title">
             
-              <a href="https://www.linkedin.com/pulse/fast-flexible-pipeline-3d-globe-maps-tim-meko-cicme/" target="_blank" rel="noopener noreferrer">Fast, flexible pipeline for 3D globe maps</a>
+              <a href="https://www.youtube.com/watch?v=cvhZRUhJE3c" target="_blank" rel="noopener noreferrer">How political winds changed the U.S.</a>
             
           </h3>
           <div class="insight-meta">
             
-              <span class="insight-type">Article</span>
+              <span class="insight-type">Talk</span>
             
             
-              <time class="insight-date">Invalid DateTime</time>
+              <time class="insight-date">October 2021</time>
+            
+          </div>
+        </div>
+      
+        <div class="insight-item">
+          <h3 class="insight-title">
+            
+              <a href="https://www.youtube.com/watch?v=ytOXCSgnvs4" target="_blank" rel="noopener noreferrer">Screenshot for the Win</a>
+            
+          </h3>
+          <div class="insight-meta">
+            
+              <span class="insight-type">Talk</span>
+            
+            
+              <time class="insight-date">October 2019</time>
+            
+          </div>
+        </div>
+      
+        <div class="insight-item">
+          <h3 class="insight-title">
+            
+              <a href="https://www.youtube.com/watch?v=55ka3-gr_NA" target="_blank" rel="noopener noreferrer">North is a societal construct: when to break the rules with your map</a>
+            
+          </h3>
+          <div class="insight-meta">
+            
+              <span class="insight-type">Talk</span>
+            
+            
+              <time class="insight-date">October 2018</time>
             
           </div>
         </div>
@@ -4926,23 +4959,12 @@
     <div class="cards-grid">
       
         <article class="card">
-          <a href="/editing/borderline/"  class="card-link">
+          <a href="/editing/spicy-food/"  class="card-link">
             
-              <img src="/img/optimized/hero/BorderlinePROMO.jpg" alt="Borderline: Navigating the invisible boundary and physical barriers that define the U.S.-Mexico border" class="card-image">
-            
-            <div class="card-content">
-              <h3 class="card-title">Borderline: Navigating the invisible boundary and physical barriers that define the U.S.-Mexico border</h3>
-            </div>
-          </a>
-        </article>
-      
-        <article class="card">
-          <a href="/editing/bears-ears/"  class="card-link">
-            
-              <img src="/img/optimized/hero/bearsEarsStill.jpg" alt="What remains of Bears Ears" class="card-image">
+              <img src="/img/optimized/hero/spicyDetail924AM.jpg" alt="Love spicy food? Hate it? Watch a hot wing’s trip through your body." class="card-image">
             
             <div class="card-content">
-              <h3 class="card-title">What remains of Bears Ears</h3>
+              <h3 class="card-title">Love spicy food? Hate it? Watch a hot wing’s trip through your body.</h3>
             </div>
           </a>
         </article>
@@ -4959,12 +4981,23 @@
         </article>
       
         <article class="card">
-          <a href="/editing/spicy-food/"  class="card-link">
+          <a href="/editing/bears-ears/"  class="card-link">
             
-              <img src="/img/optimized/hero/spicyDetail924AM.jpg" alt="Love spicy food? Hate it? Watch a hot wing’s trip through your body." class="card-image">
+              <img src="/img/optimized/hero/bearsEarsStill.jpg" alt="What remains of Bears Ears" class="card-image">
             
             <div class="card-content">
-              <h3 class="card-title">Love spicy food? Hate it? Watch a hot wing’s trip through your body.</h3>
+              <h3 class="card-title">What remains of Bears Ears</h3>
+            </div>
+          </a>
+        </article>
+      
+        <article class="card">
+          <a href="/editing/borderline/"  class="card-link">
+            
+              <img src="/img/optimized/hero/BorderlinePROMO.jpg" alt="Borderline: Navigating the invisible boundary and physical barriers that define the U.S.-Mexico border" class="card-image">
+            
+            <div class="card-content">
+              <h3 class="card-title">Borderline: Navigating the invisible boundary and physical barriers that define the U.S.-Mexico border</h3>
             </div>
           </a>
         </article>
@@ -4983,6 +5016,20 @@
       
         <div class="index-card" data-index="1">
           
+            <img src="img/optimized/thumb/oakflat.jpg" alt="A land fight pits a sacred Apache tradition against a copper mine" class="index-image" loading="lazy">
+          
+          
+          <div class="index-overlay">
+            <div class="index-title">A land fight pits a sacred Apache tradition against a copper mine</div>
+          </div>
+          
+          
+            <a href="https://www.washingtonpost.com/nation/interactive/2025/apache-oak-flat-copper-mine/" target="_blank" rel="noopener noreferrer" class="index-link" aria-label="A land fight pits a sacred Apache tradition against a copper mine"></a>
+          
+        </div>
+      
+        <div class="index-card" data-index="2">
+          
             <img src="img/optimized/thumb/GZW3YZMKX5AVDLCKTDMN4HYV6I.jpg" alt="Here&#39;s how Africa wants to redraw the world map" class="index-image" loading="lazy">
           
           
@@ -4995,7 +5042,7 @@
           
         </div>
       
-        <div class="index-card" data-index="2">
+        <div class="index-card" data-index="3">
           
             <img src="img/optimized/thumb/UAKVR3JBAJFLRGZNRROHYU6W5U.jpg" alt="How Francis, the second-oldest pope in modern history, compared with others" class="index-image" loading="lazy">
           
@@ -5009,7 +5056,7 @@
           
         </div>
       
-        <div class="index-card" data-index="3">
+        <div class="index-card" data-index="4">
           
             <img src="img/optimized/thumb/KTZGYCM6MBHJDP2WHJC2NP6C6A.jpg" alt="Where to view cherry blossoms in the D.C. area, mapped" class="index-image" loading="lazy">
           
@@ -5023,7 +5070,7 @@
           
         </div>
       
-        <div class="index-card" data-index="4">
+        <div class="index-card" data-index="5">
           
             <img src="img/optimized/thumb/3JSKQKOPSJHMPE7P7U6VNQITAY.jpg" alt="No clock change? See how early or late you would be in the dark." class="index-image" loading="lazy">
           
@@ -5037,7 +5084,7 @@
           
         </div>
       
-        <div class="index-card" data-index="5">
+        <div class="index-card" data-index="6">
           
             <img src="img/optimized/thumb/XLUSUBLFWVAS7JPFKKZJE4HBYE.jpg" alt="How Trump built his victory, vote by vote" class="index-image" loading="lazy">
           
@@ -5051,7 +5098,7 @@
           
         </div>
       
-        <div class="index-card" data-index="6">
+        <div class="index-card" data-index="7">
           
             <img src="img/optimized/thumb/YZQULNRHZVEALPP5JZ2E3DIIKU_size-normalized.jpg" alt="Where floods from Hurricane Helene are ravaging the North Carolina mountains" class="index-image" loading="lazy">
           
@@ -5065,7 +5112,7 @@
           
         </div>
       
-        <div class="index-card" data-index="7">
+        <div class="index-card" data-index="8">
           
             <img src="img/optimized/thumb/how-tim-walz-performed-in-his-most-recent-election-5837da40.jpg" alt="How Tim Walz performed in his most recent election" class="index-image" loading="lazy">
           
@@ -5079,7 +5126,7 @@
           
         </div>
       
-        <div class="index-card" data-index="8">
+        <div class="index-card" data-index="9">
           
             <img src="img/optimized/thumb/SQSX3D3EO5G2HCHWIM7VHBQJMM.jpg" alt="Mapping 2024&#39;s cicada double-whammy" class="index-image" loading="lazy">
           
@@ -5093,7 +5140,7 @@
           
         </div>
       
-        <div class="index-card" data-index="9">
+        <div class="index-card" data-index="10">
           
             <img src="img/optimized/thumb/2GRH7MZGGJFPFL3IQNA2CLLRJ4.jpg" alt="Where the Boeing 737 Max 9 flies" class="index-image" loading="lazy">
           
@@ -5107,7 +5154,7 @@
           
         </div>
       
-        <div class="index-card" data-index="10">
+        <div class="index-card" data-index="11">
           
             <img src="img/optimized/thumb/2W3TZYRJAJGIBNMODJTL2FN2CI.jpg" alt="Explore the evolution of beer, from Stone Age sludge to craft brews" class="index-image" loading="lazy">
           
@@ -5121,7 +5168,7 @@
           
         </div>
       
-        <div class="index-card" data-index="11">
+        <div class="index-card" data-index="12">
           
             <img src="img/optimized/thumb/WK5NOP4B7FBFZGMW43NUMR7A6Y.jpg" alt="Where so many Republicans voted &#39;No&#39; on Issue 1 in Ohio" class="index-image" loading="lazy">
           
@@ -5135,7 +5182,7 @@
           
         </div>
       
-        <div class="index-card" data-index="12">
+        <div class="index-card" data-index="13">
           
             <img src="img/optimized/thumb/AX5IYJN22RH63I4OZGIOICXCII_size-normalized.jpg" alt="Small towns don&#39;t vote like other rural areas" class="index-image" loading="lazy">
           
@@ -5149,7 +5196,7 @@
           
         </div>
       
-        <div class="index-card" data-index="13">
+        <div class="index-card" data-index="14">
           
             <img src="img/optimized/thumb/ENHR5EAHCNHE5JJYJFKOVNSDEA.jpg" alt="Ocean temperatures are off the charts. Here&#39;s where they&#39;re highest." class="index-image" loading="lazy">
           
@@ -5163,7 +5210,7 @@
           
         </div>
       
-        <div class="index-card" data-index="14">
+        <div class="index-card" data-index="15">
           
             <img src="img/optimized/thumb/WYUL5YK6SFDA3J2RQ4S7FPKFPM.jpg" alt="Only 19 U.S. theaters will show &#39;Oppenheimer&#39; in 70mm Imax. It&#39;s epic." class="index-image" loading="lazy">
           
@@ -5177,7 +5224,7 @@
           
         </div>
       
-        <div class="index-card" data-index="15">
+        <div class="index-card" data-index="16">
           
             <img src="img/optimized/thumb/4ZQHOBX5CBHTTJC66CA2UBWPJQ.jpg" alt="From snowy West to snow-starved East, a map of winter winners and losers" class="index-image" loading="lazy">
           
@@ -5191,7 +5238,7 @@
           
         </div>
       
-        <div class="index-card" data-index="16">
+        <div class="index-card" data-index="17">
           
             <img src="img/optimized/thumb/here-s-how-the-seoul-halloween-crush-happened-53a918ca.jpg" alt="Here&#39;s how the Seoul Halloween crush happened" class="index-image" loading="lazy">
           
@@ -5205,7 +5252,7 @@
           
         </div>
       
-        <div class="index-card" data-index="17">
+        <div class="index-card" data-index="18">
           
             <img src="img/optimized/thumb/what-it-looks-like-as-drought-strangles-the-mighty-mississippi-0bcf0d88.jpg" alt="What it looks like as drought strangles the mighty Mississippi" class="index-image" loading="lazy">
           
@@ -5219,7 +5266,7 @@
           
         </div>
       
-        <div class="index-card" data-index="18">
+        <div class="index-card" data-index="19">
           
             <img src="img/optimized/thumb/RT474X2MH5A4RAGY72NPF7A3DY.jpg" alt="Mapping this summer&#39;s extreme divide in rain and drought" class="index-image" loading="lazy">
           
@@ -5233,7 +5280,7 @@
           
         </div>
       
-        <div class="index-card" data-index="19">
+        <div class="index-card" data-index="20">
           
             <img src="img/optimized/thumb/young-men-guns-and-the-prefrontal-cortex-bdfaac27.jpg" alt="Young men, guns and the prefrontal cortex" class="index-image" loading="lazy">
           
@@ -5247,7 +5294,7 @@
           
         </div>
       
-        <div class="index-card" data-index="20">
+        <div class="index-card" data-index="21">
           
             <img src="img/optimized/thumb/visualizing-the-omicron-wave-striking-and-rolling-across-the-country-79164896.jpg" alt="Visualizing the omicron wave striking and rolling across the country" class="index-image" loading="lazy">
           
@@ -5261,7 +5308,7 @@
           
         </div>
       
-        <div class="index-card" data-index="21">
+        <div class="index-card" data-index="22">
           
             <img src="img/optimized/thumb/67U3JA7XRRCHBD3KGEIA3K7UVQ.jpg" alt="Satellite imagery shows the scale of the traffic congestion at the ports of Los Angeles" class="index-image" loading="lazy">
           
@@ -5275,7 +5322,7 @@
           
         </div>
       
-        <div class="index-card" data-index="22">
+        <div class="index-card" data-index="23">
           
             <img src="img/optimized/thumb/satellite-images-show-st-vincent-blanketed-with-volcanic-ash-as-eruptions-continue-1dc71b1a.jpg" alt="Satellite images show St. Vincent blanketed with volcanic ash as eruptions continue" class="index-image" loading="lazy">
           
@@ -5289,7 +5336,7 @@
           
         </div>
       
-        <div class="index-card" data-index="23">
+        <div class="index-card" data-index="24">
           
             <img src="img/optimized/thumb/VZDXDDCB5ZEYZP3X4FOIOINYWQ.jpg" alt="A year of the pandemic: Sorrow, stamina, defiance, despair" class="index-image" loading="lazy">
           
@@ -5303,7 +5350,7 @@
           
         </div>
       
-        <div class="index-card" data-index="24">
+        <div class="index-card" data-index="25">
           
             <img src="img/optimized/thumb/ODNMT4ECUMI6XPRCGLJTDWDVGA.jpg" alt="Stimulus payments will cover seven months of rent for some, less than one for others" class="index-image" loading="lazy">
           
@@ -5317,7 +5364,7 @@
           
         </div>
       
-        <div class="index-card" data-index="25">
+        <div class="index-card" data-index="26">
           
             <img src="img/optimized/thumb/OFYJ3YVCMJCLVI2WYPXLQCXOME.jpg" alt="Ahead of the inauguration, much of D.C. closed off as never before" class="index-image" loading="lazy">
           
@@ -5331,7 +5378,7 @@
           
         </div>
       
-        <div class="index-card" data-index="26">
+        <div class="index-card" data-index="27">
           
             <img src="img/optimized/thumb/R6DQLFPM2JDIVCQWKEZQK4IIPU.jpg" alt="The political winds in the U.S. are swirling" class="index-image" loading="lazy">
           
@@ -5345,7 +5392,7 @@
           
         </div>
       
-        <div class="index-card" data-index="27">
+        <div class="index-card" data-index="28">
           
             <img src="img/optimized/thumb/OEMVBNZ33ZGQDAO5S4ILC3DUMM.jpg" alt="How much is 250,000 deaths? Enough to empty wide swaths of the country." class="index-image" loading="lazy">
           
@@ -5359,7 +5406,7 @@
           
         </div>
       
-        <div class="index-card" data-index="28">
+        <div class="index-card" data-index="29">
           
             <img src="img/optimized/thumb/NKKSBY4RVNFBRILMTSZ3WGPNAY.jpg" alt="Is it too close to the election to confirm a Supreme Court nominee?" class="index-image" loading="lazy">
           
@@ -5373,7 +5420,7 @@
           
         </div>
       
-        <div class="index-card" data-index="29">
+        <div class="index-card" data-index="30">
           
             <img src="img/optimized/thumb/here-s-how-california-s-worst-ever-wildfire-siege-occurred-d3460386.jpg" alt="Here&#39;s how California&#39;s worst-ever wildfire siege occurred" class="index-image" loading="lazy">
           
@@ -5387,7 +5434,7 @@
           
         </div>
       
-        <div class="index-card" data-index="30">
+        <div class="index-card" data-index="31">
           
             <img src="img/optimized/thumb/HUZMMAHQOVDC3LF6CKQ47NWDSM.jpg" alt="In these states, pandemic crisis response includes attempts to stop abortion" class="index-image" loading="lazy">
           
@@ -5401,7 +5448,7 @@
           
         </div>
       
-        <div class="index-card" data-index="31">
+        <div class="index-card" data-index="32">
           
             <img src="img/optimized/thumb/how-a-surge-of-coronavirus-patients-could-stretch-hospital-resources-in-your-area-70877213.jpg" alt="How a surge of coronavirus patients could stretch hospital resources in your area" class="index-image" loading="lazy">
           
@@ -5415,7 +5462,7 @@
           
         </div>
       
-        <div class="index-card" data-index="32">
+        <div class="index-card" data-index="33">
           
             <img src="img/optimized/thumb/maps-show-where-coronavirus-started-and-why-officials-are-so-worried-4888955f.jpg" alt="Maps show where coronavirus started and why officials are so worried" class="index-image" loading="lazy">
           
@@ -5429,7 +5476,7 @@
           
         </div>
       
-        <div class="index-card" data-index="33">
+        <div class="index-card" data-index="34">
           
             <img src="img/optimized/thumb/taal-volcano-s-crater-lake-is-nearly-empty-48da57b2.jpg" alt="Taal volcano&#39;s crater lake is nearly empty" class="index-image" loading="lazy">
           
@@ -5443,7 +5490,7 @@
           
         </div>
       
-        <div class="index-card" data-index="34">
+        <div class="index-card" data-index="35">
           
             <img src="img/optimized/thumb/a-timeline-of-the-escalation-in-the-middle-east-3c23ad7c.jpg" alt="A timeline of the escalation in the Middle East" class="index-image" loading="lazy">
           
@@ -5457,7 +5504,7 @@
           
         </div>
       
-        <div class="index-card" data-index="35">
+        <div class="index-card" data-index="36">
           
             <img src="img/optimized/thumb/isis-at-the-crossroads-31ac5bf0.jpg" alt="ISIS at the crossroads" class="index-image" loading="lazy">
           
@@ -5471,7 +5518,7 @@
           
         </div>
       
-        <div class="index-card" data-index="36">
+        <div class="index-card" data-index="37">
           
             <img src="img/optimized/thumb/XHPHM2JQORGPPPXMPPU4M3IQJI.jpg" alt="Where Christmas trees come from" class="index-image" loading="lazy">
           
@@ -5485,7 +5532,7 @@
           
         </div>
       
-        <div class="index-card" data-index="37">
+        <div class="index-card" data-index="38">
           
             <img src="img/optimized/thumb/dipping-low-washington-s-historical-winter-temperatures-0495d5bb.jpg" alt="Dipping low: Washington&#39;s historical winter temperatures" class="index-image" loading="lazy">
           
@@ -5499,7 +5546,7 @@
           
         </div>
       
-        <div class="index-card" data-index="38">
+        <div class="index-card" data-index="39">
           
             <img src="img/optimized/thumb/3H3YV7MT7FEFRM3HTXE7GAQSSI.jpg" alt="North Carolina has a new congressional map for 2020" class="index-image" loading="lazy">
           
@@ -5513,7 +5560,7 @@
           
         </div>
       
-        <div class="index-card" data-index="39">
+        <div class="index-card" data-index="40">
           
             <img src="img/optimized/thumb/who-s-who-in-the-whistleblower-complaint-2be7f730.jpg" alt="Who&#39;s who in the whistleblower complaint" class="index-image" loading="lazy">
           
@@ -5527,7 +5574,7 @@
           
         </div>
       
-        <div class="index-card" data-index="40">
+        <div class="index-card" data-index="41">
           
             <img src="img/optimized/thumb/SZSMIXPU3JE67GHYABG4VT3I6M.jpg" alt="Satellite images show the destruction of Dorian in the Bahamas" class="index-image" loading="lazy">
           
@@ -5541,7 +5588,7 @@
           
         </div>
       
-        <div class="index-card" data-index="41">
+        <div class="index-card" data-index="42">
           
             <img src="img/optimized/thumb/we-re-at-the-peak-of-the-global-fire-season-5decc9ff.jpg" alt="We&#39;re at the peak of the global fire season" class="index-image" loading="lazy">
           
@@ -5555,7 +5602,7 @@
           
         </div>
       
-        <div class="index-card" data-index="42">
+        <div class="index-card" data-index="43">
           
             <img src="img/optimized/thumb/why-might-trump-want-to-buy-greenland-take-a-visual-tour-16cbe6dc.jpg" alt="Why might Trump want to buy Greenland? Take a visual tour." class="index-image" loading="lazy">
           
@@ -5569,7 +5616,7 @@
           
         </div>
       
-        <div class="index-card" data-index="43">
+        <div class="index-card" data-index="44">
           
             <img src="img/optimized/thumb/the-smelly-seaweed-that-turned-mexican-beaches-into-a-rancid-mess-08ef5524.jpg" alt="The smelly seaweed that turned Mexican beaches into a rancid mess" class="index-image" loading="lazy">
           
@@ -5583,7 +5630,7 @@
           
         </div>
       
-        <div class="index-card" data-index="44">
+        <div class="index-card" data-index="45">
           
             <img src="img/optimized/thumb/how-many-pain-pills-went-to-your-pharmacy-c4994767.jpg" alt="How many pain pills went to your pharmacy?" class="index-image" loading="lazy">
           
@@ -5597,7 +5644,7 @@
           
         </div>
       
-        <div class="index-card" data-index="45">
+        <div class="index-card" data-index="46">
           
             <img src="img/optimized/thumb/B5KSYU4W25EHXM7P4WDVNHEMJU.jpg" alt="After a biblical spring, this is the week that could break the Corn Belt" class="index-image" loading="lazy">
           
@@ -5611,7 +5658,7 @@
           
         </div>
       
-        <div class="index-card" data-index="46">
+        <div class="index-card" data-index="47">
           
             <img src="img/optimized/thumb/X4BBHCPG6ZETHHQ7BNTK325PCA.jpg" alt="The widening gap in abortion laws in this country" class="index-image" loading="lazy">
           
@@ -5625,7 +5672,7 @@
           
         </div>
       
-        <div class="index-card" data-index="47">
+        <div class="index-card" data-index="48">
           
             <img src="img/optimized/thumb/mapping-america-s-wicked-weather-and-deadly-disasters-d208479d.jpg" alt="Mapping America&#39;s wicked weather and deadly disasters" class="index-image" loading="lazy">
           
@@ -5639,7 +5686,7 @@
           
         </div>
       
-        <div class="index-card" data-index="48">
+        <div class="index-card" data-index="49">
           
             <img src="img/optimized/thumb/DP7LVHH73ZCZHBQTBWCWBDE6IU.jpg" alt="Before and after: Iconic Notre Dame Cathedral scorched by blaze" class="index-image" loading="lazy">
           
@@ -5653,7 +5700,7 @@
           
         </div>
       
-        <div class="index-card" data-index="49">
+        <div class="index-card" data-index="50">
           
             <img src="img/optimized/thumb/J2VH3NMSSVFHROKKNFKRCO5VKE.jpg" alt="A snapshot of where migrants go after release into the United States" class="index-image" loading="lazy">
           
@@ -5667,7 +5714,7 @@
           
         </div>
       
-        <div class="index-card" data-index="50">
+        <div class="index-card" data-index="51">
           
             <img src="img/optimized/thumb/EHS2IOHS3JBOJJX5E7CW46EAKY.jpg" alt="Satellite images capture D.C.&#39;s cherry blossoms at peak bloom" class="index-image" loading="lazy">
           
@@ -5681,7 +5728,7 @@
           
         </div>
       
-        <div class="index-card" data-index="51">
+        <div class="index-card" data-index="52">
           
             <img src="img/optimized/thumb/ANOYXYUDBJC25FWYZUAZKI3274.jpg" alt="Satellite images show the devastating floods in the Midwest" class="index-image" loading="lazy">
           
@@ -5695,7 +5742,7 @@
           
         </div>
       
-        <div class="index-card" data-index="52">
+        <div class="index-card" data-index="53">
           
             <img src="img/optimized/thumb/PFXBVBYG6BA6PLQJ2UPUTZPT7U.jpg" alt="Where the plane model that crashed in Ethiopia flies" class="index-image" loading="lazy">
           
@@ -5709,7 +5756,7 @@
           
         </div>
       
-        <div class="index-card" data-index="53">
+        <div class="index-card" data-index="54">
           
             <img src="img/optimized/thumb/the-trouble-with-kashmir-136915d7.jpg" alt="The trouble with Kashmir" class="index-image" loading="lazy">
           
@@ -5723,7 +5770,7 @@
           
         </div>
       
-        <div class="index-card" data-index="54">
+        <div class="index-card" data-index="55">
           
             <img src="img/optimized/thumb/where-the-new-law-permits-and-prevents-border-barriers-2328ad9f.jpg" alt="Where the new law permits - and prevents - border barriers" class="index-image" loading="lazy">
           
@@ -5737,7 +5784,7 @@
           
         </div>
       
-        <div class="index-card" data-index="55">
+        <div class="index-card" data-index="56">
           
             <img src="img/optimized/thumb/border-construction-promo.jpg" alt="The Rio Grande is where new barriers will soon be erected along the southern border" class="index-image" loading="lazy">
           
@@ -5751,7 +5798,7 @@
           
         </div>
       
-        <div class="index-card" data-index="56">
+        <div class="index-card" data-index="57">
           
             <img src="img/optimized/thumb/usa-vortex-promo.jpg" alt="Some of the coldest air in the world is decending on the Midwest" class="index-image" loading="lazy">
           
@@ -5765,7 +5812,7 @@
           
         </div>
       
-        <div class="index-card" data-index="57">
+        <div class="index-card" data-index="58">
           
             <img src="img/optimized/thumb/the-camp-fire-s-damage-goes-beyond-what-satellites-can-show-a2c0935d.jpg" alt="The Camp Fire&#39;s damage goes beyond what satellites can show" class="index-image" loading="lazy">
           
@@ -5779,7 +5826,7 @@
           
         </div>
       
-        <div class="index-card" data-index="58">
+        <div class="index-card" data-index="59">
           
             <img src="img/optimized/thumb/2018-house-election-results-virginia-and-maryland-ed3b1aa1.jpg" alt="2018 House election results: Virginia and Maryland" class="index-image" loading="lazy">
           
@@ -5793,7 +5840,7 @@
           
         </div>
       
-        <div class="index-card" data-index="59">
+        <div class="index-card" data-index="60">
           
             <img src="img/optimized/thumb/how-ted-cruz-held-off-beto-o-rourke-in-texas-1e71d89a.jpg" alt="How Ted Cruz held off Beto O&#39;Rourke in Texas" class="index-image" loading="lazy">
           
@@ -5807,7 +5854,7 @@
           
         </div>
       
-        <div class="index-card" data-index="60">
+        <div class="index-card" data-index="61">
           
             <img src="img/optimized/thumb/summer-rainfall-opposite-extremes-split-the-nation-0ef64acb.jpg" alt="Summer rainfall: opposite extremes split the nation" class="index-image" loading="lazy">
           
@@ -5821,7 +5868,7 @@
           
         </div>
       
-        <div class="index-card" data-index="61">
+        <div class="index-card" data-index="62">
           
             <img src="img/optimized/thumb/why-north-carolina-s-house-districts-may-be-redrawn-9da8f43f.jpg" alt="Why North Carolina&#39;s House Districts may be redrawn" class="index-image" loading="lazy">
           
@@ -5835,7 +5882,7 @@
           
         </div>
       
-        <div class="index-card" data-index="62">
+        <div class="index-card" data-index="63">
           
             <img src="img/optimized/thumb/360-degree-drone-images-show-the-devastation-of-the-carr-fire-99b73869.jpg" alt="360-degree drone images show the devastation of the Carr Fire" class="index-image" loading="lazy">
           
@@ -5849,7 +5896,7 @@
           
         </div>
       
-        <div class="index-card" data-index="63">
+        <div class="index-card" data-index="64">
           
             <img src="img/optimized/thumb/gerrymandering-social.jpg" alt="California took a radical step to fix gerrymandering. Did it work?" class="index-image" loading="lazy">
           
@@ -5863,7 +5910,7 @@
           
         </div>
       
-        <div class="index-card" data-index="64">
+        <div class="index-card" data-index="65">
           
             <img src="img/optimized/thumb/yemen-promo.jpg" alt="Five reasons the crisis in Yemen matters" class="index-image" loading="lazy">
           
@@ -5877,7 +5924,7 @@
           
         </div>
       
-        <div class="index-card" data-index="65">
+        <div class="index-card" data-index="66">
           
             <img src="img/optimized/thumb/a-net-result-01479a06.jpg" alt="A net result?" class="index-image" loading="lazy">
           
@@ -5891,7 +5938,7 @@
           
         </div>
       
-        <div class="index-card" data-index="66">
+        <div class="index-card" data-index="67">
           
             <img src="img/optimized/thumb/this-map-shows-every-inch-of-snow-that-fell-on-the-lower-48-this-year-1d5e7186.jpg" alt="This map shows every inch of snow that fell on the lower 48 this year" class="index-image" loading="lazy">
           
@@ -5905,7 +5952,7 @@
           
         </div>
       
-        <div class="index-card" data-index="67">
+        <div class="index-card" data-index="68">
           
             <img src="img/optimized/thumb/2300-foreignfighters-promo.jpg" alt="Islamic State fighters returning home" class="index-image" loading="lazy">
           
@@ -5919,7 +5966,7 @@
           
         </div>
       
-        <div class="index-card" data-index="68">
+        <div class="index-card" data-index="69">
           
             <img src="img/optimized/thumb/happy-700-promo.jpg" alt="Mapping the perfect U.S. winter Olympic city" class="index-image" loading="lazy">
           
@@ -5933,7 +5980,7 @@
           
         </div>
       
-        <div class="index-card" data-index="69">
+        <div class="index-card" data-index="70">
           
             <img src="img/optimized/thumb/2300-Montecito_Bef_Aft-promo.jpg" alt="Before and after photos of the mudslides in Montecito" class="index-image" loading="lazy">
           
@@ -5947,7 +5994,7 @@
           
         </div>
       
-        <div class="index-card" data-index="70">
+        <div class="index-card" data-index="71">
           
             <img src="img/optimized/thumb/image-1.jpg" alt="What made North Korea&#39;s weapons programs so much scarier in 2017" class="index-image" loading="lazy">
           
@@ -5961,7 +6008,7 @@
           
         </div>
       
-        <div class="index-card" data-index="71">
+        <div class="index-card" data-index="72">
           
             <img src="img/optimized/thumb/utah-promo-static.jpg" alt="Areas cut out of Utah monuments could reopen to mining and drilling" class="index-image" loading="lazy">
           
@@ -5975,7 +6022,7 @@
           
         </div>
       
-        <div class="index-card" data-index="72">
+        <div class="index-card" data-index="73">
           
             <img src="img/optimized/thumb/promo-DMZKorea.jpg" alt="Mapping the DMZ" class="index-image" loading="lazy">
           
@@ -5989,7 +6036,7 @@
           
         </div>
       
-        <div class="index-card" data-index="73">
+        <div class="index-card" data-index="74">
           
             <img src="img/optimized/thumb/the-rise-and-fall-of-the-islamic-state-in-iraq-and-syria-b49ca429.jpg" alt="The rise and fall of the Islamic State in Iraq and Syria" class="index-image" loading="lazy">
           
@@ -6003,7 +6050,7 @@
           
         </div>
       
-        <div class="index-card" data-index="74">
+        <div class="index-card" data-index="75">
           
             <img src="img/optimized/thumb/maria-s-deluge-on-puerto-rico-187debe4.jpg" alt="Maria&#39;s deluge on Puerto Rico" class="index-image" loading="lazy">
           
@@ -6017,7 +6064,7 @@
           
         </div>
       
-        <div class="index-card" data-index="75">
+        <div class="index-card" data-index="76">
           
             <img src="img/optimized/thumb/the-ethnic-cleansing-of-the-rohingya-3db1c677.jpg" alt="The &#39;ethnic cleansing&#39; of the Rohingya" class="index-image" loading="lazy">
           
@@ -6031,7 +6078,7 @@
           
         </div>
       
-        <div class="index-card" data-index="76">
+        <div class="index-card" data-index="77">
           
             <img src="img/optimized/thumb/wlaunchJAPAN2300.jpg" alt="Latest North Korea missile launch suggests Guam is within reach" class="index-image" loading="lazy">
           
@@ -6045,7 +6092,7 @@
           
         </div>
       
-        <div class="index-card" data-index="77">
+        <div class="index-card" data-index="78">
           
             <img src="img/optimized/thumb/irma-before-after-promo.jpg" alt="Before-and-after Hurricane Irma" class="index-image" loading="lazy">
           
@@ -6059,7 +6106,7 @@
           
         </div>
       
-        <div class="index-card" data-index="78">
+        <div class="index-card" data-index="79">
           
             <img src="img/optimized/thumb/eclipse-scroll-promo3.jpg" alt="Travel the path of the solar eclipse" class="index-image" loading="lazy">
           
@@ -6073,7 +6120,7 @@
           
         </div>
       
-        <div class="index-card" data-index="79">
+        <div class="index-card" data-index="80">
           
             <img src="img/optimized/thumb/MOSUL-ANIM-SOCIAL.jpg" alt="How Iraqi forces defeated the Islamic State" class="index-image" loading="lazy">
           
@@ -6087,7 +6134,7 @@
           
         </div>
       
-        <div class="index-card" data-index="80">
+        <div class="index-card" data-index="81">
           
             <img src="img/optimized/thumb/the-race-to-save-florida-s-devastated-coral-reef-from-global-warming-4c8217da.jpg" alt="The race to save Florida&#39;s devastated coral reef from global warming" class="index-image" loading="lazy">
           
@@ -6101,7 +6148,7 @@
           
         </div>
       
-        <div class="index-card" data-index="81">
+        <div class="index-card" data-index="82">
           
             <img src="img/optimized/thumb/map-of-death.jpg" alt="North Korea showed off a lot of missiles. What might be their targets?" class="index-image" loading="lazy">
           
@@ -6115,7 +6162,7 @@
           
         </div>
       
-        <div class="index-card" data-index="82">
+        <div class="index-card" data-index="83">
           
             <img src="img/optimized/thumb/trump-epa-promo.jpg" alt="How eliminating two EPA programs could affect large parts of America" class="index-image" loading="lazy">
           
@@ -6129,7 +6176,7 @@
           
         </div>
       
-        <div class="index-card" data-index="83">
+        <div class="index-card" data-index="84">
           
             <img src="img/optimized/thumb/2300weather-promo.jpg" alt="This map explains the weather we had in 2016" class="index-image" loading="lazy">
           
@@ -6143,7 +6190,7 @@
           
         </div>
       
-        <div class="index-card" data-index="84">
+        <div class="index-card" data-index="85">
           
             <img src="img/optimized/thumb/infrastructure-grid-promo.jpg" alt="Six maps that show the anatomy of America&#39;s vast infrastructure" class="index-image" loading="lazy">
           
@@ -6157,7 +6204,7 @@
           
         </div>
       
-        <div class="index-card" data-index="85">
+        <div class="index-card" data-index="86">
           
             <img src="img/optimized/thumb/2300-swing-state-margins-1.jpg" alt="How Trump won the presidency with razor-thin margins in swing states" class="index-image" loading="lazy">
           
@@ -6171,7 +6218,7 @@
           
         </div>
       
-        <div class="index-card" data-index="86">
+        <div class="index-card" data-index="87">
           
             <img src="img/optimized/thumb/2300-where-polls-were-wrong.jpg" alt="Where polling underestimated Trump?s chances" class="index-image" loading="lazy">
           
@@ -6185,7 +6232,7 @@
           
         </div>
       
-        <div class="index-card" data-index="87">
+        <div class="index-card" data-index="88">
           
             <img src="img/optimized/thumb/we-built-these-white-houses-from-plastic-and-electoral-votes-e09618ca.jpg" alt="We built these White Houses from plastic…and electoral votes" class="index-image" loading="lazy">
           
@@ -6199,7 +6246,7 @@
           
         </div>
       
-        <div class="index-card" data-index="88">
+        <div class="index-card" data-index="89">
           
             <img src="img/optimized/thumb/2300who-is-fighting-isis-promo.jpg" alt="The uneasy mix of forces battling the Islamic State" class="index-image" loading="lazy">
           
@@ -6213,7 +6260,7 @@
           
         </div>
       
-        <div class="index-card" data-index="89">
+        <div class="index-card" data-index="90">
           
             <img src="img/optimized/thumb/office-olympics-promo.jpg" alt="Workday Workouts" class="index-image" loading="lazy">
           
@@ -6227,7 +6274,7 @@
           
         </div>
       
-        <div class="index-card" data-index="90">
+        <div class="index-card" data-index="91">
           
             <img src="img/optimized/thumb/olympic-scale-promo.jpg" alt="Sizing up the Olympics" class="index-image" loading="lazy">
           
@@ -6241,7 +6288,7 @@
           
         </div>
       
-        <div class="index-card" data-index="91">
+        <div class="index-card" data-index="92">
           
             <img src="img/optimized/thumb/2300-doping-promo.jpg" alt="Test all you want, but dopers will still compete in Rio. What you need to know." class="index-image" loading="lazy">
           
@@ -6255,7 +6302,7 @@
           
         </div>
       
-        <div class="index-card" data-index="92">
+        <div class="index-card" data-index="93">
           
             <img src="img/optimized/thumb/one-woman-s-fight-to-save-her-land-from-a-pipeline-that-tore-a-region-apart-48818f52.jpg" alt="One woman&#39;s fight to save her land from a pipeline that tore a region apart" class="index-image" loading="lazy">
           
@@ -6269,7 +6316,7 @@
           
         </div>
       
-        <div class="index-card" data-index="93">
+        <div class="index-card" data-index="94">
           
             <img src="img/optimized/thumb/2300-rocket-promo.jpg" alt="The new space race" class="index-image" loading="lazy">
           
@@ -6283,7 +6330,7 @@
           
         </div>
       
-        <div class="index-card" data-index="94">
+        <div class="index-card" data-index="95">
           
             <img src="img/optimized/thumb/nfl-draft-history-flat-promo.jpg" alt="Legendary? Lousy? How your team has fared in the NFL draft" class="index-image" loading="lazy">
           
@@ -6297,7 +6344,7 @@
           
         </div>
       
-        <div class="index-card" data-index="95">
+        <div class="index-card" data-index="96">
           
             <img src="img/optimized/thumb/everything-you-need-to-know-about-appointing-a-supreme-court-justice-947a6d94.jpg" alt="Everything you need to know about appointing a Supreme Court justice" class="index-image" loading="lazy">
           
@@ -6311,7 +6358,7 @@
           
         </div>
       
-        <div class="index-card" data-index="96">
+        <div class="index-card" data-index="97">
           
             <img src="img/optimized/thumb/walmart-promo.jpg" alt="Poor, rural areas will be most affected by Walmart closing 154 stores" class="index-image" loading="lazy">
           
@@ -6325,7 +6372,7 @@
           
         </div>
       
-        <div class="index-card" data-index="97">
+        <div class="index-card" data-index="98">
           
             <img src="img/optimized/thumb/mapping-inequality-in-nyc_23666975871_o.jpg" alt="Mapping Inequality in NYC" class="index-image" loading="lazy">
           
@@ -6339,7 +6386,7 @@
           
         </div>
       
-        <div class="index-card" data-index="98">
+        <div class="index-card" data-index="99">
           
             <img src="img/optimized/thumb/nine-charts-about-wealth-inequality_23453639040_o.jpg" alt="Nine Charts about Wealth Inequality" class="index-image" loading="lazy">
           
@@ -6353,7 +6400,7 @@
           
         </div>
       
-        <div class="index-card" data-index="99">
+        <div class="index-card" data-index="100">
           
             <img src="img/optimized/thumb/secrecy-for-sale_15941340633_l.jpg" alt="Secrecy for Sale" class="index-image" loading="lazy">
           
@@ -6367,7 +6414,7 @@
           
         </div>
       
-        <div class="index-card" data-index="100">
+        <div class="index-card" data-index="101">
           
             <img src="img/optimized/thumb/27-weeks-long-term-unemployment-in-america_13231831485_o.jpg" alt="27 Weeks: Long-term Unemployment in America" class="index-image" loading="lazy">
           
@@ -6381,7 +6428,7 @@
           
         </div>
       
-        <div class="index-card" data-index="101">
+        <div class="index-card" data-index="102">
           
             <img src="img/optimized/thumb/the-hustle_13111871024_o.jpg" alt="The Hustle" class="index-image" loading="lazy">
           
@@ -6395,7 +6442,7 @@
           
         </div>
       
-        <div class="index-card" data-index="102">
+        <div class="index-card" data-index="103">
           
             <img src="img/optimized/thumb/mapping-americas-rental-housing-crisis_12938139454_o.jpg" alt="Mapping America&#39;s Rental Housing Crisis" class="index-image" loading="lazy">
           
@@ -6409,7 +6456,7 @@
           
         </div>
       
-        <div class="index-card" data-index="103">
+        <div class="index-card" data-index="104">
           
             <img src="img/optimized/thumb/following-the-donors-trust-money-trail_8592634082_o.jpg" alt="Following the Donors Trust Money Trail" class="index-image" loading="lazy">
           
@@ -6423,7 +6470,7 @@
           
         </div>
       
-        <div class="index-card" data-index="104">
+        <div class="index-card" data-index="105">
           
             <img src="img/optimized/thumb/cracking-the-codes_8522010140_l.jpg" alt="Cracking the Codes" class="index-image" loading="lazy">
           
@@ -6437,7 +6484,7 @@
           
         </div>
       
-        <div class="index-card" data-index="105">
+        <div class="index-card" data-index="106">
           
             <img src="img/optimized/thumb/inside-the-conclave_8515024519_o.jpg" alt="Inside the Conclave" class="index-image" loading="lazy">
           
@@ -6451,7 +6498,7 @@
           
         </div>
       
-        <div class="index-card" data-index="106">
+        <div class="index-card" data-index="107">
           
             <img src="img/optimized/thumb/transylvania-university_6973063396_o.jpg" alt="Transylvania University" class="index-image" loading="lazy">
           
@@ -6465,7 +6512,7 @@
           
         </div>
       
-        <div class="index-card" data-index="107">
+        <div class="index-card" data-index="108">
           
             <img src="img/optimized/thumb/geology-of-natural-gas-resources_6106057777_o.jpg" alt="Geology of Natural Gas Resources" class="index-image" loading="lazy">
           
@@ -6479,7 +6526,7 @@
           
         </div>
       
-        <div class="index-card" data-index="108">
+        <div class="index-card" data-index="109">
           
             <img src="img/optimized/thumb/the-carbon-cycle_6106058409_o.jpg" alt="The Carbon Cycle" class="index-image" loading="lazy">
           
@@ -6493,7 +6540,7 @@
           
         </div>
       
-        <div class="index-card" data-index="109">
+        <div class="index-card" data-index="110">
           
             <img src="img/optimized/thumb/energy-in-virginia_6080829654_o.jpg" alt="Energy in Virginia" class="index-image" loading="lazy">
           
@@ -6507,7 +6554,7 @@
           
         </div>
       
-        <div class="index-card" data-index="110">
+        <div class="index-card" data-index="111">
           
             <img src="img/optimized/thumb/lost-amphibians_5147018449_o.jpg" alt="Lost amphibians" class="index-image" loading="lazy">
           
@@ -6521,7 +6568,7 @@
           
         </div>
       
-        <div class="index-card" data-index="111">
+        <div class="index-card" data-index="112">
           
             <img src="img/optimized/thumb/oil-and-natural-gas-formation_5147614068_o.jpg" alt="Oil and Natural Gas formation" class="index-image" loading="lazy">
           
@@ -6535,7 +6582,7 @@
           
         </div>
       
-        <div class="index-card" data-index="112">
+        <div class="index-card" data-index="113">
           
             <img src="img/optimized/thumb/increasing-door-security_4404171179_o.jpg" alt="Increasing door security" class="index-image" loading="lazy">
           
@@ -6549,7 +6596,7 @@
           
         </div>
       
-        <div class="index-card" data-index="113">
+        <div class="index-card" data-index="114">
           
             <img src="img/optimized/thumb/science-of-the-curl_4404934602_o.jpg" alt="Science of the Curl" class="index-image" loading="lazy">
           
@@ -6563,7 +6610,7 @@
           
         </div>
       
-        <div class="index-card" data-index="114">
+        <div class="index-card" data-index="115">
           
             <img src="img/optimized/thumb/snow-acoustics_4334405107_o.jpg" alt="Snow acoustics" class="index-image" loading="lazy">
           
@@ -6577,7 +6624,7 @@
           
         </div>
       
-        <div class="index-card" data-index="115">
+        <div class="index-card" data-index="116">
           
             <img src="img/optimized/thumb/backyard-barbecue-history_4314470119_o.jpg" alt="Backyard Barbecue History" class="index-image" loading="lazy">
           
@@ -6591,7 +6638,7 @@
           
         </div>
       
-        <div class="index-card" data-index="116">
+        <div class="index-card" data-index="117">
           
             <img src="img/optimized/thumb/comfest_4314469833_o.jpg" alt="Comfest" class="index-image" loading="lazy">
           
@@ -6605,7 +6652,7 @@
           
         </div>
       
-        <div class="index-card" data-index="117">
+        <div class="index-card" data-index="118">
           
             <img src="img/optimized/thumb/feeling-the-sting_4314470041_o.jpg" alt="Feeling the sting" class="index-image" loading="lazy">
           
@@ -6619,7 +6666,7 @@
           
         </div>
       
-        <div class="index-card" data-index="118">
+        <div class="index-card" data-index="119">
           
             <img src="img/optimized/thumb/ncaa-special-section-front_4314469925_o.jpg" alt="NCAA special section front" class="index-image" loading="lazy">
           
@@ -6633,7 +6680,7 @@
           
         </div>
       
-        <div class="index-card" data-index="119">
+        <div class="index-card" data-index="120">
           
             <img src="img/optimized/thumb/in-the-groove_4292431022_o.jpg" alt="In the groove" class="index-image" loading="lazy">
           
@@ -6647,7 +6694,7 @@
           
         </div>
       
-        <div class="index-card" data-index="120">
+        <div class="index-card" data-index="121">
           
             <img src="img/optimized/thumb/ardi_3990346735_o.jpg" alt="Ardi" class="index-image" loading="lazy">
           
@@ -6661,7 +6708,7 @@
           
         </div>
       
-        <div class="index-card" data-index="121">
+        <div class="index-card" data-index="122">
           
             <img src="img/optimized/thumb/flora_3909049075_o.jpg" alt="Flora" class="index-image" loading="lazy">
           
@@ -6675,7 +6722,7 @@
           
         </div>
       
-        <div class="index-card" data-index="122">
+        <div class="index-card" data-index="123">
           
             <img src="img/optimized/thumb/lake-testing_3896989871_o.jpg" alt="Lake testing" class="index-image" loading="lazy">
           
@@ -6689,7 +6736,7 @@
           
         </div>
       
-        <div class="index-card" data-index="123">
+        <div class="index-card" data-index="124">
           
             <img src="img/optimized/thumb/rust-happens_3879828324_o.jpg" alt="Rust happens" class="index-image" loading="lazy">
           
@@ -6703,7 +6750,7 @@
           
         </div>
       
-        <div class="index-card" data-index="124">
+        <div class="index-card" data-index="125">
           
             <img src="img/optimized/thumb/huntington-park-an-insiders-view_3789165210_o.jpg" alt="Huntington Park: An Insiders view" class="index-image" loading="lazy">
           
@@ -6717,7 +6764,7 @@
           
         </div>
       
-        <div class="index-card" data-index="125">
+        <div class="index-card" data-index="126">
           
             <img src="img/optimized/thumb/ohios-hoops-history_3789162740_o.jpg" alt="Ohio&#39;s hoops history" class="index-image" loading="lazy">
           
@@ -6731,7 +6778,7 @@
           
         </div>
       
-        <div class="index-card" data-index="126">
+        <div class="index-card" data-index="127">
           
             <img src="img/optimized/thumb/on-the-brink-can-ohios-big-cities-be-saved_3789161438_o.jpg" alt="On the brink: Can Ohio&#39;s big cities be saved?" class="index-image" loading="lazy">
           
@@ -6745,7 +6792,7 @@
           
         </div>
       
-        <div class="index-card" data-index="127">
+        <div class="index-card" data-index="128">
           
             <img src="img/optimized/thumb/test-of-convictions_3789163022_o.jpg" alt="Test of Convictions" class="index-image" loading="lazy">
           
@@ -6759,7 +6806,7 @@
           
         </div>
       
-        <div class="index-card" data-index="128">
+        <div class="index-card" data-index="129">
           
             <img src="img/optimized/thumb/a-snapshot-of-ohios-cities_3786326724_o.jpg" alt="A snapshot of Ohio&#39;s cities" class="index-image" loading="lazy">
           
@@ -6773,7 +6820,7 @@
           
         </div>
       
-        <div class="index-card" data-index="129">
+        <div class="index-card" data-index="130">
           
             <img src="img/optimized/thumb/boom-with-a-view_3785525539_o.jpg" alt="Boom with a view" class="index-image" loading="lazy">
           
@@ -6787,7 +6834,7 @@
           
         </div>
       
-        <div class="index-card" data-index="130">
+        <div class="index-card" data-index="131">
           
             <img src="img/optimized/thumb/building-a-snow-fort_3786346248_o.jpg" alt="Building a snow fort" class="index-image" loading="lazy">
           
@@ -6801,7 +6848,7 @@
           
         </div>
       
-        <div class="index-card" data-index="131">
+        <div class="index-card" data-index="132">
           
             <img src="img/optimized/thumb/cave-dwellers_3786335734_o.jpg" alt="Cave dwellers" class="index-image" loading="lazy">
           
@@ -6815,7 +6862,7 @@
           
         </div>
       
-        <div class="index-card" data-index="132">
+        <div class="index-card" data-index="133">
           
             <img src="img/optimized/thumb/counting-down-to-zero_3785522615_o.jpg" alt="Counting down to zero" class="index-image" loading="lazy">
           
@@ -6829,7 +6876,7 @@
           
         </div>
       
-        <div class="index-card" data-index="133">
+        <div class="index-card" data-index="134">
           
             <img src="img/optimized/thumb/exploring-the-buckeye-state_3785534349_o.jpg" alt="Exploring the buckeye state" class="index-image" loading="lazy">
           
@@ -6843,7 +6890,7 @@
           
         </div>
       
-        <div class="index-card" data-index="134">
+        <div class="index-card" data-index="135">
           
             <img src="img/optimized/thumb/hoop-dreams_3785535077_o.jpg" alt="Hoop dreams" class="index-image" loading="lazy">
           
@@ -6857,7 +6904,7 @@
           
         </div>
       
-        <div class="index-card" data-index="135">
+        <div class="index-card" data-index="136">
           
             <img src="img/optimized/thumb/inside-a-scrubber_3785528835_o.jpg" alt="Inside a scrubber" class="index-image" loading="lazy">
           
@@ -6871,7 +6918,7 @@
           
         </div>
       
-        <div class="index-card" data-index="136">
+        <div class="index-card" data-index="137">
           
             <img src="img/optimized/thumb/ncaa-09-special-section_3786325520_o.jpg" alt="NCAA 09 special section" class="index-image" loading="lazy">
           
@@ -6885,7 +6932,7 @@
           
         </div>
       
-        <div class="index-card" data-index="137">
+        <div class="index-card" data-index="138">
           
             <img src="img/optimized/thumb/ohios-most-dangerous-bridges_3786330380_o.jpg" alt="Ohio&#39;s most dangerous bridges" class="index-image" loading="lazy">
           
@@ -6899,7 +6946,7 @@
           
         </div>
       
-        <div class="index-card" data-index="138">
+        <div class="index-card" data-index="139">
           
             <img src="img/optimized/thumb/old-bones_3786327194_o.jpg" alt="Old bones" class="index-image" loading="lazy">
           
@@ -6913,7 +6960,7 @@
           
         </div>
       
-        <div class="index-card" data-index="139">
+        <div class="index-card" data-index="140">
           
             <img src="img/optimized/thumb/stag-moose_3786329180_o.jpg" alt="Stag moose" class="index-image" loading="lazy">
           
@@ -6927,7 +6974,7 @@
           
         </div>
       
-        <div class="index-card" data-index="140">
+        <div class="index-card" data-index="141">
           
             <img src="img/optimized/thumb/trash-rehashed_3786324818_o.jpg" alt="Trash rehashed" class="index-image" loading="lazy">
           
@@ -7031,26 +7078,24 @@
         }
       });
       
-      // Dark Mode Toggle - Hidden Dev Feature
-      const darkModeToggle = document.getElementById('dark-mode-toggle');
+      // Automatic Dark Mode - Based on System Preferences
       const body = document.body;
       
-      // Check for saved dark mode preference
-      const isDarkMode = localStorage.getItem('darkMode') === 'true';
-      if (isDarkMode) {
+      // Check system preference
+      const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+      
+      // Apply dark mode if system prefers it
+      if (prefersColorScheme.matches) {
         body.classList.add('dark-mode');
-        darkModeToggle.textContent = '☀️'; // Sun emoji
       }
       
-      darkModeToggle.addEventListener('click', function() {
-        body.classList.toggle('dark-mode');
-        const isDark = body.classList.contains('dark-mode');
-        
-        // Update button icon
-        darkModeToggle.textContent = isDark ? '☀️' : '🌙'; // Sun or Moon
-        
-        // Save preference
-        localStorage.setItem('darkMode', isDark);
+      // Listen for changes in system preference
+      prefersColorScheme.addEventListener('change', (e) => {
+        if (e.matches) {
+          body.classList.add('dark-mode');
+        } else {
+          body.classList.remove('dark-mode');
+        }
       });
       
       // Featured project animations
@@ -7093,44 +7138,35 @@
       // Initialize functionality
       setupFeaturedProjects();
       
-      // Scroll-triggered sticky nav functionality
+      // Always show navigation immediately
       const header = document.querySelector('header');
-      let lastScrollY = window.scrollY;
-      let heroHeight = window.innerHeight; // Full viewport height
       
+      // Add scrolled class for styling after minimal scrolling
       window.addEventListener('scroll', () => {
         const currentScrollY = window.scrollY;
         
-        // Show header after scrolling past hero section (100vh)
-        if (currentScrollY > heroHeight * 0.8) { // Show when 80% through hero
-          header.classList.add('show');
-        } else {
-          header.classList.remove('show');
-        }
-        
-        // Add scrolled class for additional styling after more scrolling
-        if (currentScrollY > heroHeight + 100) {
+        if (currentScrollY > 50) {
           header.classList.add('scrolled');
         } else {
           header.classList.remove('scrolled');
         }
-        
-        lastScrollY = currentScrollY;
       });
       
-      // Update hero height on resize
-      window.addEventListener('resize', () => {
-        heroHeight = window.innerHeight;
-      });
-      
-      // Smooth scroll with dynamic header offset
+      // Smooth scroll with dynamic header offset (only for same-page anchor links)
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+          // Only handle same-page anchor links (not /#section links)
+          const href = this.getAttribute('href');
+          if (href.startsWith('/#')) {
+            // Let the browser handle navigation to homepage with anchor
+            return;
+          }
+          
           e.preventDefault();
-          const targetId = this.getAttribute('href');
+          const targetId = href;
           const targetElement = document.querySelector(targetId);
           if (targetElement) {
-            const headerHeight = header.classList.contains('show') ? 80 : 0;
+            const headerHeight = header.classList.contains('scrolled') ? 60 : 80; // Use consistent header height
             const targetPosition = targetElement.offsetTop - headerHeight;
             window.scrollTo({
               top: targetPosition,
@@ -7172,5 +7208,8 @@
   
   <!-- A/B Test JavaScript -->
   <script src="/assets/js/ab-test.js"></script>
+  
+  <!-- Chatbot CTA JavaScript -->
+  <script src="/assets/js/chatbot-cta.js"></script>
 </body>
 </html>

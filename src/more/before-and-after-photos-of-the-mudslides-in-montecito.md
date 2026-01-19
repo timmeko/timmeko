@@ -4,7 +4,7 @@ date: 2018-01-12
 hero: "img/optimized/thumb/2300-Montecito_Bef_Aft-promo.jpg"
 link: "http://www.washingtonpost.com/graphics/2018/national/montecito-before-after/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Just days after intense rains triggered deadly mudslides in Montecito, satellite images reveal the destruction.

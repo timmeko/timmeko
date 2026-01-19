@@ -1,5 +1,5 @@
 ---
-layout: layouts/base
+layout: base
 title: Tim Meko - Visual Journalist & Graphics Editor
 ---
 
@@ -117,8 +117,43 @@ title: Tim Meko - Visual Journalist & Graphics Editor
 </section>
 </div>
 
+<section id="chatbot-cta" class="chatbot-cta section">
+  <div class="container">
+    <h3 class="chatbot-heading"><span class="beta-label">Beta</span> Click below to copy a prompt and ask your favorite chatbot about me</h3>
+    <div class="chatbot-icons">
+      <div class="chatbot-icon-wrapper" data-chatbot="chatgpt">
+        <button class="chatbot-icon-button" aria-label="Ask ChatGPT about Tim Meko">
+          <img src="/assets/icons/chatgpt-logo.svg" alt="ChatGPT" class="chatbot-icon">
+        </button>
+        <span class="chatbot-toast">Prompt copied to clipboard</span>
+      </div>
+      
+      <div class="chatbot-icon-wrapper" data-chatbot="claude">
+        <button class="chatbot-icon-button" aria-label="Ask Claude about Tim Meko">
+          <img src="/assets/icons/claude-logo.svg" alt="Claude" class="chatbot-icon">
+        </button>
+        <span class="chatbot-toast">Prompt copied to clipboard</span>
+      </div>
+      
+      <div class="chatbot-icon-wrapper" data-chatbot="gemini">
+        <button class="chatbot-icon-button" aria-label="Ask Gemini about Tim Meko">
+          <img src="/assets/icons/gemini-logo.svg" alt="Gemini" class="chatbot-icon">
+        </button>
+        <span class="chatbot-toast">Prompt copied to clipboard</span>
+      </div>
+    </div>
+    <p class="chatbot-context-link">
+      <a href="/assets/tim-meko-context.txt" download>Download my context profile for AI</a>
+    </p>
+
+  </div>
+</section>
+
 <section id="featured" class="featured section">
   <div class="container">
+    <header class="section-header">
+      <h2>Featured Work</h2>
+    </header>
     <div class="featured-list">
       {% for item in collections.flagship %}
         <article class="featured-project {{ 'featured-project--reverse' if loop.index0 % 2 == 1 }}" data-project-index="{{ loop.index0 }}">

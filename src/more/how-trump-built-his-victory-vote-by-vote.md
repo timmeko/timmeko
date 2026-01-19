@@ -4,7 +4,7 @@ date: 2024-11-08
 hero: "img/optimized/thumb/XLUSUBLFWVAS7JPFKKZJE4HBYE.jpg"
 link: "https://www.washingtonpost.com/elections/interactive/2024/2024-election-vote-map/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Using sand to represent individual votes, The Post explains where key votes gave Trump a second term in the White House.

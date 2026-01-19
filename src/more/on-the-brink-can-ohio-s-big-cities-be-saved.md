@@ -4,7 +4,7 @@ date: 2009-08-04
 hero: "img/optimized/thumb/on-the-brink-can-ohios-big-cities-be-saved_3789161438_o.jpg"
 link: "https://flickr.com/photos/timmeko/3789161438/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 The Dispatch's first major interactive graphic. This graphic had information about every large city in Ohio. I also designed the accompanying print graphics.

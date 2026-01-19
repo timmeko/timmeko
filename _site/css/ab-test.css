@@ -16,7 +16,7 @@
 
 /* TRADITIONAL HERO VARIANT STYLES */
 .hero-traditional {
-  min-height: 60vh;
+  min-height: 90vh;
   background: url('/assets/images/covidyear-0221.jpg') center/cover;
   position: relative;
   display: flex;
@@ -45,15 +45,13 @@
   z-index: 2;
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
-  border-radius: 12px;
   padding: 3rem 2rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hero-traditional h1 {
-  font-size: clamp(2.2rem, 4vw, 3.5rem); /* Same as main H1 */
-  font-weight: 900;
-  margin-bottom: 1.5rem;
+  font-size: clamp(2.0rem); /* Same as main H1 */
+   margin-bottom: 1.5rem;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.95);
 }
@@ -85,7 +83,7 @@
 /* RESPONSIVE DESIGN FOR TRADITIONAL HERO */
 @media (max-width: 768px) {
   .hero-traditional {
-    min-height: 50vh;
+    min-height: 95vh;
     padding: 5rem 1rem 3rem; /* Adjusted for header on mobile */
   }
   

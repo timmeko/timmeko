@@ -4,7 +4,7 @@ date: 2019-12-03
 hero: "img/optimized/thumb/3H3YV7MT7FEFRM3HTXE7GAQSSI.jpg"
 link: "https://www.washingtonpost.com/politics/2019/12/03/north-carolinas-new-congressional-map-shifts-two-seats-toward-democrats/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 The new districts probably won't end controversy over partisan gerrymandering in the state.

@@ -4,7 +4,7 @@ date: 2009-08-03
 hero: "img/optimized/thumb/building-a-snow-fort_3786346248_o.jpg"
 link: "https://flickr.com/photos/timmeko/3786346248/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Showing children how to build a proper snow fort.

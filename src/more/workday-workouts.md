@@ -4,7 +4,7 @@ date: 2016-08-08
 hero: "img/optimized/thumb/office-olympics-promo.jpg"
 link: "http://www.washingtonpost.com/graphics/sports/olympics/office-olympics/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Inspired by the Olympics? Make your cubicle your stadium and the office your own little Rio.

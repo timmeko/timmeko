@@ -4,7 +4,7 @@ date: 2016-02-05
 hero: "img/optimized/thumb/walmart-promo.jpg"
 link: "http://www.washingtonpost.com/graphics/business/walmart-closings/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Here is a look at the neighborhoods where Walmart is closing its doors.

@@ -4,8 +4,9 @@ slug: "bears-ears"
 date: "2019-01-01"
 hero: "/img/optimized/hero/bearsEarsStill.jpg"
 tags: ["editing"]
-layout: layouts/page
+layout: page
 ---
+# What remains of Bears Ears
 
 ![Bears Ears hero](/img/optimized/hero/bearsEarsStill.jpg)
 

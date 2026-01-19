@@ -4,7 +4,7 @@ date: 2022-09-03
 hero: "img/optimized/thumb/RT474X2MH5A4RAGY72NPF7A3DY.jpg"
 link: "https://www.washingtonpost.com/climate-environment/2022/09/03/rain-drought-united-states-maps/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Despite record precipitation events this summer, the country is likely running behind its average annual rainfall

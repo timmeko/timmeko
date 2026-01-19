@@ -4,7 +4,7 @@ date: 2019-09-05
 hero: "img/optimized/thumb/SZSMIXPU3JE67GHYABG4VT3I6M.jpg"
 link: "https://www.washingtonpost.com/weather/2019/09/05/satellite-images-show-destruction-dorian-bahamas/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Satellite images show the destruction of the Abaco Islands in the Bahamas.

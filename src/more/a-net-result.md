@@ -4,7 +4,7 @@ date: 2018-05-27
 hero: "img/optimized/thumb/a-net-result-01479a06.jpg"
 link: "http://www.washingtonpost.com/graphics/2018/sports/holtby-fleury/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Seven-game series often have turned on the play of the goaltenders. Here's how the starting netminders for the Capitals and Golden Knights compare

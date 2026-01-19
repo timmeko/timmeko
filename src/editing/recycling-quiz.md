@@ -4,8 +4,10 @@ slug: "recycling-quiz"
 date: "2023-01-01"
 hero: "/img/optimized/hero/recyclingPROMO.jpg"
 tags: ["editing"]
-layout: layouts/page
+layout: page
 ---
+
+# You’re probably recycling wrong. This quiz will help you sort it out.
 
 ![Recycling quiz promo](/img/optimized/hero/recyclingPROMO.jpg)
 

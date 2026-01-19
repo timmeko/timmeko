@@ -10,8 +10,6 @@
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <!-- Dark Mode Toggle - Hidden Dev Feature -->
-  <button class="dark-mode-toggle" id="dark-mode-toggle" title="Toggle Dark Mode">🌙</button>
   <header>
     <div class="container">
       <div class="header-content">
@@ -34,11 +32,11 @@
         </button>
         
         <nav class="main-nav" id="main-nav">
-          <a href="#featured">Featured</a>
-          <a href="#insights">Insights</a>
-          <a href="#editing">Edited</a>
-          <a href="#more-work">More work</a>
-          <a href="#about-contact">About</a>
+          <a href="/#featured">Featured</a>
+          <a href="/#insights">Insights</a>
+          <a href="/#editing">Edited</a>
+          <a href="/#more-work">More work</a>
+          <a href="/#about-contact">About</a>
         </nav>
       </div>
     </div>
@@ -51,12 +49,6 @@
     
 <article class="page">
   <div class="container">
-    
-      <header class="page-header">
-        <h1>Before-and-after Hurricane Irma</h1>
-      </header>
-    
-    
     <div class="page-content">
       <p>Now that storm clouds are clearing, satellites are able to capture the devastation of Hurricane Irma.</p>
 <p><strong><a href="http://www.washingtonpost.com/graphics/2017/national/hurricane-irma-before-after/">View project →</a></strong><br>
@@ -123,26 +115,24 @@
         }
       });
       
-      // Dark Mode Toggle - Hidden Dev Feature
-      const darkModeToggle = document.getElementById('dark-mode-toggle');
+      // Automatic Dark Mode - Based on System Preferences
       const body = document.body;
       
-      // Check for saved dark mode preference
-      const isDarkMode = localStorage.getItem('darkMode') === 'true';
-      if (isDarkMode) {
+      // Check system preference
+      const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+      
+      // Apply dark mode if system prefers it
+      if (prefersColorScheme.matches) {
         body.classList.add('dark-mode');
-        darkModeToggle.textContent = '☀️'; // Sun emoji
       }
       
-      darkModeToggle.addEventListener('click', function() {
-        body.classList.toggle('dark-mode');
-        const isDark = body.classList.contains('dark-mode');
-        
-        // Update button icon
-        darkModeToggle.textContent = isDark ? '☀️' : '🌙'; // Sun or Moon
-        
-        // Save preference
-        localStorage.setItem('darkMode', isDark);
+      // Listen for changes in system preference
+      prefersColorScheme.addEventListener('change', (e) => {
+        if (e.matches) {
+          body.classList.add('dark-mode');
+        } else {
+          body.classList.remove('dark-mode');
+        }
       });
       
       // Featured project animations
@@ -185,44 +175,35 @@
       // Initialize functionality
       setupFeaturedProjects();
       
-      // Scroll-triggered sticky nav functionality
+      // Always show navigation immediately
       const header = document.querySelector('header');
-      let lastScrollY = window.scrollY;
-      let heroHeight = window.innerHeight; // Full viewport height
       
+      // Add scrolled class for styling after minimal scrolling
       window.addEventListener('scroll', () => {
         const currentScrollY = window.scrollY;
         
-        // Show header after scrolling past hero section (100vh)
-        if (currentScrollY > heroHeight * 0.8) { // Show when 80% through hero
-          header.classList.add('show');
-        } else {
-          header.classList.remove('show');
-        }
-        
-        // Add scrolled class for additional styling after more scrolling
-        if (currentScrollY > heroHeight + 100) {
+        if (currentScrollY > 50) {
           header.classList.add('scrolled');
         } else {
           header.classList.remove('scrolled');
         }
-        
-        lastScrollY = currentScrollY;
       });
       
-      // Update hero height on resize
-      window.addEventListener('resize', () => {
-        heroHeight = window.innerHeight;
-      });
-      
-      // Smooth scroll with dynamic header offset
+      // Smooth scroll with dynamic header offset (only for same-page anchor links)
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+          // Only handle same-page anchor links (not /#section links)
+          const href = this.getAttribute('href');
+          if (href.startsWith('/#')) {
+            // Let the browser handle navigation to homepage with anchor
+            return;
+          }
+          
           e.preventDefault();
-          const targetId = this.getAttribute('href');
+          const targetId = href;
           const targetElement = document.querySelector(targetId);
           if (targetElement) {
-            const headerHeight = header.classList.contains('show') ? 80 : 0;
+            const headerHeight = header.classList.contains('scrolled') ? 60 : 80; // Use consistent header height
             const targetPosition = targetElement.offsetTop - headerHeight;
             window.scrollTo({
               top: targetPosition,
@@ -264,5 +245,8 @@
   
   <!-- A/B Test JavaScript -->
   <script src="/assets/js/ab-test.js"></script>
+  
+  <!-- Chatbot CTA JavaScript -->
+  <script src="/assets/js/chatbot-cta.js"></script>
 </body>
 </html>

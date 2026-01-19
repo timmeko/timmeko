@@ -4,7 +4,7 @@ date: 2019-04-02
 hero: "img/optimized/thumb/EHS2IOHS3JBOJJX5E7CW46EAKY.jpg"
 link: "https://www.washingtonpost.com/weather/2019/04/02/satellite-images-capture-dcs-cherry-blossoms-peak-bloom/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Satellite images captured the cherry blossoms at their peak.

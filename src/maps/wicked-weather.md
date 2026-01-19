@@ -4,7 +4,7 @@ date: 2019-04-25
 hero: "/img/raw/FIRE.jpg"
 homepage_description: "A visual investigation into America's weather disasters, exploring how every part of the country faces unique risks."
 tags: [maps, flagship]
-layout: layouts/page
+layout: page
 ---
 # America's wicked weather and natural disasters
 

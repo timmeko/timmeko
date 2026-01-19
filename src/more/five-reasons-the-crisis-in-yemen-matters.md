@@ -4,7 +4,7 @@ date: 2018-06-08
 hero: "img/optimized/thumb/yemen-promo.jpg"
 link: "http://www.washingtonpost.com/graphics/2018/world/why-yemen-matters/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Long overshadowed by conflicts and intrigues elsewhere in the Middle East, Yemen is increasingly hard to ignore.

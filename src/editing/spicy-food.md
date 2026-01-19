@@ -4,8 +4,11 @@ slug: "spicy-food"
 date: "2024-01-01"
 hero: "/img/optimized/hero/spicyDetail924AM.jpg"
 tags: ["editing"]
-layout: layouts/page
+layout: page
 ---
+
+# What spicy food does to your body
+
 
 ![Spicy food hero](/img/optimized/hero/spicyDetail924AM.jpg)
 

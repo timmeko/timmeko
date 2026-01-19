@@ -4,7 +4,7 @@ date: 2016-08-05
 hero: "img/optimized/thumb/olympic-scale-promo.jpg"
 link: "http://www.washingtonpost.com/graphics/sports/olympics/scale-of-the-olympics/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Here's a look at the scale of the courts and equipment of the summer games.

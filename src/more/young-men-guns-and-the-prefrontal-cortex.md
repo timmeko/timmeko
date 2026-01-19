@@ -4,7 +4,7 @@ date: 2022-06-03
 hero: "img/optimized/thumb/young-men-guns-and-the-prefrontal-cortex-bdfaac27.jpg"
 link: "https://www.washingtonpost.com/health/2022/06/03/why-so-many-mass-shooters-young-angry-men/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 The Uvalde, Tex., shooter is part of a long list of young male perpetrators. Some experts think gun laws need to change to address that.

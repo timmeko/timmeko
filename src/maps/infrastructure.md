@@ -4,7 +4,7 @@ date: 2016-12-01
 hero: "/img/raw/infrastructure-grid-promo.jpg"
 homepage_description: "A deep dive into America's infrastructure, creating six distinct map perspectives that made complex infrastructure data accessible to millions of readers."
 tags: [maps, flagship]
-layout: layouts/page
+layout: page
 ---
 
 # Mapping America's interconnected infrastructure

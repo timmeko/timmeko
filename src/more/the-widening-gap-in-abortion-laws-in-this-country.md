@@ -4,7 +4,7 @@ date: 2019-05-28
 hero: "img/optimized/thumb/X4BBHCPG6ZETHHQ7BNTK325PCA.jpg"
 link: "https://www.washingtonpost.com/nation/2019/05/09/which-states-are-blocking-abortion-and-which-are-enacting-protections/"
 tags: ["more"]
-layout: layouts/page
+layout: page
 ---
 
 Several states recently passed laws that further restrict access to abortions.

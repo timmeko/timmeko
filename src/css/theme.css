@@ -81,7 +81,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header - Scroll-triggered sticky nav */
+/* Header - Always visible sticky nav */
 header {
   padding: var(--space-md) 0; /* Reduced padding */
   position: fixed;
@@ -93,15 +93,6 @@ header {
   transition: all 0.3s ease;
   border-bottom: 1px solid var(--color-border);
   box-shadow: var(--shadow-sm);
-  
-  /* Initially hidden - slides down when scrolling */
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
-header.show {
-  transform: translateY(0);
-  opacity: 1;
 }
 
 header.scrolled {
@@ -167,10 +158,14 @@ header.scrolled .logo svg {
 /* Main Content */
 main {
   min-height: 60vh;
-  padding: 10px 0 var(--space-xl) 0;
+  padding: calc(var(--space-md) * 4) 0 var(--space-xl) 0; /* Add top padding for fixed nav */
 }
 
 /* Page Styles */
+.page {
+  padding-top: 0; /* Remove any additional padding since main handles it */
+}
+
 .page-header {
   margin-bottom: var(--space-xl);
   text-align: center;
@@ -194,13 +189,13 @@ main {
   margin-top: var(--space-sm);
 }
 
-/* Ensure sections don't get hidden under fixed header when it appears */
+/* Ensure sections don't get hidden under fixed header */
 .featured.section,
 .insights.section,
 .editing.section,
 .index.section,
 .about-contact.section {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 100px; /* Increased for always-visible header */
 }
 
 /* Section Styles - Much tighter */
@@ -354,11 +349,45 @@ h2.section-header {
   padding: 0;
   position: relative;
   overflow: hidden;
-  margin-top: 0;
+  margin-top: 0; /* Remove margin since nav is persistent */
   height: 100vh; /* Exact viewport height */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Hero Section - Traditional variant */
+.hero-traditional {
+  text-align: center;
+  padding: var(--space-2xl) 0;
+  margin-top: 0; /* Remove margin since nav is persistent */
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-traditional .container {
+  max-width: 600px;
+}
+
+.hero-traditional h1 {
+  font-family: var(--font-secondary);
+  font-style: italic;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+  font-weight: 400;
+}
+
+.hero-traditional .hero-statement {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  margin: 0;
+  line-height: 1.5;
 }
 
 /* Hero background container */
@@ -1210,6 +1239,7 @@ footer {
   .hero .hero-content {
     padding: var(--space-lg);
     margin: 0;
+    width:90vw;
   }
   
   .hero h1 {
@@ -1436,34 +1466,7 @@ blockquote {
   }
 }
 
-/* Dark Mode Toggle - Hidden Dev Feature */
-.dark-mode-toggle {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 9999;
-  background: var(--color-primary);
-  color: white;
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 0;
-  font-size: 18px;
-  cursor: pointer;
-  opacity: 0.1;
-  transition: opacity 0.2s ease, background 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.dark-mode-toggle:hover {
-  opacity: 0.8;
-}
-
-.dark-mode-toggle:active {
-  opacity: 1;
-}
 
 /* Dark Mode Styles */
 body.dark-mode {
@@ -1474,9 +1477,7 @@ body.dark-mode {
   --color-border: #333333; /* Dark gray border */
 }
 
-body.dark-mode .dark-mode-toggle {
-  background: var(--color-accent);
-}
+
 
 body.dark-mode header {
   background: rgba(17, 17, 17, 0.98); /* Match new dark background */
@@ -1488,6 +1489,15 @@ body.dark-mode header.scrolled {
   background: rgba(17, 17, 17, 0.98); /* Match new dark background */
   backdrop-filter: blur(10px);
   border-bottom-color: var(--color-border);
+}
+
+/* Dark mode logo color corrections */
+body.dark-mode .logo svg polygon {
+  fill: #ffffff !important; /* White background in dark mode */
+}
+
+body.dark-mode .logo svg .title-name {
+  fill: #000000 !important; /* Black text in dark mode */
 }
 
 /* Dark mode hero styles */
@@ -1581,4 +1591,139 @@ body.dark-mode .hamburger-lines span {
 body.dark-mode .main-nav {
   background: var(--color-background);
   border-right-color: var(--color-border);
+}
+
+/* Chatbot CTA Section */
+.chatbot-cta {
+  text-align: center;
+  padding: var(--space-xl) 0;
+  margin-bottom: var(--space-2xl);
+}
+
+.chatbot-heading {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  margin-bottom: var(--space-lg);
+}
+
+.chatbot-icons {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+.chatbot-icon-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chatbot-icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.chatbot-icon-button:hover {
+  transform: translateY(-2px);
+}
+
+.chatbot-icon {
+  width: 48px;
+  height: 48px;
+  transition: filter 0.2s ease;
+}
+
+/* Teal hover effect */
+.chatbot-icon-button:hover .chatbot-icon {
+  filter: brightness(0) saturate(100%) invert(39%) sepia(97%) saturate(1234%) hue-rotate(164deg) brightness(90%) contrast(101%);
+}
+
+.chatbot-toast {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: var(--space-xs);
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.chatbot-toast.show {
+  opacity: 1;
+}
+
+.chatbot-context-link {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.chatbot-context-link a {
+  color: var(--color-text-light);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.chatbot-context-link a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* Dark mode chatbot CTA */
+body.dark-mode .chatbot-heading {
+  color: var(--color-text-light);
+}
+
+body.dark-mode .chatbot-icon {
+  filter: invert(1);
+}
+
+body.dark-mode .chatbot-icon-button:hover .chatbot-icon {
+  filter: invert(1) brightness(0) saturate(100%) invert(39%) sepia(97%) saturate(1234%) hue-rotate(164deg) brightness(90%) contrast(101%);
+}
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+  .chatbot-icons {
+    gap: var(--space-lg);
+  }
+  
+  .chatbot-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .chatbot-heading {
+    font-size: 1rem;
+  }
+}
+
+/* Beta label for chatbot section */
+.beta-label {
+  display: inline-block;
+  font-family: var(--font-primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #854d0e; /* Dark yellow/brown for text contrast */
+  background-color: #fef08a; /* Soft yellow background */
+  padding: 4px 8px;
+  border-radius: 9999px; /* Pill shape */
+  margin-right: var(--space-sm);
+  vertical-align: text-bottom;
+  border: 1px solid #fde047;
 }

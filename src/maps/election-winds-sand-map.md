@@ -4,7 +4,7 @@ date: 2024-11-08
 hero: "/img/raw/XLUSUBLFWVAS7JPFKKZJE4HBYE.jpg"
 homepage_description: "Innovative visualizations for two landmark elections, including the viral 'sand map' that showed every vote as individual grains and wind-pattern maps revealing political currents across America."
 tags: [maps, flagship]
-layout: layouts/page
+layout: page
 ---
 # Visualizing American democracy
 
@@ -13,7 +13,7 @@ layout: layouts/page
 **[View project →](https://www.washingtonpost.com/elections/interactive/2024/2024-election-vote-map/)**  
 *Published: November 2024 | The Washington Post*
 
-A cinematic, three-dimensional map where over 144 million votes become grains of sand, piling up by precinct to show election results as both texture and structure. The metaphor underlines how America is more unified—and individual votes still matter. 
+A cinematic, three-dimensional map where over 144 million votes become grains of sand, piling up by precinct to show election results as both texture and structure. The metaphor underlines how America's geography is less polarized than is often presented. It also highlights the power of individual votes. 
 
 
 **Highlights:**  
